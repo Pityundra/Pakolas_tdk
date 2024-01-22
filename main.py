@@ -1,3 +1,7 @@
-from test import Tester
+from test import Tester, ffdic3Test, ffdic1Test, ffdic2Test
 
-Tester()
+# Tester()
+
+ffdic1Test()
+ffdic2Test()
+ffdic3Test()

@@ -1,3 +1,4 @@
+from Algorithms.FFD.ffd import FFD
 from Resources.item1D import Item1D
 from Resources.item2D import Item2D
 from Resources.item3D import Item3D
@@ -62,4 +63,36 @@ def Tester():
     print("Egyszerű alsó korlát: " + str(SimpleLowerBound(items2, [4, 10], "test", 2)))
     print("Egyszerű alsó korlát: " + str(SimpleLowerBound(items3, [10, 10, 10], "test", 3)))
 
+
+def ffdic1Test():
+    bin1 = Bin1D(1, 10)
+    item1 = Item1D(1, 1)
+    item11 = Item1D(2, 2)
+    item111 = Item1D(3, 3)
+    items1 = [item1, item11, item111, item111, item111]
+
+    # print(FFD(items1, [10], "item", "avg", 1))
+    print(FFD(items1, [10], "bin", "sum", 1))
+
+
+def ffdic2Test():
+    bin2 = Bin2D(1, 10, 10)
+    item2 = Item2D(1, 1, 2)
+    item22 = Item2D(2, 4, 2)
+    item222 = Item2D(3, 5, 3)
+    items2 = [item2, item22, item222, item222, item222, item222]
+
+    # print(FFD(items2, [10, 10], "item", "prod", 2))
+    print(FFD(items2, [10, 10], "bin", "avg", 2))
+
+
+def ffdic3Test():
+    bin3 = Bin3D(1, 10, 10, 10)
+    item3 = Item3D(1, 1, 2, 4)
+    item33 = Item3D(2, 3, 8, 3)
+    item333 = Item3D(3, 9, 2, 8)
+    items3 = [item3, item33, item333]
+
+    # print(FFD(items3, [10, 10, 10], "item", "sum", 3))
+    print(FFD(items3, [10, 10, 10], "bin", "avg", 3))
 

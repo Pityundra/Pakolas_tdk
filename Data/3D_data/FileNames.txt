@@ -1,0 +1,16 @@
+data\class1_100.txt
+data\class2_100.txt
+data\class3_100.txt
+data\class4_100.txt
+data\class5_100.txt
+data\class10_100.txt
+data\class11_100.txt
+data\class12_100.txt
+data\class1_1000.txt
+data\class2_1000.txt
+data\class3_1000.txt
+data\class4_1000.txt
+data\class5_1000.txt
+data\class10_1000.txt
+data\class11_1000.txt
+data\class12_1000.txt

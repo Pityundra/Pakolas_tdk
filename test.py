@@ -1,6 +1,11 @@
 from Algorithms.FFD.ffd import FFD
 from Algorithms.FFDDet.ffdRev import FFDRev
 from Algorithms.FFDDet.ffdRevAdv import FFDRevAdv
+from Algorithms.FFDNotDet.ffdBox import FFDBox
+from Algorithms.FFDNotDet.ffdGroups import FFDGroups
+from Algorithms.FFDNotDet.ffdRatio import FFDRatio
+from Algorithms.FFDNotDet.ffdVal import FFDVal
+from Algorithms.FFDNotDet.l2NotDet import L2NotDet
 from Algorithms.GH.gh import GH
 from Resources.Item.item1D import Item1D
 from Resources.Item.item2D import Item2D
@@ -190,3 +195,28 @@ def FFDRevTest():
     print(FFDRevAdv(items1, [10]))
     print(FFDRevAdv(items2, [10, 10]))
     print(FFDRevAdv(items3, [10, 10, 10]))
+
+    print("FFDVal")
+    print(FFDVal(items1, [10]))
+    print(FFDVal(items2, [10, 10]))
+    print(FFDVal(items3, [10, 10, 10]))
+
+    print("FFDRatio")
+    print(FFDRatio(items1, [10]))
+    print(FFDRatio(items2, [10, 10]))
+    print(FFDRatio(items3, [10, 10, 10]))
+
+    print("FFDGroups")
+    print(FFDGroups(items1, [10]))
+    print(FFDGroups(items2, [10, 10]))
+    print(FFDGroups(items3, [10, 10, 10]))
+
+    print("FFDBox")
+    print(FFDBox(items1, [10]))
+    print(FFDBox(items2, [10, 10]))
+    print(FFDBox(items3, [10, 10, 10]))
+
+    print("L2NotDet")
+    print(L2NotDet(items1, [10]))
+    print(L2NotDet(items2, [10, 10]))
+    print(L2NotDet(items3, [10, 10, 10]))

@@ -19,7 +19,7 @@ def GH(alg, items, binSize, grasp):
         elif len(binSize) == 3:
             return DotP3(itemsCopy, binSize, grasp)
         else:
-            print("Rossz dimenzió szám!")
+            print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1
 
     elif alg == "L2":
@@ -30,7 +30,7 @@ def GH(alg, items, binSize, grasp):
         elif len(binSize) == 3:
             return L2_3(itemsCopy, binSize, grasp)
         else:
-            print("Rossz dimenzió szám!")
+            print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1
 
     else:

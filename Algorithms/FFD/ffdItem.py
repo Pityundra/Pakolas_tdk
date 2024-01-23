@@ -1,6 +1,6 @@
-from Resources.bin1D import Bin1D
-from Resources.bin2D import Bin2D
-from Resources.bin3D import Bin3D
+from Resources.Bin.bin1D import Bin1D
+from Resources.Bin.bin2D import Bin2D
+from Resources.Bin.bin3D import Bin3D
 
 
 def FFDIC1(items, binSize,):

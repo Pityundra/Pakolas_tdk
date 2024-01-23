@@ -1,11 +1,11 @@
 from Algorithms.FFD.ffd import FFD
 from Algorithms.GH.gh import GH
-from Resources.item1D import Item1D
+from Resources.Item.item1D import Item1D
 from Resources.item2D import Item2D
 from Resources.item3D import Item3D
-from Resources.bin1D import Bin1D
-from Resources.bin2D import Bin2D
-from Resources.bin3D import Bin3D
+from Resources.Bin.bin1D import Bin1D
+from Resources.Bin.bin2D import Bin2D
+from Resources.Bin.bin3D import Bin3D
 from Resources.simpleLowerBound import SimpleLowerBound
 
 
@@ -72,9 +72,8 @@ def ffdic1Test():
     item111 = Item1D(3, 3)
     items1 = [item1, item11, item111, item111, item111]
 
-    # print(FFD(items1, [10], "item", "avg", 1))
     print("FFD - 1 - bin - sum")
-    print(FFD(items1, [10], "bin", "sum"))
+    print(FFD("sum", "bin", items1, [10]))
 
 
 def ffdic2Test():
@@ -84,9 +83,8 @@ def ffdic2Test():
     item222 = Item2D(3, 5, 3)
     items2 = [item2, item22, item222, item222, item222, item222]
 
-    # print(FFD(items2, [10, 10], "item", "prod", 2))
     print("FFD - 2 - bin - avg")
-    print(FFD(items2, [10, 10], "bin", "avg"))
+    print(FFD("avg", "bin", items2, [10, 10]))
 
 
 def ffdic3Test():
@@ -97,8 +95,7 @@ def ffdic3Test():
     items3 = [item3, item33, item333]
 
     print("FFD - 3 - item - sum")
-    print(FFD(items3, [10, 10, 10], "item", "sum"))
-    # print(FFD(items3, [10, 10, 10], "bin", "avg", 3))
+    print(FFD("sum", "item", items3, [10, 10, 10]))
 
 
 def DotP1Test():
@@ -107,7 +104,6 @@ def DotP1Test():
     item11 = Item1D(2, 2)
     item111 = Item1D(3, 3)
     items1 = [item1, item11, item111, item111, item111]
-
 
     print("DotP - 1")
     print(GH("dotP", items1, [10], 1))
@@ -141,7 +137,6 @@ def L2_1Test():
     item11 = Item1D(2, 2)
     item111 = Item1D(3, 3)
     items1 = [item1, item11, item111, item111, item111]
-
 
     print("L2 - 1")
     print(GH("L2", items1, [10], 1))

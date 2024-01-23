@@ -1,8 +1,3 @@
-from Resources.bin1D import Bin1D
-from Resources.bin2D import Bin2D
-from Resources.bin3D import Bin3D
-from Resources.item1D import Item1D
-from Resources.item2D import Item2D
 from Resources.item3D import Item3D
 
 # Bele írni első sorként a dimenzió számot, és a szerint megcsinálni a beolvasást

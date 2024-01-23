@@ -1,8 +1,10 @@
 from Algorithms.FFD.ffd import FFD
+from Algorithms.FFDDet.ffdRev import FFDRev
+from Algorithms.FFDDet.ffdRevAdv import FFDRevAdv
 from Algorithms.GH.gh import GH
 from Resources.Item.item1D import Item1D
-from Resources.item2D import Item2D
-from Resources.item3D import Item3D
+from Resources.Item.item2D import Item2D
+from Resources.Item.item3D import Item3D
 from Resources.Bin.bin1D import Bin1D
 from Resources.Bin.bin2D import Bin2D
 from Resources.Bin.bin3D import Bin3D
@@ -60,9 +62,9 @@ def Tester():
     print(bin3)
     print()
 
-    print("Egyszerű alsó korlát: " + str(SimpleLowerBound(items1, [10], "test", 1)))
-    print("Egyszerű alsó korlát: " + str(SimpleLowerBound(items2, [4, 10], "test", 2)))
-    print("Egyszerű alsó korlát: " + str(SimpleLowerBound(items3, [10, 10, 10], "test", 3)))
+    print("Egyszerű alsó korlát: " + str(SimpleLowerBound(items1, [10])))
+    print("Egyszerű alsó korlát: " + str(SimpleLowerBound(items2, [4, 10])))
+    print("Egyszerű alsó korlát: " + str(SimpleLowerBound(items3, [10, 10, 10])))
 
 
 def ffdic1Test():
@@ -162,3 +164,29 @@ def L2_3Test():
 
     print("L2 - 2")
     print(GH("L2", items3, [10, 10, 10], 1))
+
+
+def FFDRevTest():
+    item1 = Item1D(1, 4)
+    item11 = Item1D(2, 8)
+    item111 = Item1D(3, 3)
+    items1 = [item1, item11, item111, item1, item11, item111, item1, item11, item111, item1, item1, item111]
+
+    item2 = Item2D(1, 1, 2)
+    item22 = Item2D(2, 4, 2)
+    item222 = Item2D(3, 5, 3)
+    items2 = [item2, item22, item222, item2, item22, item222, item2, item22, item222, item2, item22, item222, item2, item22, item222]
+
+    item3 = Item3D(1, 1, 2, 4)
+    item33 = Item3D(2, 3, 8, 3)
+    item333 = Item3D(3, 9, 2, 8)
+    items3 = [item3, item33, item333, item3, item33, item333, item3, item33, item333, item3, item33, item333, item3, item33, item333, item3, item33, item333]
+
+    print("FFDRev")
+    print(FFDRev(items1, [10]))
+    print(FFDRev(items2, [10, 10]))
+    print(FFDRev(items3, [10, 10, 10]))
+    print("FFDRevAdv")
+    print(FFDRevAdv(items1, [10]))
+    print(FFDRevAdv(items2, [10, 10]))
+    print(FFDRevAdv(items3, [10, 10, 10]))

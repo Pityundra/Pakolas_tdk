@@ -1,11 +1,11 @@
 from Algorithms.FFD.ffdBin import FFDBC1, FFDBC2, FFDBC3
-from Algorithms.FFD.ffdItem import FFDIC3, FFDIC1, FFDIC2
+from Algorithms.FFD.ffdItem import FFDIC1, FFDIC2, FFDIC3
 from Resources.item1D import itemsSum, itemsAVG, itemsProd
 from Resources.item2D import itemsSum, itemsAVG, itemsProd
 from Resources.item3D import itemsSum, itemsAVG, itemsProd
 
 
-def FFD(items, binSize, centric, SAP, dimNumber):
+def FFD(items, binSize, centric, SAP):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -31,22 +31,22 @@ def FFD(items, binSize, centric, SAP, dimNumber):
     print()
 
     if centric == "item":
-        if dimNumber == 1:
+        if len(binSize) == 1:
             return FFDIC1(itemsCopy, binSize)
-        elif dimNumber == 2:
+        elif len(binSize) == 2:
             return FFDIC2(itemsCopy, binSize)
-        elif dimNumber == 3:
+        elif len(binSize) == 3:
             return FFDIC3(itemsCopy, binSize)
         else:
             print("Rossz dimenzió szám!")
             return 1
 
     elif centric == "bin":
-        if dimNumber == 1:
+        if len(binSize) == 1:
             return FFDBC1(itemsCopy, binSize)
-        elif dimNumber == 2:
+        elif len(binSize) == 2:
             return FFDBC2(itemsCopy, binSize)
-        elif dimNumber == 3:
+        elif len(binSize) == 3:
             return FFDBC3(itemsCopy, binSize)
         else:
             print("Rossz dimenzió szám!")

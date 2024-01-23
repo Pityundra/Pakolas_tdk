@@ -1,4 +1,5 @@
 from Algorithms.FFD.ffd import FFD
+from Algorithms.GH.gh import GH
 from Resources.item1D import Item1D
 from Resources.item2D import Item2D
 from Resources.item3D import Item3D
@@ -72,7 +73,8 @@ def ffdic1Test():
     items1 = [item1, item11, item111, item111, item111]
 
     # print(FFD(items1, [10], "item", "avg", 1))
-    print(FFD(items1, [10], "bin", "sum", 1))
+    print("FFD - 1 - bin - sum")
+    print(FFD(items1, [10], "bin", "sum"))
 
 
 def ffdic2Test():
@@ -83,7 +85,8 @@ def ffdic2Test():
     items2 = [item2, item22, item222, item222, item222, item222]
 
     # print(FFD(items2, [10, 10], "item", "prod", 2))
-    print(FFD(items2, [10, 10], "bin", "avg", 2))
+    print("FFD - 2 - bin - avg")
+    print(FFD(items2, [10, 10], "bin", "avg"))
 
 
 def ffdic3Test():
@@ -93,6 +96,74 @@ def ffdic3Test():
     item333 = Item3D(3, 9, 2, 8)
     items3 = [item3, item33, item333]
 
-    # print(FFD(items3, [10, 10, 10], "item", "sum", 3))
-    print(FFD(items3, [10, 10, 10], "bin", "avg", 3))
+    print("FFD - 3 - item - sum")
+    print(FFD(items3, [10, 10, 10], "item", "sum"))
+    # print(FFD(items3, [10, 10, 10], "bin", "avg", 3))
 
+
+def DotP1Test():
+    bin1 = Bin1D(1, 10)
+    item1 = Item1D(1, 1)
+    item11 = Item1D(2, 2)
+    item111 = Item1D(3, 3)
+    items1 = [item1, item11, item111, item111, item111]
+
+
+    print("DotP - 1")
+    print(GH("dotP", items1, [10], 1))
+
+
+def DotP2Test():
+    bin2 = Bin2D(1, 10, 10)
+    item2 = Item2D(1, 1, 2)
+    item22 = Item2D(2, 4, 2)
+    item222 = Item2D(3, 5, 3)
+    items2 = [item2, item22, item222, item222, item222, item222]
+
+    print("DotP - 2")
+    print(GH("dotP", items2, [10, 10], 1))
+
+
+def DotP3Test():
+    bin3 = Bin3D(1, 10, 10, 10)
+    item3 = Item3D(1, 1, 2, 4)
+    item33 = Item3D(2, 3, 8, 3)
+    item333 = Item3D(3, 9, 2, 8)
+    items3 = [item3, item33, item333]
+
+    print("DotP - 2")
+    print(GH("dotP", items3, [10, 10, 10], 1))
+
+
+def L2_1Test():
+    bin1 = Bin1D(1, 10)
+    item1 = Item1D(1, 1)
+    item11 = Item1D(2, 2)
+    item111 = Item1D(3, 3)
+    items1 = [item1, item11, item111, item111, item111]
+
+
+    print("L2 - 1")
+    print(GH("L2", items1, [10], 1))
+
+
+def L2_2Test():
+    bin2 = Bin2D(1, 10, 10)
+    item2 = Item2D(1, 1, 2)
+    item22 = Item2D(2, 4, 2)
+    item222 = Item2D(3, 5, 3)
+    items2 = [item2, item22, item222, item222, item222, item222]
+
+    print("L2 - 2")
+    print(GH("L2", items2, [10, 10], 1))
+
+
+def L2_3Test():
+    bin3 = Bin3D(1, 10, 10, 10)
+    item3 = Item3D(1, 1, 2, 4)
+    item33 = Item3D(2, 3, 8, 3)
+    item333 = Item3D(3, 9, 2, 8)
+    items3 = [item3, item33, item333]
+
+    print("L2 - 2")
+    print(GH("L2", items3, [10, 10, 10], 1))

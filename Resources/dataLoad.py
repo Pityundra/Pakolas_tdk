@@ -1,8 +1,9 @@
-from Resources.item3D import Item3D
+from Resources.Item.item3D import Item3D
 
 # Bele írni első sorként a dimenzió számot, és a szerint megcsinálni a beolvasást
 
 items = []
+
 
 def fileRead(fileName):
     print(fileName)

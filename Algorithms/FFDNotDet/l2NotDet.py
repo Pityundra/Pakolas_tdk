@@ -2,12 +2,6 @@ import numpy as np
 from Resources.Bin.bin1D import Bin1D
 from Resources.Bin.bin2D import Bin2D
 from Resources.Bin.bin3D import Bin3D
-from Resources.Item.item1D import itemsSum
-from Resources.Item.item2D import itemsSum
-from Resources.Item.item3D import itemsSum
-from Resources.PlaceItem.placeItem1D import placeItem1D
-from Resources.PlaceItem.placeItem2D import placeItem2D
-from Resources.PlaceItem.placeItem3D import placeItem3D
 from Resources.weightInform import WeightInform, itemWeight
 
 

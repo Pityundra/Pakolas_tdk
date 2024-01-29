@@ -185,7 +185,7 @@ def FFDRevTest():
     item3 = Item3D(1, 1, 2, 4)
     item33 = Item3D(2, 3, 8, 3)
     item333 = Item3D(3, 9, 2, 8)
-    items3 = [item3, item33, item333, item3, item33, item333, item3, item33, item333, item3, item33, item333, item3, item33, item333, item3, item33, item333]
+    items3 = [item3, item33, item333]
 
     print("FFDRev")
     print(FFDRev(items1, [10]))
@@ -224,3 +224,9 @@ def FFDRevTest():
     # result = FFDBox(items1, [10], 4)
     # for res in result:
     #     print(res)
+
+    # for item in items3:
+    #     print(item)
+    # items3.pop(0)
+    # for item in items3:
+    #     print(item)

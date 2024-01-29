@@ -10,7 +10,7 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDBox(items, binSize):
+def FFDBox(items, binSize, boxSize):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -21,22 +21,22 @@ def FFDBox(items, binSize):
     itemsCopy.sort(reverse=True, key=itemsSum)
 
     if len(binSize) == 1:
-        return FFDBox1D(itemsCopy, binSize)
+        return FFDBox1D(itemsCopy, binSize, boxSize)
     elif len(binSize) == 2:
-        return FFDBox2D(itemsCopy, binSize)
+        return FFDBox2D(itemsCopy, binSize, boxSize)
     elif len(binSize) == 3:
-        return FFDBox3D(itemsCopy, binSize)
+        return FFDBox3D(itemsCopy, binSize, boxSize)
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
 
-def FFDBox1D(items, binSize):
+def FFDBox1D(items, binSize, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
 
-    boxSize = 5
+    boxSize = boxSize
 
     for i in range(len(items)):
         if boxSize > len(items):
@@ -54,12 +54,12 @@ def FFDBox1D(items, binSize):
     return len(bins)
 
 
-def FFDBox2D(items, binSize):
+def FFDBox2D(items, binSize, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
 
-    boxSize = 5
+    boxSize = boxSize
 
     for i in range(len(items)):
         if boxSize > len(items):
@@ -77,12 +77,12 @@ def FFDBox2D(items, binSize):
     return len(bins)
 
 
-def FFDBox3D(items, binSize):
+def FFDBox3D(items, binSize, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
 
-    boxSize = 5
+    boxSize = boxSize
 
     for i in range(len(items)):
         if boxSize > len(items):

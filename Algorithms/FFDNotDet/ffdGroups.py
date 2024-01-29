@@ -10,7 +10,7 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDGroups(items, binSize):
+def FFDGroups(items, binSize, groupNumber):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -21,22 +21,22 @@ def FFDGroups(items, binSize):
     itemsCopy.sort(reverse=True, key=itemsSum)
 
     if len(binSize) == 1:
-        return FFDGroups1D(itemsCopy, binSize)
+        return FFDGroups1D(itemsCopy, binSize, groupNumber)
     elif len(binSize) == 2:
-        return FFDGroups2D(itemsCopy, binSize)
+        return FFDGroups2D(itemsCopy, binSize, groupNumber)
     elif len(binSize) == 3:
-        return FFDGroups3D(itemsCopy, binSize)
+        return FFDGroups3D(itemsCopy, binSize, groupNumber)
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
 
-def FFDGroups1D(items, binSize):
+def FFDGroups1D(items, binSize, groupNumber):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
 
-    groupNumber = 3
+    groupNumber = groupNumber
 
     splitNumber = int(np.ceil(len(items) / groupNumber))
 
@@ -60,12 +60,12 @@ def FFDGroups1D(items, binSize):
     return len(bins)
 
 
-def FFDGroups2D(items, binSize):
+def FFDGroups2D(items, binSize, groupNumber):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
 
-    groupNumber = 3
+    groupNumber = groupNumber
 
     splitNumber = int(np.ceil(len(items) / groupNumber))
 
@@ -89,12 +89,12 @@ def FFDGroups2D(items, binSize):
     return len(bins)
 
 
-def FFDGroups3D(items, binSize):
+def FFDGroups3D(items, binSize, groupNumber):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
 
-    groupNumber = 3
+    groupNumber = groupNumber
 
     splitNumber = int(np.ceil(len(items) / groupNumber))
 

@@ -207,14 +207,14 @@ def FFDRevTest():
     print(FFDRatio(items3, [10, 10, 10]))
 
     print("FFDGroups")
-    print(FFDGroups(items1, [10]))
-    print(FFDGroups(items2, [10, 10]))
-    print(FFDGroups(items3, [10, 10, 10]))
+    print(FFDGroups(items1, [10], 3))
+    print(FFDGroups(items2, [10, 10], 3))
+    print(FFDGroups(items3, [10, 10, 10], 3))
 
     print("FFDBox")
-    print(FFDBox(items1, [10]))
-    print(FFDBox(items2, [10, 10]))
-    print(FFDBox(items3, [10, 10, 10]))
+    print(FFDBox(items1, [10], 5))
+    print(FFDBox(items2, [10, 10], 5))
+    print(FFDBox(items3, [10, 10, 10], 5))
 
     print("L2NotDet")
     print(L2NotDet(items1, [10]))

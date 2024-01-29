@@ -10,7 +10,7 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDRatio(items, binSize):
+def FFDRatio(items, binSize, ratio):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -21,25 +21,25 @@ def FFDRatio(items, binSize):
     itemsCopy.sort(reverse=True, key=itemsSum)
 
     if len(binSize) == 1:
-        return FFDRatio1D(itemsCopy, binSize)
+        return FFDRatio1D(itemsCopy, binSize, ratio)
     elif len(binSize) == 2:
-        return FFDRatio2D(itemsCopy, binSize)
+        return FFDRatio2D(itemsCopy, binSize, ratio)
     elif len(binSize) == 3:
-        return FFDRatio3D(itemsCopy, binSize)
+        return FFDRatio3D(itemsCopy, binSize, ratio)
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
 
-def FFDRatio1D(items, binSize):
-    # 1/4 eséllyel a végéről rakunk el egy tárgyat
+def FFDRatio1D(items, binSize, ratio):
+    # az arányszám (ratio) függvényében a végéről rakunk el egy tárgyat
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
 
     for i in range(len(items)):
-        number = np.random.random_integers(1, 4)
-        if number == 4:
+        number = np.random.random_integers(1, ratio)
+        if number == ratio:
             item = items[len(items) - 1]
             # print("vége " + str(len(itemsCopy)))
         else:
@@ -55,15 +55,15 @@ def FFDRatio1D(items, binSize):
     return len(bins)
 
 
-def FFDRatio2D(items, binSize):
-    # 1/4 eséllyel a végéről rakunk el egy tárgyat
+def FFDRatio2D(items, binSize, ratio):
+    # az arányszám (ratio) függvényében a végéről rakunk el egy tárgyat
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
 
     for i in range(len(items)):
-        number = np.random.random_integers(1, 4)
-        if number == 4:
+        number = np.random.random_integers(1, ratio)
+        if number == ratio:
             item = items[len(items) - 1]
             # print("vége " + str(len(itemsCopy)))
         else:
@@ -79,15 +79,15 @@ def FFDRatio2D(items, binSize):
     return len(bins)
 
 
-def FFDRatio3D(items, binSize):
-    # 1/4 eséllyel a végéről rakunk el egy tárgyat
+def FFDRatio3D(items, binSize, ratio):
+    # az arányszám (ratio) függvényében a végéről rakunk el egy tárgyat
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
 
     for i in range(len(items)):
-        number = np.random.random_integers(1, 4)
-        if number == 4:
+        number = np.random.random_integers(1, ratio)
+        if number == ratio:
             item = items[len(items) - 1]
             # print("vége " + str(len(itemsCopy)))
         else:

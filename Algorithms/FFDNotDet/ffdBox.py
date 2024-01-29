@@ -51,7 +51,7 @@ def FFDBox1D(items, binSize, boxSize):
     for bin in bins:
         print(bin)
     print()
-    return len(bins)
+    return bins
 
 
 def FFDBox2D(items, binSize, boxSize):

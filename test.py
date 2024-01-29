@@ -202,9 +202,9 @@ def FFDRevTest():
     print(FFDVal(items3, [10, 10, 10]))
 
     print("FFDRatio")
-    print(FFDRatio(items1, [10]))
-    print(FFDRatio(items2, [10, 10]))
-    print(FFDRatio(items3, [10, 10, 10]))
+    print(FFDRatio(items1, [10], 4))
+    print(FFDRatio(items2, [10, 10], 4))
+    print(FFDRatio(items3, [10, 10, 10], 4))
 
     print("FFDGroups")
     print(FFDGroups(items1, [10], 3))
@@ -212,11 +212,15 @@ def FFDRevTest():
     print(FFDGroups(items3, [10, 10, 10], 3))
 
     print("FFDBox")
-    print(FFDBox(items1, [10], 5))
+    # print(FFDBox(items1, [10], 5))
     print(FFDBox(items2, [10, 10], 5))
     print(FFDBox(items3, [10, 10, 10], 5))
 
     print("L2NotDet")
-    print(L2NotDet(items1, [10]))
-    print(L2NotDet(items2, [10, 10]))
-    print(L2NotDet(items3, [10, 10, 10]))
+    print(L2NotDet(items1, [10], 5))
+    print(L2NotDet(items2, [10, 10], 5))
+    print(L2NotDet(items3, [10, 10, 10], 5))
+
+    # result = FFDBox(items1, [10], 4)
+    # for res in result:
+    #     print(res)

@@ -5,7 +5,7 @@ from Resources.Bin.bin3D import Bin3D
 from Resources.weightInform import WeightInform, itemWeight
 
 
-def L2NotDet(items, binSize):
+def L2NotDet(items, binSize, boxSize):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -15,22 +15,22 @@ def L2NotDet(items, binSize):
         itemsCopy.append(item)
 
     if len(binSize) == 1:
-        return L2NotDet1D(itemsCopy, binSize)
+        return L2NotDet1D(itemsCopy, binSize, boxSize)
     elif len(binSize) == 2:
-        return L2NotDet2D(itemsCopy, binSize)
+        return L2NotDet2D(itemsCopy, binSize, boxSize)
     elif len(binSize) == 3:
-        return L2NotDet3D(itemsCopy, binSize)
+        return L2NotDet3D(itemsCopy, binSize, boxSize)
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
 
-def L2NotDet1D(items, binSize):
+def L2NotDet1D(items, binSize, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
     allWeight = []
-    boxSize = 5
+    boxSize = boxSize
 
     while len(items):
         for item in items:
@@ -65,12 +65,12 @@ def L2NotDet1D(items, binSize):
     return len(bins)
 
 
-def L2NotDet2D(items, binSize):
+def L2NotDet2D(items, binSize, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
     allWeight = []
-    boxSize = 5
+    boxSize = boxSize
 
     while len(items):
         for item in items:
@@ -105,12 +105,12 @@ def L2NotDet2D(items, binSize):
     return len(bins)
 
 
-def L2NotDet3D(items, binSize):
+def L2NotDet3D(items, binSize, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
     allWeight = []
-    boxSize = 5
+    boxSize = boxSize
 
     while len(items):
         for item in items:

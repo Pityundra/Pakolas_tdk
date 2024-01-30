@@ -43,15 +43,15 @@ def FFDGroups1D(items, binSize, groupNumber):
     for j in range(groupNumber):
         if j == groupNumber - 1:
             for i in range(len(items)):
-                random = np.random.random_integers(0, len(items) - 1)
-                bins, binsIndex = placeItem1D(items[random], bins, binsIndex, binSize)
-                items.remove(items[random])
+                item = items[np.random.random_integers(0, len(items) - 1)]
+                bins, binsIndex = placeItem1D(item, bins, binsIndex, binSize)
+                items.remove(item)
             # print(f"Elraktuk az összes tárgyat! ItemsCopy lista hossza: {len(itemsCopy)}\n")
         else:
-            for i in range(splitNumber - 1):
-                random = np.random.random_integers(0, splitNumber - 1 - i)
-                bins, binsIndex = placeItem1D(items[random], bins, binsIndex, binSize)
-                items.remove(items[random])
+            for i in range(splitNumber):
+                item = items[np.random.random_integers(0, splitNumber - 1 - i)]
+                bins, binsIndex = placeItem1D(item, bins, binsIndex, binSize)
+                items.remove(item)
             # print(f"Elraktuk a {splitNumber * (j+1)}. tárgyig a tárgyakat\n")
 
     for bin in bins:
@@ -72,15 +72,15 @@ def FFDGroups2D(items, binSize, groupNumber):
     for j in range(groupNumber):
         if j == groupNumber - 1:
             for i in range(len(items)):
-                random = np.random.random_integers(0, len(items) - 1)
-                bins, binsIndex = placeItem2D(items[random], bins, binsIndex, binSize)
-                items.remove(items[random])
+                item = items[np.random.random_integers(0, len(items) - 1)]
+                bins, binsIndex = placeItem2D(item, bins, binsIndex, binSize)
+                items.remove(item)
             # print(f"Elraktuk az összes tárgyat! ItemsCopy lista hossza: {len(itemsCopy)}\n")
         else:
-            for i in range(splitNumber - 1):
-                random = np.random.random_integers(0, splitNumber - 1 - i)
-                bins, binsIndex = placeItem2D(items[random], bins, binsIndex, binSize)
-                items.remove(items[random])
+            for i in range(splitNumber):
+                item = items[np.random.random_integers(0, splitNumber - 1 - i)]
+                bins, binsIndex = placeItem2D(item, bins, binsIndex, binSize)
+                items.remove(item)
             # print(f"Elraktuk a {splitNumber * (j+1)}. tárgyig a tárgyakat\n")
 
     for bin in bins:
@@ -101,15 +101,15 @@ def FFDGroups3D(items, binSize, groupNumber):
     for j in range(groupNumber):
         if j == groupNumber - 1:
             for i in range(len(items)):
-                random = np.random.random_integers(0, len(items) - 1)
-                bins, binsIndex = placeItem3D(items[random], bins, binsIndex, binSize)
-                items.remove(items[random])
+                item = items[np.random.random_integers(0, len(items) - 1)]
+                bins, binsIndex = placeItem3D(item, bins, binsIndex, binSize)
+                items.remove(item)
             # print(f"Elraktuk az összes tárgyat! ItemsCopy lista hossza: {len(itemsCopy)}\n")
         else:
-            for i in range(splitNumber - 1):
-                random = np.random.random_integers(0, splitNumber - 1 - i)
-                bins, binsIndex = placeItem3D(items[random], bins, binsIndex, binSize)
-                items.remove(items[random])
+            for i in range(splitNumber):
+                item = items[np.random.random_integers(0, splitNumber - 1 - i)]
+                bins, binsIndex = placeItem3D(item, bins, binsIndex, binSize)
+                items.remove(item)
             # print(f"Elraktuk a {splitNumber * (j+1)}. tárgyig a tárgyakat\n")
 
     for bin in bins:

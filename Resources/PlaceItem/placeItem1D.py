@@ -9,6 +9,7 @@ def placeItem1D(item, bins, binsIndex, binSize):
         if bin.d1FreeCapacity >= item.getD1():
             bin.addItem(item)
             isItemTaken = True
+            # print(f"{item} el lett rakva ide: {bin}")
             break
 
     # Ha nem sikerült berakni az itemet sehova új ládát nyitunk
@@ -16,5 +17,7 @@ def placeItem1D(item, bins, binsIndex, binSize):
         binsIndex += 1
         bins.append(Bin1D(binsIndex + 1, binSize[0]))
         bins[binsIndex].addItem(item)
+        # print("új ládát nyitott!")
+        # print(f"{item} le lett rakva az új ládába: {bins[binsIndex]}")
 
     return bins, binsIndex

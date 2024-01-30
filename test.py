@@ -1,6 +1,9 @@
+import numpy as np
+
 from Algorithms.FFD.ffd import FFD
 from Algorithms.FFDDet.ffdRev import FFDRev
 from Algorithms.FFDDet.ffdRevAdv import FFDRevAdv
+from Algorithms.FFDNotDet.ffdBG import FFDGB
 from Algorithms.FFDNotDet.ffdBox import FFDBox
 from Algorithms.FFDNotDet.ffdGroups import FFDGroups
 from Algorithms.FFDNotDet.ffdRatio import FFDRatio
@@ -230,3 +233,25 @@ def FFDRevTest():
     # items3.pop(0)
     # for item in items3:
     #     print(item)
+
+
+def FFDBGTest():
+    items = []
+    for i in range(30):
+        item = Item1D(i, np.random.random_integers(1, 100))
+        items.append(item)
+    FFDGB(items, [100], 3, 5)
+    items.clear()
+
+
+    for i in range(100):
+        item = Item2D(i, np.random.random_integers(1, 100), np.random.random_integers(1, 100))
+        items.append(item)
+    FFDGB(items, [100, 100], 10, 5)
+    items.clear()
+
+
+    for i in range(100):
+        item = Item3D(i, np.random.random_integers(1, 100), np.random.random_integers(1, 100), np.random.random_integers(1, 100))
+        items.append(item)
+    FFDGB(items, [100, 100, 100], 10, 5)

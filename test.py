@@ -6,6 +6,7 @@ from Algorithms.FFDDet.ffdRevAdv import FFDRevAdv
 from Algorithms.FFDNotDet.ffdBG import FFDGB
 from Algorithms.FFDNotDet.ffdBox import FFDBox
 from Algorithms.FFDNotDet.ffdGroups import FFDGroups
+from Algorithms.FFDDet.ffdMP import FFDMP
 from Algorithms.FFDNotDet.ffdRatio import FFDRatio
 from Algorithms.FFDNotDet.ffdVal import FFDVal
 from Algorithms.FFDNotDet.l2NotDet import L2NotDet
@@ -255,3 +256,17 @@ def FFDBGTest():
         item = Item3D(i, np.random.random_integers(1, 100), np.random.random_integers(1, 100), np.random.random_integers(1, 100))
         items.append(item)
     FFDGB(items, [100, 100, 100], 10, 5)
+
+
+def FFDMPTest():
+    # item1 = Item1D(1, 4)
+    # item11 = Item1D(2, 8)
+    # item111 = Item1D(3, 5)
+    # items = [item1, item11, item111]
+
+    items = []
+    for i in range(100):
+        item = Item3D(i, np.random.random_integers(1, 100), np.random.random_integers(1, 100), np.random.random_integers(1, 100))
+        items.append(item)
+
+    FFDMP(items, [100, 100, 100], 0.9)

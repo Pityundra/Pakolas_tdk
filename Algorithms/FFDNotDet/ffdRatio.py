@@ -10,32 +10,43 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDRatio(items, binSize, ratio):
+def FFDRatio(items, binSize, ratio, runTime):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
 
-    itemsCopy = []
-    for item in items:
-        itemsCopy.append(item)
+    itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
+    print(f"\nFFDRatio Futási eredményei:")
+    res = []
+
     if len(binSize) == 1:
-        return FFDRatio1D(itemsCopy, binSize, ratio)
+        for i in range(runTime):
+            res.append(FFDRatio1D(itemsCopy, binSize, ratio))
     elif len(binSize) == 2:
-        return FFDRatio2D(itemsCopy, binSize, ratio)
+        for i in range(runTime):
+            res.append(FFDRatio2D(itemsCopy, binSize, ratio))
     elif len(binSize) == 3:
-        return FFDRatio3D(itemsCopy, binSize, ratio)
+        for i in range(runTime):
+            res.append(FFDRatio3D(itemsCopy, binSize, ratio))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
+    print(res)
+    print({i: res.count(i) for i in res})
+    print("Átlag:" + str(sum(res) / len(res)))
+    print()
+    return res
 
-def FFDRatio1D(items, binSize, ratio):
+
+def FFDRatio1D(itemsList, binSize, ratio):
     # az arányszám (ratio) függvényében a végéről rakunk el egy tárgyat
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
+    items = itemsList.copy()
 
     for i in range(len(items)):
         number = np.random.random_integers(1, ratio)
@@ -49,17 +60,15 @@ def FFDRatio1D(items, binSize, ratio):
         bin, binsIndex = placeItem1D(item, bins, binsIndex, binSize)
         items.remove(item)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def FFDRatio2D(items, binSize, ratio):
+def FFDRatio2D(itemsList, binSize, ratio):
     # az arányszám (ratio) függvényében a végéről rakunk el egy tárgyat
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
+    items = itemsList.copy()
 
     for i in range(len(items)):
         number = np.random.random_integers(1, ratio)
@@ -73,17 +82,15 @@ def FFDRatio2D(items, binSize, ratio):
         bin, binsIndex = placeItem2D(item, bins, binsIndex, binSize)
         items.remove(item)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def FFDRatio3D(items, binSize, ratio):
+def FFDRatio3D(itemsList, binSize, ratio):
     # az arányszám (ratio) függvényében a végéről rakunk el egy tárgyat
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
+    items = itemsList.copy()
 
     for i in range(len(items)):
         number = np.random.random_integers(1, ratio)
@@ -97,8 +104,5 @@ def FFDRatio3D(items, binSize, ratio):
         bin, binsIndex = placeItem3D(item, bins, binsIndex, binSize)
         items.remove(item)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 

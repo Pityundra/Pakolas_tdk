@@ -10,32 +10,44 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDGroups(items, binSize, groupNumber):
+def FFDGroups(items, binSize, groupNumber, runTime):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
 
-    itemsCopy = []
-    for item in items:
-        itemsCopy.append(item)
+    itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
+    print(f"\nFFDGroups Futási eredményei:")
+    res = []
+
     if len(binSize) == 1:
-        return FFDGroups1D(itemsCopy, binSize, groupNumber)
+        for i in range(runTime):
+            res.append(FFDGroups1D(itemsCopy, binSize, groupNumber))
     elif len(binSize) == 2:
-        return FFDGroups2D(itemsCopy, binSize, groupNumber)
+        for i in range(runTime):
+            res.append(FFDGroups2D(itemsCopy, binSize, groupNumber))
     elif len(binSize) == 3:
-        return FFDGroups3D(itemsCopy, binSize, groupNumber)
+        for i in range(runTime):
+            res.append(FFDGroups3D(itemsCopy, binSize, groupNumber))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
+    print(res)
+    print({i: res.count(i) for i in res})
+    print("Átlag:" + str(sum(res) / len(res)))
+    print()
+    return res
 
-def FFDGroups1D(items, binSize, groupNumber):
+
+def FFDGroups1D(itemsList, binSize, groupNumber):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
 
+    items = itemsList.copy()
+
     groupNumber = groupNumber
 
     splitNumber = int(np.ceil(len(items) / groupNumber))
@@ -54,17 +66,16 @@ def FFDGroups1D(items, binSize, groupNumber):
                 items.remove(item)
             # print(f"Elraktuk a {splitNumber * (j+1)}. tárgyig a tárgyakat\n")
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def FFDGroups2D(items, binSize, groupNumber):
+def FFDGroups2D(itemsList, binSize, groupNumber):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
 
+    items = itemsList.copy()
+
     groupNumber = groupNumber
 
     splitNumber = int(np.ceil(len(items) / groupNumber))
@@ -83,17 +94,16 @@ def FFDGroups2D(items, binSize, groupNumber):
                 items.remove(item)
             # print(f"Elraktuk a {splitNumber * (j+1)}. tárgyig a tárgyakat\n")
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def FFDGroups3D(items, binSize, groupNumber):
+def FFDGroups3D(itemsList, binSize, groupNumber):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
 
+    items = itemsList.copy()
+
     groupNumber = groupNumber
 
     splitNumber = int(np.ceil(len(items) / groupNumber))
@@ -112,7 +122,4 @@ def FFDGroups3D(items, binSize, groupNumber):
                 items.remove(item)
             # print(f"Elraktuk a {splitNumber * (j+1)}. tárgyig a tárgyakat\n")
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)

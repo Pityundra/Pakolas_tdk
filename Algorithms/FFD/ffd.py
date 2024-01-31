@@ -24,33 +24,34 @@ def FFD(SAP, centric, items, binSize):
         return 1
 
     # Biztonsági mentés a tárgyakról
-    itemsCopy = []
-    for item in items:
-        itemsCopy.append(item)
-        print(item)
-    print()
+    itemsCopy = items.copy()
+
+    res = []
 
     if centric == "item":
         if len(binSize) == 1:
-            return FFDIC1(itemsCopy, binSize)
+            res.append(FFDIC1(itemsCopy, binSize))
         elif len(binSize) == 2:
-            return FFDIC2(itemsCopy, binSize)
+            res.append(FFDIC2(itemsCopy, binSize))
         elif len(binSize) == 3:
-            return FFDIC3(itemsCopy, binSize)
+            res.append(FFDIC3(itemsCopy, binSize))
         else:
             print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1
 
     elif centric == "bin":
         if len(binSize) == 1:
-            return FFDBC1(itemsCopy, binSize)
+            res.append(FFDBC1(itemsCopy, binSize))
         elif len(binSize) == 2:
-            return FFDBC2(itemsCopy, binSize)
+            res.append(FFDBC2(itemsCopy, binSize))
         elif len(binSize) == 3:
-            return FFDBC3(itemsCopy, binSize)
+            res.append(FFDBC3(itemsCopy, binSize))
         else:
             print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1
     else:
         print("Nem bin vagy item!")
         return 1
+
+    print(f"FFD-{centric}-{SAP} Futási eredménye: {res}\n")
+    return res

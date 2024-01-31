@@ -10,31 +10,42 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDVal(items, binSize):
+def FFDVal(items, binSize, runTime):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
 
-    itemsCopy = []
-    for item in items:
-        itemsCopy.append(item)
+    itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
+    print(f"\nFFDVal Futási eredményei:")
+    res = []
+
     if len(binSize) == 1:
-        return FFDVal1D(itemsCopy, binSize)
+        for i in range(runTime):
+            res.append(FFDVal1D(itemsCopy, binSize))
     elif len(binSize) == 2:
-        return FFDVal2D(itemsCopy, binSize)
+        for i in range(runTime):
+            res.append(FFDVal2D(itemsCopy, binSize))
     elif len(binSize) == 3:
-        return FFDVal3D(itemsCopy, binSize)
+        for i in range(runTime):
+            res.append(FFDVal3D(itemsCopy, binSize))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
+    print(res)
+    print({i: res.count(i) for i in res})
+    print("Átlag:" + str(sum(res) / len(res)))
+    print()
+    return res
 
-def FFDVal1D(items, binSize):
+
+def FFDVal1D(itemsList, binSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
+    items = itemsList.copy()
 
     for i in range(len(items)):
         number = np.random.random_integers(1, 4)
@@ -51,16 +62,14 @@ def FFDVal1D(items, binSize):
         bin, binsIndex = placeItem1D(item, bins, binsIndex, binSize)
         items.remove(item)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def FFDVal2D(items, binSize):
+def FFDVal2D(itemsList, binSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
+    items = itemsList.copy()
 
     for i in range(len(items)):
         number = np.random.random_integers(1, 4)
@@ -77,16 +86,14 @@ def FFDVal2D(items, binSize):
         bin, binsIndex = placeItem2D(item, bins, binsIndex, binSize)
         items.remove(item)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def FFDVal3D(items, binSize):
+def FFDVal3D(itemsList, binSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
+    items = itemsList.copy()
 
     for i in range(len(items)):
         number = np.random.random_integers(1, 4)
@@ -103,7 +110,4 @@ def FFDVal3D(items, binSize):
         bin, binsIndex = placeItem3D(item, bins, binsIndex, binSize)
         items.remove(item)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)

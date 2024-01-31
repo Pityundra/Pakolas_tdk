@@ -14,20 +14,23 @@ def FFDRev(items, binSize):
         print("Nincsenek tárgyak!")
         return 1
 
-    itemsCopy = []
-    for item in items:
-        itemsCopy.append(item)
+    itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
+    res = []
+
     if len(binSize) == 1:
-        return FFDRev1D(itemsCopy, binSize)
+        res.append(FFDRev1D(itemsCopy, binSize))
     elif len(binSize) == 2:
-        return FFDRev2D(itemsCopy, binSize)
+        res.append(FFDRev2D(itemsCopy, binSize))
     elif len(binSize) == 3:
-        return FFDRev3D(itemsCopy, binSize)
+        res.append(FFDRev3D(itemsCopy, binSize))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
+
+    print(f"FFDRev Futási eredménye: {res}\n")
+    return res
 
 
 def FFDRev1D(items, binSize):
@@ -50,9 +53,6 @@ def FFDRev1D(items, binSize):
             bin, binsIndex = placeItem1D(lastItem, bins, binsIndex, binSize)
             items.remove(lastItem)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
@@ -76,9 +76,6 @@ def FFDRev2D(items, binSize):
             bin, binsIndex = placeItem2D(lastItem, bins, binsIndex, binSize)
             items.remove(lastItem)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
@@ -102,7 +99,4 @@ def FFDRev3D(items, binSize):
             bin, binsIndex = placeItem3D(lastItem, bins, binsIndex, binSize)
             items.remove(lastItem)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)

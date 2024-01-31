@@ -10,28 +10,38 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDGB(items, binSize, groupNumber, boxSize):
+def FFDGB(items, binSize, groupNumber, boxSize, runTime):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
 
-    itemsCopy = []
-    for item in items:
-        itemsCopy.append(item)
+    itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
+    print(f"\nFFDGB Futási eredményei:")
+    res = []
+
     if len(binSize) == 1:
-        return FFDGB1D(itemsCopy, binSize, groupNumber, boxSize)
+        for i in range(runTime):
+            res.append(FFDGB1D(itemsCopy, binSize, groupNumber, boxSize))
     elif len(binSize) == 2:
-        return FFDGB2D(itemsCopy, binSize, groupNumber, boxSize)
+        for i in range(runTime):
+            res.append(FFDGB2D(itemsCopy, binSize, groupNumber, boxSize))
     elif len(binSize) == 3:
-        return FFDGB3D(itemsCopy, binSize, groupNumber, boxSize)
+        for i in range(runTime):
+            res.append(FFDGB3D(itemsCopy, binSize, groupNumber, boxSize))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
+    print(res)
+    print({i: res.count(i) for i in res})
+    print("Átlag:" + str(sum(res) / len(res)))
+    print()
+    return res
 
-def FFDGB1D(items, binSize, groupNumber, boxSize):
+
+def FFDGB1D(itemsList, binSize, groupNumber, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
@@ -39,9 +49,7 @@ def FFDGB1D(items, binSize, groupNumber, boxSize):
     groupNumber = groupNumber
     boxSize = boxSize
 
-    # for item in items:
-    #     print(item)
-    # print()
+    items = itemsList.copy()
 
     splitNumber = int(np.ceil(len(items) / groupNumber))
     # print("splitNumber:" + str(splitNumber))
@@ -69,19 +77,17 @@ def FFDGB1D(items, binSize, groupNumber, boxSize):
                     bin, binsIndex = placeItem1D(item, bins, binsIndex, binSize)
                     items.remove(item)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def FFDGB2D(items, binSize, groupNumber, boxSize):
+def FFDGB2D(itemsList, binSize, groupNumber, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
 
     groupNumber = groupNumber
     boxSize = boxSize
+    items = itemsList.copy()
 
     splitNumber = int(np.ceil(len(items) / groupNumber))
 
@@ -107,16 +113,15 @@ def FFDGB2D(items, binSize, groupNumber, boxSize):
                     bin, binsIndex = placeItem2D(item, bins, binsIndex, binSize)
                     items.remove(item)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def FFDGB3D(items, binSize, groupNumber, boxSize):
+def FFDGB3D(itemsList, binSize, groupNumber, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
+
+    items = itemsList.copy()
 
     groupNumber = groupNumber
     boxSize = boxSize
@@ -145,7 +150,4 @@ def FFDGB3D(items, binSize, groupNumber, boxSize):
                     bin, binsIndex = placeItem3D(item, bins, binsIndex, binSize)
                     items.remove(item)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)

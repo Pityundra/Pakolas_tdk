@@ -20,19 +20,20 @@ def FFDMP(items, binSize, ratio):
         itemsCopy.append(item)
     itemsCopy.sort(reverse=True, key=itemsSum)
 
-    for item in itemsCopy:
-        print(item)
-    print()
+    res = []
 
     if len(binSize) == 1:
-        return FFDMP1D(itemsCopy, binSize, ratio)
+        res.append(FFDMP1D(itemsCopy, binSize, ratio))
     elif len(binSize) == 2:
-        return FFDMP2D(itemsCopy, binSize, ratio)
+        res.append(FFDMP2D(itemsCopy, binSize, ratio))
     elif len(binSize) == 3:
-        return FFDMP3D(itemsCopy, binSize, ratio)
+        res.append(FFDMP3D(itemsCopy, binSize, ratio))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
+
+    print(f"FFDMP Futási eredménye: {res}\n")
+    return res
 
 
 def FFDMP1D(items, binSize, ratio):
@@ -47,7 +48,7 @@ def FFDMP1D(items, binSize, ratio):
                 bins[binsIndex].addItem(item1)
                 bins[binsIndex].addItem(item2)
                 binsIndex += 1
-                print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()}")
+                # print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()}")
                 items.remove(item1)
                 items.remove(item2)
                 break
@@ -63,7 +64,7 @@ def FFDMP1D(items, binSize, ratio):
                     bins[binsIndex].addItem(item2)
                     bins[binsIndex].addItem(item3)
                     binsIndex += 1
-                    print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()} és {item3.getNumber()}")
+                    # print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()} és {item3.getNumber()}")
                     items.remove(item1)
                     items.remove(item2)
                     items.remove(item3)
@@ -74,9 +75,6 @@ def FFDMP1D(items, binSize, ratio):
     for item in items:
         bin, binsIndex = placeItem1D(item, bins, binsIndex, binSize)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
@@ -95,7 +93,7 @@ def FFDMP2D(items, binSize, ratio):
                 bins[binsIndex].addItem(item1)
                 bins[binsIndex].addItem(item2)
                 binsIndex += 1
-                print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()}")
+                # print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()}")
                 items.remove(item1)
                 items.remove(item2)
                 break
@@ -113,7 +111,7 @@ def FFDMP2D(items, binSize, ratio):
                     bins[binsIndex].addItem(item2)
                     bins[binsIndex].addItem(item3)
                     binsIndex += 1
-                    print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()} és {item3.getNumber()}")
+                    # print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()} és {item3.getNumber()}")
                     items.remove(item1)
                     items.remove(item2)
                     items.remove(item3)
@@ -124,9 +122,6 @@ def FFDMP2D(items, binSize, ratio):
     for item in items:
         bin, binsIndex = placeItem2D(item, bins, binsIndex, binSize)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
@@ -147,7 +142,7 @@ def FFDMP3D(items, binSize, ratio):
                 bins[binsIndex].addItem(item1)
                 bins[binsIndex].addItem(item2)
                 binsIndex += 1
-                print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()}")
+                # print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()}")
                 items.remove(item1)
                 items.remove(item2)
                 break
@@ -167,7 +162,7 @@ def FFDMP3D(items, binSize, ratio):
                     bins[binsIndex].addItem(item2)
                     bins[binsIndex].addItem(item3)
                     binsIndex += 1
-                    print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()} és {item3.getNumber()}")
+                    # print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()} és {item3.getNumber()}")
                     items.remove(item1)
                     items.remove(item2)
                     items.remove(item3)
@@ -178,7 +173,4 @@ def FFDMP3D(items, binSize, ratio):
     for item in items:
         bin, binsIndex = placeItem3D(item, bins, binsIndex, binSize)
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)

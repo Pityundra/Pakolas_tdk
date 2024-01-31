@@ -4,7 +4,7 @@ from Resources.Bin.bin3D import Bin3D
 from Resources.weightInform import WeightInform, itemWeight
 
 
-def DotP1(itemsCopy, binSize, grasp):
+def DotP1(items, binSize, grasp):
     # Előkészítési fázis
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
@@ -12,8 +12,8 @@ def DotP1(itemsCopy, binSize, grasp):
     # r(t) jelöli a jelenleg nyitott ládák fennmaradó kapacitás vektorát => bins[].d1FreeCapacity
     allWeight = []  # [item] [bin] [weight]
 
-    while len(itemsCopy):
-        for item in itemsCopy:
+    while len(items):
+        for item in items:
             for bin in bins:
                 if bin.d1FreeCapacity >= item.getD1():
                     item.itemWeight = int(item.d1) * int(bin.d1FreeCapacity)
@@ -35,18 +35,14 @@ def DotP1(itemsCopy, binSize, grasp):
         # Elrakjuk a tárgyat a ládába
         bins[int(allWeight[itemChosenNo].bin.binIndex - 1)].addItem(allWeight[itemChosenNo].item)
         # Kiveszük a tárgyat az elpakolandó tárgyak listájából
-        itemsCopy.remove(allWeight[itemChosenNo].item)
+        items.remove(allWeight[itemChosenNo].item)
         # Töröljük az eddigi súlyokat, hiszen mindent újra kell számolni
         allWeight.clear()
 
-    for bin in bins:
-        print(bin)
-    print()
-
-    return f"Felhasznált ládák száma: {len(bins)}"
+    return len(bins)
 
 
-def DotP2(itemsCopy, binSize, grasp):
+def DotP2(items, binSize, grasp):
     # Előkészítési fázis
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
@@ -54,8 +50,8 @@ def DotP2(itemsCopy, binSize, grasp):
     # r(t) jelöli a jelenleg nyitott ládák fennmaradó kapacitás vektorát => bins[].d1FreeCapacity
     allWeight = []  # [item] [bin] [weight]
 
-    while len(itemsCopy):
-        for item in itemsCopy:
+    while len(items):
+        for item in items:
             for bin in bins:
                 if (bin.d1FreeCapacity >= item.getD1()) and (bin.d2FreeCapacity >= item.getD2()):
                     item.itemWeight = int(item.d1) * int(bin.d1FreeCapacity) + int(item.d2) * int(bin.d2FreeCapacity)
@@ -77,18 +73,14 @@ def DotP2(itemsCopy, binSize, grasp):
         # Elrakjuk a tárgyat a ládába
         bins[int(allWeight[itemChosenNo].bin.binIndex - 1)].addItem(allWeight[itemChosenNo].item)
         # Kiveszük a tárgyat az elpakolandó tárgyak listájából
-        itemsCopy.remove(allWeight[itemChosenNo].item)
+        items.remove(allWeight[itemChosenNo].item)
         # Töröljük az eddigi súlyokat, hiszen mindent újra kell számolni
         allWeight.clear()
 
-    for bin in bins:
-        print(bin)
-    print()
-
-    return f"Felhasznált ládák száma: {len(bins)}"
+    return len(bins)
 
 
-def DotP3(itemsCopy, binSize, grasp):
+def DotP3(items, binSize, grasp):
     # Előkészítési fázis
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
@@ -96,8 +88,8 @@ def DotP3(itemsCopy, binSize, grasp):
     # r(t) jelöli a jelenleg nyitott ládák fennmaradó kapacitás vektorát => bins[].d1FreeCapacity
     allWeight = []  # [item] [bin] [weight]
 
-    while len(itemsCopy):
-        for item in itemsCopy:
+    while len(items):
+        for item in items:
             for bin in bins:
                 if (bin.d1FreeCapacity >= item.getD1()) and (bin.d2FreeCapacity >= item.getD2()) and (bin.d3FreeCapacity >= item.getD3()):
                     item.itemWeight = int(item.d1) * int(bin.d1FreeCapacity) + int(item.d2) * int(bin.d2FreeCapacity) + int(item.d3) * int(bin.d3FreeCapacity)
@@ -119,12 +111,8 @@ def DotP3(itemsCopy, binSize, grasp):
         # Elrakjuk a tárgyat a ládába
         bins[int(allWeight[itemChosenNo].bin.binIndex - 1)].addItem(allWeight[itemChosenNo].item)
         # Kiveszük a tárgyat az elpakolandó tárgyak listájából
-        itemsCopy.remove(allWeight[itemChosenNo].item)
+        items.remove(allWeight[itemChosenNo].item)
         # Töröljük az eddigi súlyokat, hiszen mindent újra kell számolni
         allWeight.clear()
 
-    for bin in bins:
-        print(bin)
-    print()
-
-    return f"Felhasznált ládák száma: {len(bins)}"
+    return len(bins)

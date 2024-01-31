@@ -5,32 +5,43 @@ from Resources.Bin.bin3D import Bin3D
 from Resources.weightInform import WeightInform, itemWeight
 
 
-def L2NotDet(items, binSize, boxSize):
+def L2NotDet(items, binSize, boxSize, runTime):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
 
-    itemsCopy = []
-    for item in items:
-        itemsCopy.append(item)
+    itemsCopy = items.copy()
+
+    print(f"\nL2NotDet Futási eredményei:")
+    res = []
 
     if len(binSize) == 1:
-        return L2NotDet1D(itemsCopy, binSize, boxSize)
+        for i in range(runTime):
+            res.append(L2NotDet1D(itemsCopy, binSize, boxSize))
     elif len(binSize) == 2:
-        return L2NotDet2D(itemsCopy, binSize, boxSize)
+        for i in range(runTime):
+            res.append(L2NotDet1D(itemsCopy, binSize, boxSize))
     elif len(binSize) == 3:
-        return L2NotDet3D(itemsCopy, binSize, boxSize)
+        for i in range(runTime):
+            res.append(L2NotDet1D(itemsCopy, binSize, boxSize))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
+    print(res)
+    print({i: res.count(i) for i in res})
+    print("Átlag:" + str(sum(res) / len(res)))
+    print()
+    return res
 
-def L2NotDet1D(items, binSize, boxSize):
+
+def L2NotDet1D(itemsList, binSize, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
     allWeight = []
     boxSize = boxSize
+    items = itemsList.copy()
 
     while len(items):
         for item in items:
@@ -59,18 +70,16 @@ def L2NotDet1D(items, binSize, boxSize):
         items.remove(allWeight[randomItemNo].item)
         allWeight.clear()
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def L2NotDet2D(items, binSize, boxSize):
+def L2NotDet2D(itemsList, binSize, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
     allWeight = []
     boxSize = boxSize
+    items = itemsList.copy()
 
     while len(items):
         for item in items:
@@ -99,18 +108,16 @@ def L2NotDet2D(items, binSize, boxSize):
         items.remove(allWeight[randomItemNo].item)
         allWeight.clear()
 
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)
 
 
-def L2NotDet3D(items, binSize, boxSize):
+def L2NotDet3D(itemsList, binSize, boxSize):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
     allWeight = []
     boxSize = boxSize
+    items = itemsList.copy()
 
     while len(items):
         for item in items:
@@ -139,8 +146,4 @@ def L2NotDet3D(items, binSize, boxSize):
         items.remove(allWeight[randomItemNo].item)
         allWeight.clear()
 
-
-    for bin in bins:
-        print(bin)
-    print()
     return len(bins)

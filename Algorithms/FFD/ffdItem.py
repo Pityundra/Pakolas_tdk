@@ -23,11 +23,7 @@ def FFDIC1(items, binSize,):
             bins.append(Bin1D(binsIndex + 1, binSize[0]))
             bins[binsIndex].addItem(item)
 
-    for bin in bins:
-        print(bin)
-    print()
-
-    return f"Felhasznált ládák száma: {len(bins)}"
+    return len(bins)
 
 
 def FFDIC2(items, binSize):
@@ -50,11 +46,7 @@ def FFDIC2(items, binSize):
             bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
             bins[binsIndex].addItem(item)
 
-    for bin in bins:
-        print(bin)
-    print()
-
-    return f"Felhasznált ládák száma: {len(bins)}"
+    return len(bins)
 
 
 def FFDIC3(items, binSize):
@@ -77,8 +69,4 @@ def FFDIC3(items, binSize):
             bins.append(Bin3D(binsIndex+1, binSize[0], binSize[1], binSize[2]))
             bins[binsIndex].addItem(item)
 
-    for bin in bins:
-        print(bin)
-    print()
-
-    return f"Felhasznált ládák száma: {len(bins)}"
+    return len(bins)

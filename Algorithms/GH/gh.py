@@ -7,28 +7,28 @@ def GH(alg, items, binSize, grasp):
         print("Nincsenek tárgyak!")
         return 1
 
-    itemsCopy = []
-    for item in items:
-        itemsCopy.append(item)
+    itemsCopy = items.copy()
+
+    res = []
 
     if alg == "dotP":
         if len(binSize) == 1:
-            return DotP1(itemsCopy, binSize, grasp)
+            res.append(DotP1(itemsCopy, binSize, grasp))
         elif len(binSize) == 2:
-            return DotP2(itemsCopy, binSize, grasp)
+            res.append(DotP2(itemsCopy, binSize, grasp))
         elif len(binSize) == 3:
-            return DotP3(itemsCopy, binSize, grasp)
+            res.append(DotP3(itemsCopy, binSize, grasp))
         else:
             print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1
 
     elif alg == "L2":
         if len(binSize) == 1:
-            return L2_1(itemsCopy, binSize, grasp)
+            res.append(L2_1(itemsCopy, binSize, grasp))
         elif len(binSize) == 2:
-            return L2_2(itemsCopy, binSize, grasp)
+            res.append(L2_2(itemsCopy, binSize, grasp))
         elif len(binSize) == 3:
-            return L2_3(itemsCopy, binSize, grasp)
+            res.append(L2_3(itemsCopy, binSize, grasp))
         else:
             print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1
@@ -36,3 +36,6 @@ def GH(alg, items, binSize, grasp):
     else:
         print("Nem DotP vagy L2!")
         return 1
+
+    print(f"{alg}-{grasp} Futási eredménye: {res}\n")
+    return res

@@ -201,39 +201,29 @@ def FFDRevTest():
     print(FFDRevAdv(items3, [10, 10, 10]))
 
     print("FFDVal")
-    print(FFDVal(items1, [10]))
-    print(FFDVal(items2, [10, 10]))
-    print(FFDVal(items3, [10, 10, 10]))
+    print(FFDVal(items1, [10], 10))
+    print(FFDVal(items2, [10, 10], 10))
+    print(FFDVal(items3, [10, 10, 10], 10))
 
     print("FFDRatio")
-    print(FFDRatio(items1, [10], 4))
-    print(FFDRatio(items2, [10, 10], 4))
-    print(FFDRatio(items3, [10, 10, 10], 4))
+    print(FFDRatio(items1, [10], 4, 10))
+    print(FFDRatio(items2, [10, 10], 4, 10))
+    print(FFDRatio(items3, [10, 10, 10], 4, 10))
 
     print("FFDGroups")
-    print(FFDGroups(items1, [10], 3))
-    print(FFDGroups(items2, [10, 10], 3))
-    print(FFDGroups(items3, [10, 10, 10], 3))
+    print(FFDGroups(items1, [10], 3, 10))
+    print(FFDGroups(items2, [10, 10], 3, 10))
+    print(FFDGroups(items3, [10, 10, 10], 3, 10))
 
     print("FFDBox")
-    # print(FFDBox(items1, [10], 5))
-    print(FFDBox(items2, [10, 10], 5))
-    print(FFDBox(items3, [10, 10, 10], 5))
+    print(FFDBox(items1, [10], 5, 10))
+    print(FFDBox(items2, [10, 10], 5, 10))
+    print(FFDBox(items3, [10, 10, 10], 5, 10))
 
     print("L2NotDet")
-    print(L2NotDet(items1, [10], 5))
-    print(L2NotDet(items2, [10, 10], 5))
-    print(L2NotDet(items3, [10, 10, 10], 5))
-
-    # result = FFDBox(items1, [10], 4)
-    # for res in result:
-    #     print(res)
-
-    # for item in items3:
-    #     print(item)
-    # items3.pop(0)
-    # for item in items3:
-    #     print(item)
+    print(L2NotDet(items1, [10], 5, 10))
+    print(L2NotDet(items2, [10, 10], 5, 10))
+    print(L2NotDet(items3, [10, 10, 10], 5, 10))
 
 
 def FFDBGTest():
@@ -241,21 +231,21 @@ def FFDBGTest():
     for i in range(30):
         item = Item1D(i, np.random.random_integers(1, 100))
         items.append(item)
-    FFDGB(items, [100], 3, 5)
+    FFDGB(items, [100], 3, 5, 100)
     items.clear()
 
 
     for i in range(100):
         item = Item2D(i, np.random.random_integers(1, 100), np.random.random_integers(1, 100))
         items.append(item)
-    FFDGB(items, [100, 100], 10, 5)
+    FFDGB(items, [100, 100], 10, 5, 100)
     items.clear()
 
 
     for i in range(100):
         item = Item3D(i, np.random.random_integers(1, 100), np.random.random_integers(1, 100), np.random.random_integers(1, 100))
         items.append(item)
-    FFDGB(items, [100, 100, 100], 10, 5)
+    FFDGB(items, [100, 100, 100], 10, 5, 100)
 
 
 def FFDMPTest():
@@ -270,3 +260,42 @@ def FFDMPTest():
         items.append(item)
 
     FFDMP(items, [100, 100, 100], 0.9)
+
+
+def Test():
+    item3 = Item3D(1, 1, 2, 4)
+    item33 = Item3D(2, 3, 8, 3)
+    item333 = Item3D(3, 9, 2, 8)
+    items3 = [item3, item33, item333]
+
+    copy = items3.copy()
+
+    for i in copy:
+        print(i)
+
+    copy.pop()
+    print(len(copy))
+    print(len(items3))
+    return copy
+
+
+def FFDBoxTest():
+    items = []
+    for i in range(30):
+        item = Item1D(i, np.random.random_integers(1, 100))
+        items.append(item)
+    FFDBox(items, [100], 5, 100)
+    items.clear()
+
+
+    for i in range(100):
+        item = Item2D(i, np.random.random_integers(1, 100), np.random.random_integers(1, 100))
+        items.append(item)
+    FFDBox(items, [100, 100], 5, 100)
+    items.clear()
+
+
+    for i in range(100):
+        item = Item3D(i, np.random.random_integers(1, 100), np.random.random_integers(1, 100), np.random.random_integers(1, 100))
+        items.append(item)
+    FFDBox(items, [100, 100, 100], 5, 100)

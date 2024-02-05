@@ -1,0 +1,719 @@
+1
+A ládák dimenziói maximális kapacitása: 
+100 
+
+1 53  
+2 13  
+3 15  
+4 18  
+5 1  
+Az 1. számú ládába 5 db tárgy került elhelyezésre 
+ 
+6 4  
+7 3  
+8 25  
+9 58  
+10 4  
+11 4  
+12 2  
+Az 2. számú ládába 7 db tárgy került elhelyezésre 
+ 
+13 69  
+14 29  
+15 2  
+Az 3. számú ládába 3 db tárgy került elhelyezésre 
+ 
+16 63  
+17 18  
+18 7  
+19 11  
+20 1  
+Az 4. számú ládába 5 db tárgy került elhelyezésre 
+ 
+21 62  
+22 38  
+Az 5. számú ládába 2 db tárgy került elhelyezésre 
+ 
+23 56  
+24 42  
+25 2  
+Az 6. számú ládába 3 db tárgy került elhelyezésre 
+ 
+26 27  
+27 62  
+28 6  
+29 2  
+30 1  
+31 2  
+Az 7. számú ládába 6 db tárgy került elhelyezésre 
+ 
+32 100  
+Az 8. számú ládába 1 db tárgy került elhelyezésre 
+ 
+33 80  
+34 16  
+35 4  
+Az 9. számú ládába 3 db tárgy került elhelyezésre 
+ 
+36 69  
+37 11  
+38 11  
+39 4  
+40 5  
+Az 10. számú ládába 5 db tárgy került elhelyezésre 
+ 
+41 42  
+42 31  
+43 23  
+44 1  
+45 3  
+Az 11. számú ládába 5 db tárgy került elhelyezésre 
+ 
+46 44  
+47 25  
+48 3  
+49 22  
+50 6  
+Az 12. számú ládába 5 db tárgy került elhelyezésre 
+ 
+51 1  
+52 18  
+53 25  
+54 24  
+55 11  
+56 17  
+57 3  
+58 1  
+Az 13. számú ládába 8 db tárgy került elhelyezésre 
+ 
+59 38  
+60 28  
+61 26  
+62 1  
+63 2  
+64 4  
+65 1  
+Az 14. számú ládába 7 db tárgy került elhelyezésre 
+ 
+66 49  
+67 11  
+68 20  
+69 13  
+70 4  
+71 1  
+72 1  
+73 1  
+Az 15. számú ládába 8 db tárgy került elhelyezésre 
+ 
+74 63  
+75 32  
+76 1  
+77 3  
+78 1  
+Az 16. számú ládába 5 db tárgy került elhelyezésre 
+ 
+79 24  
+80 39  
+81 34  
+82 2  
+83 1  
+Az 17. számú ládába 5 db tárgy került elhelyezésre 
+ 
+84 83  
+85 16  
+86 1  
+Az 18. számú ládába 3 db tárgy került elhelyezésre 
+ 
+87 57  
+88 4  
+89 2  
+90 30  
+91 5  
+92 1  
+93 1  
+Az 19. számú ládába 7 db tárgy került elhelyezésre 
+ 
+94 7  
+95 54  
+96 4  
+97 11  
+98 9  
+99 8  
+100 7  
+Az 20. számú ládába 7 db tárgy került elhelyezésre 
+ 
+101 71  
+102 6  
+103 9  
+104 14  
+Az 21. számú ládába 4 db tárgy került elhelyezésre 
+ 
+105 73  
+106 11  
+107 3  
+108 2  
+109 2  
+110 6  
+111 2  
+112 1  
+Az 22. számú ládába 8 db tárgy került elhelyezésre 
+ 
+113 69  
+114 22  
+115 5  
+116 2  
+117 2  
+Az 23. számú ládába 5 db tárgy került elhelyezésre 
+ 
+118 79  
+119 2  
+120 6  
+121 1  
+122 10  
+123 2  
+Az 24. számú ládába 6 db tárgy került elhelyezésre 
+ 
+124 75  
+125 14  
+126 7  
+127 1  
+128 2  
+129 1  
+Az 25. számú ládába 6 db tárgy került elhelyezésre 
+ 
+130 3  
+131 63  
+132 27  
+133 5  
+134 2  
+Az 26. számú ládába 5 db tárgy került elhelyezésre 
+ 
+135 8  
+136 37  
+137 22  
+138 6  
+139 21  
+140 3  
+141 1  
+142 2  
+Az 27. számú ládába 8 db tárgy került elhelyezésre 
+ 
+143 98  
+144 2  
+Az 28. számú ládába 2 db tárgy került elhelyezésre 
+ 
+145 79  
+146 20  
+147 1  
+Az 29. számú ládába 3 db tárgy került elhelyezésre 
+ 
+148 90  
+149 8  
+150 2  
+Az 30. számú ládába 3 db tárgy került elhelyezésre 
+ 
+151 100  
+Az 31. számú ládába 1 db tárgy került elhelyezésre 
+ 
+152 56  
+153 12  
+154 29  
+155 2  
+156 1  
+Az 32. számú ládába 5 db tárgy került elhelyezésre 
+ 
+157 57  
+158 12  
+159 14  
+160 7  
+161 8  
+162 1  
+163 1  
+Az 33. számú ládába 7 db tárgy került elhelyezésre 
+ 
+164 53  
+165 31  
+166 9  
+167 2  
+168 1  
+169 2  
+170 2  
+Az 34. számú ládába 7 db tárgy került elhelyezésre 
+ 
+171 40  
+172 59  
+173 1  
+Az 35. számú ládába 3 db tárgy került elhelyezésre 
+ 
+174 34  
+175 47  
+176 3  
+177 15  
+178 1  
+Az 36. számú ládába 5 db tárgy került elhelyezésre 
+ 
+179 1  
+180 47  
+181 28  
+182 20  
+183 3  
+184 1  
+Az 37. számú ládába 6 db tárgy került elhelyezésre 
+ 
+185 61  
+186 13  
+187 4  
+188 8  
+189 7  
+190 4  
+191 3  
+Az 38. számú ládába 7 db tárgy került elhelyezésre 
+ 
+192 51  
+193 48  
+194 1  
+Az 39. számú ládába 3 db tárgy került elhelyezésre 
+ 
+195 85  
+196 7  
+197 4  
+198 4  
+Az 40. számú ládába 4 db tárgy került elhelyezésre 
+ 
+199 34  
+200 2  
+201 53  
+202 1  
+203 7  
+204 1  
+205 2  
+Az 41. számú ládába 7 db tárgy került elhelyezésre 
+ 
+206 83  
+207 16  
+208 1  
+Az 42. számú ládába 3 db tárgy került elhelyezésre 
+ 
+209 60  
+210 3  
+211 21  
+212 1  
+213 3  
+214 7  
+215 3  
+216 1  
+217 1  
+Az 43. számú ládába 9 db tárgy került elhelyezésre 
+ 
+218 54  
+219 39  
+220 5  
+221 1  
+222 1  
+Az 44. számú ládába 5 db tárgy került elhelyezésre 
+ 
+223 97  
+224 1  
+225 1  
+226 1  
+Az 45. számú ládába 4 db tárgy került elhelyezésre 
+ 
+227 24  
+228 65  
+229 6  
+230 4  
+231 1  
+Az 46. számú ládába 5 db tárgy került elhelyezésre 
+ 
+232 32  
+233 6  
+234 4  
+235 18  
+236 16  
+237 1  
+238 13  
+239 3  
+240 7  
+Az 47. számú ládába 9 db tárgy került elhelyezésre 
+ 
+241 71  
+242 19  
+243 3  
+244 1  
+245 1  
+246 5  
+Az 48. számú ládába 6 db tárgy került elhelyezésre 
+ 
+247 75  
+248 4  
+249 18  
+250 2  
+251 1  
+Az 49. számú ládába 5 db tárgy került elhelyezésre 
+ 
+252 99  
+253 1  
+Az 50. számú ládába 2 db tárgy került elhelyezésre 
+ 
+254 41  
+255 19  
+256 12  
+257 13  
+258 14  
+259 1  
+Az 51. számú ládába 6 db tárgy került elhelyezésre 
+ 
+260 59  
+261 1  
+262 40  
+Az 52. számú ládába 3 db tárgy került elhelyezésre 
+ 
+263 89  
+264 4  
+265 2  
+266 1  
+267 4  
+Az 53. számú ládába 5 db tárgy került elhelyezésre 
+ 
+268 20  
+269 17  
+270 50  
+271 6  
+272 7  
+Az 54. számú ládába 5 db tárgy került elhelyezésre 
+ 
+273 5  
+274 59  
+275 28  
+276 1  
+277 7  
+Az 55. számú ládába 5 db tárgy került elhelyezésre 
+ 
+278 37  
+279 40  
+280 9  
+281 1  
+282 11  
+283 1  
+284 1  
+Az 56. számú ládába 7 db tárgy került elhelyezésre 
+ 
+285 55  
+286 24  
+287 8  
+288 11  
+289 1  
+290 1  
+Az 57. számú ládába 6 db tárgy került elhelyezésre 
+ 
+291 75  
+292 8  
+293 16  
+294 1  
+Az 58. számú ládába 4 db tárgy került elhelyezésre 
+ 
+295 26  
+296 31  
+297 37  
+298 2  
+299 3  
+300 1  
+Az 59. számú ládába 6 db tárgy került elhelyezésre 
+ 
+301 78  
+302 12  
+303 9  
+304 1  
+Az 60. számú ládába 4 db tárgy került elhelyezésre 
+ 
+305 10  
+306 62  
+307 21  
+308 3  
+309 1  
+310 1  
+311 1  
+312 1  
+Az 61. számú ládába 8 db tárgy került elhelyezésre 
+ 
+313 65  
+314 11  
+315 3  
+316 1  
+317 13  
+318 6  
+319 1  
+Az 62. számú ládába 7 db tárgy került elhelyezésre 
+ 
+320 64  
+321 4  
+322 4  
+323 1  
+324 19  
+325 1  
+326 6  
+327 1  
+Az 63. számú ládába 8 db tárgy került elhelyezésre 
+ 
+328 86  
+329 13  
+330 1  
+Az 64. számú ládába 3 db tárgy került elhelyezésre 
+ 
+331 22  
+332 61  
+333 6  
+334 2  
+335 7  
+336 2  
+Az 65. számú ládába 6 db tárgy került elhelyezésre 
+ 
+337 99  
+338 1  
+Az 66. számú ládába 2 db tárgy került elhelyezésre 
+ 
+339 93  
+340 6  
+341 1  
+Az 67. számú ládába 3 db tárgy került elhelyezésre 
+ 
+342 22  
+343 7  
+344 19  
+345 38  
+346 10  
+347 3  
+348 1  
+Az 68. számú ládába 7 db tárgy került elhelyezésre 
+ 
+349 39  
+350 34  
+351 5  
+352 16  
+353 3  
+354 3  
+Az 69. számú ládába 6 db tárgy került elhelyezésre 
+ 
+355 28  
+356 4  
+357 33  
+358 27  
+359 7  
+360 1  
+Az 70. számú ládába 6 db tárgy került elhelyezésre 
+ 
+361 97  
+362 2  
+363 1  
+Az 71. számú ládába 3 db tárgy került elhelyezésre 
+ 
+364 23  
+365 11  
+366 21  
+367 44  
+368 1  
+Az 72. számú ládába 5 db tárgy került elhelyezésre 
+ 
+369 33  
+370 6  
+371 28  
+372 29  
+373 4  
+Az 73. számú ládába 5 db tárgy került elhelyezésre 
+ 
+374 13  
+375 44  
+376 2  
+377 28  
+378 11  
+379 2  
+Az 74. számú ládába 6 db tárgy került elhelyezésre 
+ 
+380 28  
+381 8  
+382 41  
+383 20  
+384 2  
+385 1  
+Az 75. számú ládába 6 db tárgy került elhelyezésre 
+ 
+386 17  
+387 58  
+388 16  
+389 8  
+390 1  
+Az 76. számú ládába 5 db tárgy került elhelyezésre 
+ 
+391 49  
+392 45  
+393 2  
+394 3  
+395 1  
+Az 77. számú ládába 5 db tárgy került elhelyezésre 
+ 
+396 49  
+397 11  
+398 33  
+399 2  
+400 4  
+401 1  
+Az 78. számú ládába 6 db tárgy került elhelyezésre 
+ 
+402 51  
+403 18  
+404 4  
+405 21  
+406 6  
+Az 79. számú ládába 5 db tárgy került elhelyezésre 
+ 
+407 16  
+408 54  
+409 8  
+410 17  
+411 4  
+412 1  
+Az 80. számú ládába 6 db tárgy került elhelyezésre 
+ 
+413 12  
+414 42  
+415 3  
+416 16  
+417 20  
+418 3  
+419 2  
+420 2  
+Az 81. számú ládába 8 db tárgy került elhelyezésre 
+ 
+421 70  
+422 3  
+423 27  
+Az 82. számú ládába 3 db tárgy került elhelyezésre 
+ 
+424 11  
+425 71  
+426 12  
+427 5  
+428 1  
+Az 83. számú ládába 5 db tárgy került elhelyezésre 
+ 
+429 46  
+430 52  
+431 1  
+432 1  
+Az 84. számú ládába 4 db tárgy került elhelyezésre 
+ 
+433 23  
+434 30  
+435 1  
+436 27  
+437 7  
+438 6  
+439 5  
+440 1  
+Az 85. számú ládába 8 db tárgy került elhelyezésre 
+ 
+441 10  
+442 79  
+443 3  
+444 3  
+445 3  
+446 1  
+447 1  
+Az 86. számú ládába 7 db tárgy került elhelyezésre 
+ 
+448 95  
+449 1  
+450 1  
+451 2  
+452 1  
+Az 87. számú ládába 5 db tárgy került elhelyezésre 
+ 
+453 8  
+454 36  
+455 20  
+456 17  
+457 16  
+458 2  
+459 1  
+Az 88. számú ládába 7 db tárgy került elhelyezésre 
+ 
+460 73  
+461 22  
+462 5  
+Az 89. számú ládába 3 db tárgy került elhelyezésre 
+ 
+463 31  
+464 26  
+465 29  
+466 8  
+467 2  
+468 3  
+469 1  
+Az 90. számú ládába 7 db tárgy került elhelyezésre 
+ 
+470 15  
+471 47  
+472 34  
+473 3  
+474 1  
+Az 91. számú ládába 5 db tárgy került elhelyezésre 
+ 
+475 26  
+476 64  
+477 5  
+478 3  
+479 1  
+480 1  
+Az 92. számú ládába 6 db tárgy került elhelyezésre 
+ 
+481 48  
+482 43  
+483 8  
+484 1  
+Az 93. számú ládába 4 db tárgy került elhelyezésre 
+ 
+485 39  
+486 49  
+487 5  
+488 6  
+489 1  
+Az 94. számú ládába 5 db tárgy került elhelyezésre 
+ 
+490 98  
+491 2  
+Az 95. számú ládába 2 db tárgy került elhelyezésre 
+ 
+492 42  
+493 4  
+494 51  
+495 1  
+496 2  
+Az 96. számú ládába 5 db tárgy került elhelyezésre 
+ 
+497 13  
+498 33  
+499 9  
+500 35  
+501 8  
+502 1  
+503 1  
+Az 97. számú ládába 7 db tárgy került elhelyezésre 
+ 
+504 87  
+505 9  
+506 4  
+Az 98. számú ládába 3 db tárgy került elhelyezésre 
+ 
+507 58  
+508 15  
+509 14  
+510 10  
+511 3  
+Az 99. számú ládába 5 db tárgy került elhelyezésre 
+ 
+512 23  
+513 77  
+Az 100. számú ládába 2 db tárgy került elhelyezésre 
+ 
+Az 513 db tárgyat optimálisan 100 ládába tudjuk elpakolni 
+ 

@@ -1,3 +1,4 @@
+from Data.GenerateFiles.dataGenerateWithOpt import dataGen
 from Data.GenerateFiles.splitData import splitData, dataSplitter
 from Resources.dataLoad import fileRead
 from test import Tester, ffdic3Test, ffdic1Test, ffdic2Test, DotP1Test, DotP2Test, DotP3Test, L2_1Test, L2_2Test, \
@@ -42,9 +43,11 @@ from test import Tester, ffdic3Test, ffdic1Test, ffdic2Test, DotP1Test, DotP2Tes
 
 # splitData("class1_5")
 
-dataSplitter("C:/Users/Asus/Desktop/Pakolas_tdk/Data/3D_Classes/FileNames.txt")
+# dataSplitter("C:/Users/Asus/Desktop/Pakolas_tdk/Data/3D_Classes/FileNames.txt")
 
 # FFDMPTest()
 # print(Test())
 
 # FFDBoxTest()
+
+dataGen()

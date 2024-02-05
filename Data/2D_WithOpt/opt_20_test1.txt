@@ -1,0 +1,134 @@
+2
+A ládák dimenziói maximális kapacitása: 
+100 100 
+
+1 11 48  
+2 82 20  
+3 5 29  
+4 2 3  
+Az 1. számú ládába 4 db tárgy került elhelyezésre 
+ 
+5 42 42  
+6 27 34  
+7 4 10  
+8 2 1  
+9 2 1  
+10 21 5  
+11 2 7  
+Az 2. számú ládába 7 db tárgy került elhelyezésre 
+ 
+12 70 54  
+13 5 4  
+14 16 38  
+15 9 4  
+Az 3. számú ládába 4 db tárgy került elhelyezésre 
+ 
+16 41 73  
+17 45 5  
+18 10 12  
+19 4 10  
+Az 4. számú ládába 4 db tárgy került elhelyezésre 
+ 
+20 65 44  
+21 6 41  
+22 29 15  
+Az 5. számú ládába 3 db tárgy került elhelyezésre 
+ 
+23 48 62  
+24 48 9  
+25 3 20  
+26 1 9  
+Az 6. számú ládába 4 db tárgy került elhelyezésre 
+ 
+27 95 65  
+28 2 10  
+29 3 25  
+Az 7. számú ládába 3 db tárgy került elhelyezésre 
+ 
+30 87 24  
+31 5 7  
+32 6 14  
+33 2 55  
+Az 8. számú ládába 4 db tárgy került elhelyezésre 
+ 
+34 8 3  
+35 30 6  
+36 23 72  
+37 26 8  
+38 4 3  
+39 8 2  
+40 1 6  
+Az 9. számú ládába 7 db tárgy került elhelyezésre 
+ 
+41 57 81  
+42 2 5  
+43 21 5  
+44 20 9  
+Az 10. számú ládába 4 db tárgy került elhelyezésre 
+ 
+45 59 52  
+46 22 11  
+47 11 32  
+48 4 2  
+49 4 3  
+Az 11. számú ládába 5 db tárgy került elhelyezésre 
+ 
+50 37 95  
+51 53 1  
+52 9 3  
+53 1 1  
+Az 12. számú ládába 4 db tárgy került elhelyezésre 
+ 
+54 60 93  
+55 26 4  
+56 14 3  
+Az 13. számú ládába 3 db tárgy került elhelyezésre 
+ 
+57 2 89  
+58 15 2  
+59 76 4  
+60 6 4  
+61 1 1  
+Az 14. számú ládába 5 db tárgy került elhelyezésre 
+ 
+62 93 48  
+63 2 38  
+64 1 3  
+65 3 8  
+66 1 3  
+Az 15. számú ládába 5 db tárgy került elhelyezésre 
+ 
+67 41 86  
+68 38 2  
+69 6 7  
+70 12 2  
+71 3 3  
+Az 16. számú ládába 5 db tárgy került elhelyezésre 
+ 
+72 91 19  
+73 1 47  
+74 7 23  
+75 1 11  
+Az 17. számú ládába 4 db tárgy került elhelyezésre 
+ 
+76 15 50  
+77 59 37  
+78 23 4  
+79 1 1  
+80 1 5  
+81 1 3  
+Az 18. számú ládába 6 db tárgy került elhelyezésre 
+ 
+82 4 91  
+83 4 7  
+84 7 1  
+85 85 1  
+Az 19. számú ládába 4 db tárgy került elhelyezésre 
+ 
+86 62 28  
+87 23 55  
+88 4 4  
+Az 20. számú ládába 3 db tárgy került elhelyezésre 
+ 
+Az 89 db tárgyat optimálisan 20 ládába tudjuk elpakolni 
+ 

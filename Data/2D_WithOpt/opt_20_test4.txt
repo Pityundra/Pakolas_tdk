@@ -1,0 +1,135 @@
+2
+A ládák dimenziói maximális kapacitása: 
+100 100 
+
+1 51 60  
+2 30 33  
+3 19 7  
+Az 1. számú ládába 3 db tárgy került elhelyezésre 
+ 
+4 91 36  
+5 3 38  
+6 4 16  
+7 1 2  
+8 1 8  
+Az 2. számú ládába 5 db tárgy került elhelyezésre 
+ 
+9 62 21  
+10 14 58  
+11 21 14  
+12 3 7  
+Az 3. számú ládába 4 db tárgy került elhelyezésre 
+ 
+13 27 58  
+14 32 20  
+15 34 15  
+16 7 7  
+Az 4. számú ládába 4 db tárgy került elhelyezésre 
+ 
+17 57 10  
+18 10 29  
+19 3 16  
+20 5 21  
+21 17 4  
+22 4 5  
+23 3 1  
+24 1 14  
+Az 5. számú ládába 8 db tárgy került elhelyezésre 
+ 
+25 81 28  
+26 14 61  
+27 4 9  
+28 1 2  
+Az 6. számú ládába 4 db tárgy került elhelyezésre 
+ 
+29 83 42  
+30 15 13  
+31 2 45  
+Az 7. számú ládába 3 db tárgy került elhelyezésre 
+ 
+32 80 96  
+33 20 4  
+Az 8. számú ládába 2 db tárgy került elhelyezésre 
+ 
+34 100 100  
+Az 9. számú ládába 1 db tárgy került elhelyezésre 
+ 
+35 87 2  
+36 3 35  
+37 4 18  
+38 1 14  
+39 5 31  
+Az 10. számú ládába 5 db tárgy került elhelyezésre 
+ 
+40 91 44  
+41 6 34  
+42 2 2  
+43 1 20  
+Az 11. számú ládába 4 db tárgy került elhelyezésre 
+ 
+44 29 22  
+45 10 62  
+46 44 1  
+47 2 12  
+48 5 2  
+49 10 1  
+Az 12. számú ládába 6 db tárgy került elhelyezésre 
+ 
+50 41 17  
+51 38 41  
+52 7 5  
+53 7 22  
+54 3 3  
+55 1 2  
+56 2 6  
+57 1 4  
+Az 13. számú ládába 8 db tárgy került elhelyezésre 
+ 
+58 35 87  
+59 37 5  
+60 14 4  
+61 11 2  
+62 3 2  
+Az 14. számú ládába 5 db tárgy került elhelyezésre 
+ 
+63 59 41  
+64 2 7  
+65 15 5  
+66 1 5  
+67 7 11  
+68 1 1  
+69 10 13  
+70 2 14  
+71 1 1  
+72 1 1  
+73 1 1  
+Az 15. számú ládába 11 db tárgy került elhelyezésre 
+ 
+74 83 87  
+75 7 4  
+76 9 8  
+77 1 1  
+Az 16. számú ládába 4 db tárgy került elhelyezésre 
+ 
+78 90 61  
+79 10 39  
+Az 17. számú ládába 2 db tárgy került elhelyezésre 
+ 
+80 30 51  
+81 55 13  
+82 9 32  
+83 6 4  
+Az 18. számú ládába 4 db tárgy került elhelyezésre 
+ 
+84 72 71  
+85 2 16  
+86 26 13  
+Az 19. számú ládába 3 db tárgy került elhelyezésre 
+ 
+87 36 87  
+88 30 4  
+89 1 4  
+Az 20. számú ládába 3 db tárgy került elhelyezésre 
+ 
+Az 90 db tárgyat optimálisan 20 ládába tudjuk elpakolni 
+ 

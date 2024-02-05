@@ -1,0 +1,61 @@
+3
+A ládák dimenziói maximális kapacitása: 
+100 100 100 
+
+1 89 31 9 
+2 6 14 39 
+3 2 11 48 
+4 1 19 2 
+5 2 25 2 
+Az 1. számú ládába 5 db tárgy került elhelyezésre 
+ 
+6 62 80 40 
+7 20 16 28 
+8 6 2 23 
+9 12 2 9 
+Az 2. számú ládába 4 db tárgy került elhelyezésre 
+ 
+10 3 34 40 
+11 46 65 1 
+12 51 1 59 
+Az 3. számú ládába 3 db tárgy került elhelyezésre 
+ 
+13 72 70 27 
+14 5 14 58 
+15 12 12 14 
+16 11 4 1 
+Az 4. számú ládába 4 db tárgy került elhelyezésre 
+ 
+17 44 16 58 
+18 7 60 35 
+19 49 24 7 
+Az 5. számú ládába 3 db tárgy került elhelyezésre 
+ 
+20 28 85 94 
+21 57 1 1 
+22 5 12 1 
+23 10 2 4 
+Az 6. számú ládába 4 db tárgy került elhelyezésre 
+ 
+24 74 37 25 
+25 25 53 40 
+26 1 10 35 
+Az 7. számú ládába 3 db tárgy került elhelyezésre 
+ 
+27 90 77 40 
+28 8 16 10 
+29 2 7 50 
+Az 8. számú ládába 3 db tárgy került elhelyezésre 
+ 
+30 21 40 34 
+31 51 14 25 
+32 4 44 1 
+33 5 1 16 
+34 19 1 24 
+Az 9. számú ládába 5 db tárgy került elhelyezésre 
+ 
+35 15 35 80 
+Az 10. számú ládába 1 db tárgy került elhelyezésre 
+ 
+Az 36 db tárgyat optimálisan 10 ládába tudjuk elpakolni 
+ 

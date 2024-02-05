@@ -1,0 +1,128 @@
+2
+A ládák dimenziói maximális kapacitása: 
+100 100 
+
+1 36 4  
+2 57 22  
+3 4 45  
+4 1 11  
+5 1 17  
+6 1 1  
+Az 1. számú ládába 6 db tárgy került elhelyezésre 
+ 
+7 6 83  
+8 43 6  
+9 26 3  
+10 13 3  
+11 1 1  
+12 11 4  
+Az 2. számú ládába 6 db tárgy került elhelyezésre 
+ 
+13 99 92  
+14 1 8  
+Az 3. számú ládába 2 db tárgy került elhelyezésre 
+ 
+15 28 36  
+16 4 19  
+17 59 27  
+18 3 14  
+19 1 1  
+20 4 2  
+21 1 1  
+Az 4. számú ládába 7 db tárgy került elhelyezésre 
+ 
+22 98 42  
+23 2 58  
+Az 5. számú ládába 2 db tárgy került elhelyezésre 
+ 
+24 32 39  
+25 35 60  
+26 33 1  
+Az 6. számú ládába 3 db tárgy került elhelyezésre 
+ 
+27 94 14  
+28 1 24  
+29 2 28  
+30 3 34  
+Az 7. számú ládába 4 db tárgy került elhelyezésre 
+ 
+31 80 57  
+32 16 41  
+33 4 2  
+Az 8. számú ládába 3 db tárgy került elhelyezésre 
+ 
+34 64 73  
+35 13 7  
+36 2 4  
+37 8 13  
+38 7 1  
+39 1 1  
+40 5 1  
+Az 9. számú ládába 7 db tárgy került elhelyezésre 
+ 
+41 80 9  
+42 12 39  
+43 5 18  
+44 3 34  
+Az 10. számú ládába 4 db tárgy került elhelyezésre 
+ 
+45 2 40  
+46 60 10  
+47 38 50  
+Az 11. számú ládába 3 db tárgy került elhelyezésre 
+ 
+48 86 55  
+49 11 22  
+50 3 23  
+Az 12. számú ládába 3 db tárgy került elhelyezésre 
+ 
+51 15 20  
+52 84 52  
+53 1 28  
+Az 13. számú ládába 3 db tárgy került elhelyezésre 
+ 
+54 12 34  
+55 20 53  
+56 42 1  
+57 12 11  
+58 14 1  
+Az 14. számú ládába 5 db tárgy került elhelyezésre 
+ 
+59 11 3  
+60 75 57  
+61 5 6  
+62 8 3  
+63 1 31  
+Az 15. számú ládába 5 db tárgy került elhelyezésre 
+ 
+64 80 98  
+65 20 2  
+Az 16. számú ládába 2 db tárgy került elhelyezésre 
+ 
+66 66 93  
+67 9 6  
+68 25 1  
+Az 17. számú ládába 3 db tárgy került elhelyezésre 
+ 
+69 43 62  
+70 8 15  
+71 18 4  
+72 18 6  
+73 9 3  
+74 2 9  
+75 2 1  
+Az 18. számú ládába 7 db tárgy került elhelyezésre 
+ 
+76 57 43  
+77 5 25  
+78 16 29  
+79 19 1  
+80 2 1  
+81 1 1  
+Az 19. számú ládába 6 db tárgy került elhelyezésre 
+ 
+82 38 95  
+Az 20. számú ládába 1 db tárgy került elhelyezésre 
+ 
+Az 83 db tárgyat optimálisan 20 ládába tudjuk elpakolni 
+ 

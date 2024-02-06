@@ -9,7 +9,7 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDRevAdv(items, binSize):
+def FFDRevAdv(items, binSize,dataName):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -28,6 +28,10 @@ def FFDRevAdv(items, binSize):
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
+
+    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
+    f.write(f"FFDRevAdv;{res[0]}\n")
+    f.close()
 
     print(f"FFDRevAdv Futási eredménye: {res}\n")
     return res

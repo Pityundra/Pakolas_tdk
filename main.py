@@ -1,6 +1,13 @@
 from Algorithms.FFD.ffd import FFD
+from Algorithms.FFDDet.ffdMP import FFDMP
+from Algorithms.FFDDet.ffdRev import FFDRev
+from Algorithms.FFDDet.ffdRevAdv import FFDRevAdv
+from Algorithms.FFDNotDet.ffdBG import FFDGB
 from Algorithms.FFDNotDet.ffdBox import FFDBox
 from Algorithms.FFDNotDet.ffdGroups import FFDGroups
+from Algorithms.FFDNotDet.ffdRatio import FFDRatio
+from Algorithms.FFDNotDet.ffdVal import FFDVal
+from Algorithms.FFDNotDet.l2NotDet import L2NotDet
 from Algorithms.GH.gh import GH
 from Data.GenerateFiles.dataGenerateWithOpt import dataGen
 from Data.GenerateFiles.splitData import splitData, dataSplitter
@@ -13,17 +20,25 @@ f = open("C:/Users/Asus/Desktop/Pakolas_tdk/Data/FileNames.txt", "r")
 lines = f.readlines()
 for line in lines:
     line = line.strip()
-    dataName = line.replace(".", "/").split("/")
-    print(dataName[-2])
+    dataName = line.replace(".", "/").split("/")[-2]
+    print(dataName)
     items, binSize = fileRead(line)
 
     print("Dimenzió szám: " + str(len(binSize)))
     print("Alsó korlát: " + str(SimpleLowerBound(items, binSize)))
 
-    FFDGroups(items, binSize, 3, 10)
-    FFDBox(items, binSize, 5, 10)
-    FFD("sum", "bin", items, binSize)
-    GH("dotP", items, binSize, 1)
+    # FFDGroups(items, binSize, 3, 10, dataName)
+    # FFDBox(items, binSize, 5, 10, dataName)
+    # FFD("sum", "bin", items, binSize, dataName)
+    # GH("dotP", items, binSize, 1, dataName)
+    # FFDMP(items, binSize, 0.9, dataName)
+    # FFDRev(items, binSize, dataName)
+    # FFDRevAdv(items, binSize, dataName)
+    FFDRatio(items, binSize, 3, 10, dataName)
+    FFDVal(items, binSize, 3, dataName)
+    L2NotDet(items, binSize, 3, 10, dataName)
+    FFDGB(items, binSize, 5, 3, 10, dataName)
+
 
     items.clear()
     binSize.clear()

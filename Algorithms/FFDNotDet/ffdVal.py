@@ -10,7 +10,7 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDVal(items, binSize, runTime):
+def FFDVal(items, binSize, runTime, dataName):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -33,6 +33,10 @@ def FFDVal(items, binSize, runTime):
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
+
+    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
+    f.write(f"FFDVal-rt{runTime}; ;Átlag;{str(sum(res) / len(res))};Összes futási eredmény;{res};Eredmények csoportosítva;" + str({i: res.count(i) for i in res}) + "\n")
+    f.close()
 
     print(res)
     print({i: res.count(i) for i in res})

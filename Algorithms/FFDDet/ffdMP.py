@@ -10,7 +10,7 @@ from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
 
 
-def FFDMP(items, binSize, ratio):
+def FFDMP(items, binSize, ratio, dataName):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -31,6 +31,12 @@ def FFDMP(items, binSize, ratio):
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
+
+    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
+    f.write(f"FFDMP-{ratio};{res[0]}\n")
+    f.close()
+
+    # Ezt még át kell nézni
 
     print(f"FFDMP Futási eredménye: {res}\n")
     return res

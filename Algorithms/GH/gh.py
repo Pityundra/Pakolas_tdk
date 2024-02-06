@@ -2,7 +2,7 @@ from Algorithms.GH.dotP import DotP1, DotP2, DotP3
 from Algorithms.GH.l2 import L2_1, L2_2, L2_3
 
 
-def GH(alg, items, binSize, grasp):
+def GH(alg, items, binSize, grasp, dataName):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -36,6 +36,10 @@ def GH(alg, items, binSize, grasp):
     else:
         print("Nem DotP vagy L2!")
         return 1
+
+    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
+    f.write(f"{alg}-{grasp};{res[0]}\n")
+    f.close()
 
     print(f"{alg}-{grasp} Futási eredménye: {res}\n")
     return res

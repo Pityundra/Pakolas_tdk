@@ -1,0 +1,24 @@
+FFD-bx5-rn10, ,Átlag,15.0,Összes futási eredmény.[15, 15, 15, 15, 15, 15, 15, 15, 15, 15],Eredmények csoportosítva:{15: 10}
+FFDRev,16
+FFDRevAdv,16
+FFD-bx5-rn10       Átlag   15.1  Összes futási eredmény  [15, 15, 15, 15, 15, 15, 15, 15, 15, 16]   Eredmények csoportosítva    {15: 9, 16: 1}
+FFDRev    16
+FFDRevAdv 16
+FFD-bx5-rn10       Átlag   15.0  Összes futási eredmény  [15, 14, 15, 15, 15, 16, 15, 15, 15, 15]   Eredmények csoportosítva    {15: 8, 14: 1, 16: 1}
+FFDRev    16
+FFDRevAdv 16
+FFD-bx5-rn10;Átlag;15.0;Összes futási eredmény;[15, 15, 15, 15, 15, 15, 15, 15, 15, 15];Eredmények csoportosítva;{15: 10}
+FFDRev;16
+FFDRevAdv;16
+FFD-bx5-rn10;Átlag;15.1;Összes futási eredmény;[15, 15, 15, 15, 15, 15, 15, 16, 15, 15];Eredmények csoportosítva;{15: 9, 16: 1}
+FFDRev;16
+FFDRevAdv;16
+FFD-bx5-rn10; ;Átlag;15.1;Összes futási eredmény;[16, 15, 15, 15, 15, 15, 15, 15, 15, 15];Eredmények csoportosítva;{16: 1, 15: 9}
+FFDRev;16
+FFDRevAdv;16
+FFD-gr3-rn10; ;Átlag;15.0;Összes futási eredmény;[15, 15, 15, 15, 15, 15, 15, 15, 15, 15];Eredmények csoportosítva;{15: 10}
+FFD-ra3-rn10; ;Átlag;15.7;Összes futási eredmény;[16, 15, 16, 16, 16, 15, 16, 16, 15, 16];Eredmények csoportosítva;{16: 7, 15: 3}
+FFDRatio-ra3-rt10; ;Átlag;15.8;Összes futási eredmény;[16, 16, 15, 15, 16, 16, 16, 16, 16, 16];Eredmények csoportosítva;{16: 8, 15: 2}
+FFDVal-rt3; ;Átlag;15.0;Összes futási eredmény;[15, 15, 15];Eredmények csoportosítva;{15: 3}
+L2NotDet-bx3-rn10; ;Átlag;14.0;Összes futási eredmény;[14, 14, 14, 14, 14, 14, 14, 14, 14, 14];Eredmények csoportosítva;{14: 10}
+FFDBG-bx3-gn5-rt10; ;Átlag;14.9;Összes futási eredmény;[15, 15, 15, 15, 15, 15, 15, 15, 14, 15];Eredmények csoportosítva;{15: 9, 14: 1}

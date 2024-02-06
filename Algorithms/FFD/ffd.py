@@ -5,7 +5,7 @@ from Resources.Item.item2D import itemsSum, itemsAVG, itemsProd
 from Resources.Item.item3D import itemsSum, itemsAVG, itemsProd
 
 
-def FFD(SAP, centric, items, binSize):
+def FFD(SAP, centric, items, binSize, dataName):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -52,6 +52,10 @@ def FFD(SAP, centric, items, binSize):
     else:
         print("Nem bin vagy item!")
         return 1
+
+    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
+    f.write(f"FFD-{centric}-{SAP};{res[0]}\n")
+    f.close()
 
     print(f"FFD-{centric}-{SAP} Futási eredménye: {res}\n")
     return res

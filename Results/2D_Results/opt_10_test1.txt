@@ -1,0 +1,9 @@
+FFD-bx5-rn10; ;Átlag;10.0;Összes futási eredmény;[10, 10, 10, 10, 10, 10, 10, 10, 10, 10];Eredmények csoportosítva;{10: 10}
+FFDRev;11
+FFDRevAdv;11
+FFD-gr3-rn10; ;Átlag;10.0;Összes futási eredmény;[10, 10, 10, 10, 10, 10, 10, 10, 10, 10];Eredmények csoportosítva;{10: 10}
+FFD-ra3-rn10; ;Átlag;10.6;Összes futási eredmény;[10, 11, 10, 11, 11, 10, 11, 11, 10, 11];Eredmények csoportosítva;{10: 4, 11: 6}
+FFDRatio-ra3-rt10; ;Átlag;10.4;Összes futási eredmény;[10, 10, 10, 11, 10, 11, 10, 11, 11, 10];Eredmények csoportosítva;{10: 6, 11: 4}
+FFDVal-rt3; ;Átlag;10.0;Összes futási eredmény;[10, 10, 10];Eredmények csoportosítva;{10: 3}
+L2NotDet-bx3-rn10; ;Átlag;10.0;Összes futási eredmény;[10, 10, 10, 10, 10, 10, 10, 10, 10, 10];Eredmények csoportosítva;{10: 10}
+FFDBG-bx3-gn5-rt10; ;Átlag;10.0;Összes futási eredmény;[10, 10, 10, 10, 10, 10, 10, 10, 10, 10];Eredmények csoportosítva;{10: 10}

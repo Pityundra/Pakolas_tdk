@@ -2,10 +2,6 @@ from Resources.Item.item1D import Item1D
 from Resources.Item.item2D import Item2D
 from Resources.Item.item3D import Item3D
 
-# Bele írni első sorként a dimenzió számot, és a szerint megcsinálni a beolvasást
-
-items = []
-
 
 def fileRead(fileName):
     # print(fileName)
@@ -13,7 +9,9 @@ def fileRead(fileName):
     lines = f.readlines()
     # print(lines)
     firstLine = lines[0].replace('\n', " ").strip().split()
-    # print(firstLine[0])
+    print(firstLine[0])
+    items = []
+    binSize = []
 
     if firstLine[0] == '1':
         lines.pop(0)

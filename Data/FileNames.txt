@@ -1,0 +1,6 @@
+C:/Users/Asus/Desktop/Pakolas_tdk/Data/1D_Classes/class1_25_1.txt
+C:/Users/Asus/Desktop/Pakolas_tdk/Data/1D_WithOpt/opt_10_test1.txt
+C:/Users/Asus/Desktop/Pakolas_tdk/Data/2D_Classes/class1_25_1.txt
+C:/Users/Asus/Desktop/Pakolas_tdk/Data/2D_WithOpt/opt_10_test1.txt
+C:/Users/Asus/Desktop/Pakolas_tdk/Data/3D_Classes/class1_50.txt
+C:/Users/Asus/Desktop/Pakolas_tdk/Data/3D_WithOpt/opt_10_test1.txt

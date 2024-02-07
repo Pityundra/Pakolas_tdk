@@ -1,7 +1,7 @@
 from math import ceil
 
 
-def SimpleLowerBound(items, binSize):
+def SimpleLowerBound(items, binSize, dataName):
     if len(binSize) == 1:
 
         d1Sum = 0
@@ -40,5 +40,9 @@ def SimpleLowerBound(items, binSize):
     amikor mindegyik elemet külön kell tegyünk nagyon távoli korlátott add, pedig nem lehet jobb pakolást összehozni
     sehogy semm.
     """
+    
+    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
+    f.write(f"Alsó Korlát;{lowerBound}\n")
+    f.close()
 
     return lowerBound

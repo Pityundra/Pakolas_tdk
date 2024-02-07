@@ -59,22 +59,28 @@ def FFDMP1D(items, binSize, ratio):
                 items.remove(item2)
                 break
 
-    for item1 in items:
-        for item2 in items:
-            for item3 in items:
-                if (item1 != item2 != item3) and (
-                        (item1.getD1() + item2.getD1() + item3.getD1()) >= (binSize[0] * ratio) and (
-                        (item1.getD1() + item2.getD1() + item3.getD1()) <= (binSize[0]))):
-                    bins.append(Bin1D(binsIndex + 1, binSize[0]))
-                    bins[binsIndex].addItem(item1)
-                    bins[binsIndex].addItem(item2)
-                    bins[binsIndex].addItem(item3)
-                    binsIndex += 1
-                    # print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()} és {item3.getNumber()}")
-                    items.remove(item1)
-                    items.remove(item2)
-                    items.remove(item3)
+    if len(items) > 2:
+        for item1 in items:
+            isItemsTaken = False
+            for item2 in items:
+                for item3 in items:
+                    if (item1 != item2) and (item1 != item3) and (item2 != item3) and (
+                            (item1.getD1() + item2.getD1() + item3.getD1()) >= (binSize[0] * ratio) and (
+                            (item1.getD1() + item2.getD1() + item3.getD1()) <= (binSize[0]))):
+                        bins.append(Bin1D(binsIndex + 1, binSize[0]))
+                        bins[binsIndex].addItem(item1)
+                        bins[binsIndex].addItem(item2)
+                        bins[binsIndex].addItem(item3)
+                        binsIndex += 1
+                        # print(f"Talált pár: {item1.getNumber()} és {item2.getNumber()} és {item3.getNumber()}")
+                        items.remove(item1)
+                        items.remove(item2)
+                        items.remove(item3)
+                        isItemsTaken = True
+                        break
+                if isItemsTaken:
                     break
+            if isItemsTaken:
                 break
 
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
@@ -105,9 +111,10 @@ def FFDMP2D(items, binSize, ratio):
                 break
 
     for item1 in items:
+        isItemsTaken = False
         for item2 in items:
             for item3 in items:
-                if (item1 != item2 != item3) \
+                if (item1 != item2) and (item1 != item3) and (item2 != item3) \
                         and (item1.getD1() + item2.getD1() + item3.getD1()) >= (binSize[0] * ratio) \
                         and ((item1.getD1() + item2.getD1() + item3.getD1()) <= (binSize[0])) \
                         and (item1.getD2() + item2.getD2() + item3.getD2()) >= (binSize[1] * ratio) \
@@ -121,8 +128,12 @@ def FFDMP2D(items, binSize, ratio):
                     items.remove(item1)
                     items.remove(item2)
                     items.remove(item3)
+                    isItemsTaken = True
                     break
+            if isItemsTaken:
                 break
+        if isItemsTaken:
+            break
 
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
     for item in items:
@@ -154,9 +165,10 @@ def FFDMP3D(items, binSize, ratio):
                 break
 
     for item1 in items:
+        isItemsTaken = False
         for item2 in items:
             for item3 in items:
-                if (item1 != item2 != item3) \
+                if (item1 != item2) and (item1 != item3) and (item2 != item3) \
                         and (item1.getD1() + item2.getD1() + item3.getD1()) >= (binSize[0] * ratio) \
                         and ((item1.getD1() + item2.getD1() + item3.getD1()) <= (binSize[0])) \
                         and (item1.getD2() + item2.getD2() + item3.getD2()) >= (binSize[1] * ratio) \
@@ -172,9 +184,12 @@ def FFDMP3D(items, binSize, ratio):
                     items.remove(item1)
                     items.remove(item2)
                     items.remove(item3)
+                    isItemsTaken = True
                     break
+            if isItemsTaken:
                 break
-
+        if isItemsTaken:
+            break
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
     for item in items:
         bin, binsIndex = placeItem3D(item, bins, binsIndex, binSize)

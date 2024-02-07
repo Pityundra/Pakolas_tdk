@@ -23,3 +23,11 @@ FFDRatio-ra3-rt10; ;Átlag;7.0;Összes futási eredmény;[7, 7, 7, 7, 7, 7, 7, 7, 7,
 FFDVal-rt3; ;Átlag;7.333333333333333;Összes futási eredmény;[7, 8, 7];Eredmények csoportosítva;{7: 2, 8: 1}
 L2NotDet-bx3-rn10; ;Átlag;7.0;Összes futási eredmény;[7, 7, 7, 7, 7, 7, 7, 7, 7, 7];Eredmények csoportosítva;{7: 10}
 FFDBG-bx3-gn5-rt10; ;Átlag;7.0;Összes futási eredmény;[7, 7, 7, 7, 7, 7, 7, 7, 7, 7];Eredmények csoportosítva;{7: 10}
+Alsó Korlát;7
+Alsó Korlát;7
+Alsó Korlát;7
+Alsó Korlát;7
+Alsó Korlát;7
+FFDMP-0.9;7
+Alsó Korlát;7
+FFDMP-0.9;7

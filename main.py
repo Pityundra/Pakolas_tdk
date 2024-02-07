@@ -25,19 +25,19 @@ for line in lines:
     items, binSize = fileRead(line)
 
     print("Dimenzió szám: " + str(len(binSize)))
-    print("Alsó korlát: " + str(SimpleLowerBound(items, binSize)))
+    print("Alsó korlát: " + str(SimpleLowerBound(items, binSize, dataName)))
 
     # FFDGroups(items, binSize, 3, 10, dataName)
     # FFDBox(items, binSize, 5, 10, dataName)
     # FFD("sum", "bin", items, binSize, dataName)
     # GH("dotP", items, binSize, 1, dataName)
-    # FFDMP(items, binSize, 0.9, dataName)
+    FFDMP(items, binSize, 0.9, dataName)
     # FFDRev(items, binSize, dataName)
     # FFDRevAdv(items, binSize, dataName)
-    FFDRatio(items, binSize, 3, 10, dataName)
-    FFDVal(items, binSize, 3, dataName)
-    L2NotDet(items, binSize, 3, 10, dataName)
-    FFDGB(items, binSize, 5, 3, 10, dataName)
+    # FFDRatio(items, binSize, 3, 10, dataName)
+    # FFDVal(items, binSize, 3, dataName)
+    # L2NotDet(items, binSize, 3, 10, dataName)
+    # FFDGB(items, binSize, 5, 3, 10, dataName)
 
 
     items.clear()

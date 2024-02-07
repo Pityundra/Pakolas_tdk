@@ -22,3 +22,5 @@ FFDRatio-ra3-rt10; ;Átlag;12.1;Összes futási eredmény;[12, 12, 12, 13, 12, 12, 1
 FFDVal-rt3; ;Átlag;11.0;Összes futási eredmény;[11, 11, 11];Eredmények csoportosítva;{11: 3}
 L2NotDet-bx3-rn10; ;Átlag;10.0;Összes futási eredmény;[10, 10, 10, 10, 10, 10, 10, 10, 10, 10];Eredmények csoportosítva;{10: 10}
 FFDBG-bx3-gn5-rt10; ;Átlag;11.0;Összes futási eredmény;[11, 11, 11, 11, 11, 11, 11, 11, 11, 11];Eredmények csoportosítva;{11: 10}
+Alsó Korlát;10
+FFDMP-0.9;10

@@ -35,7 +35,7 @@ def FFDGB(items, binSize, groupNumber, boxSize, runTime, dataName):
         return 1
 
     f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
-    f.write(f"FFDBG-bx{boxSize}-gn{groupNumber}-rt{runTime}; ;Átlag;{str(sum(res) / len(res))};Összes futási eredmény;{res};Eredmények csoportosítva;" + str({i: res.count(i) for i in res}) + "\n")
+    f.write(f"FFDBG-gn{groupNumber}-bx{boxSize}-rt{runTime}; ;Átlag;{str(sum(res) / len(res))};Összes futási eredmény;{res};Eredmények csoportosítva;" + str({i: res.count(i) for i in res}) + "\n")
     f.close()
 
     print(res)

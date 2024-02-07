@@ -38,7 +38,7 @@ def GH(alg, items, binSize, grasp, dataName):
         return 1
 
     f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
-    f.write(f"{alg}-{grasp};{res[0]}\n")
+    f.write(f"{alg}-gp{grasp};{res[0]}\n")
     f.close()
 
     print(f"{alg}-{grasp} Futási eredménye: {res}\n")

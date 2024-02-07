@@ -5,7 +5,7 @@ from Resources.Bin.bin3D import Bin3D
 from Resources.weightInform import WeightInform, itemWeight
 
 
-def L2NotDet(items, binSize, boxSize, runTime, dataName):
+def L2NotDet(items, binSize, grasp, runTime, dataName):
     if len(items) == 0:
         print("Nincsenek tárgyak!")
         return 1
@@ -17,19 +17,19 @@ def L2NotDet(items, binSize, boxSize, runTime, dataName):
 
     if len(binSize) == 1:
         for i in range(runTime):
-            res.append(L2NotDet1D(itemsCopy, binSize, boxSize))
+            res.append(L2NotDet1D(itemsCopy, binSize, grasp))
     elif len(binSize) == 2:
         for i in range(runTime):
-            res.append(L2NotDet1D(itemsCopy, binSize, boxSize))
+            res.append(L2NotDet1D(itemsCopy, binSize, grasp))
     elif len(binSize) == 3:
         for i in range(runTime):
-            res.append(L2NotDet1D(itemsCopy, binSize, boxSize))
+            res.append(L2NotDet1D(itemsCopy, binSize, grasp))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
     f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
-    f.write(f"L2NotDet-bx{boxSize}-rn{runTime}; ;Átlag;{str(sum(res) / len(res))};Összes futási eredmény;{res};Eredmények csoportosítva;" + str({i: res.count(i) for i in res}) + "\n")
+    f.write(f"L2NotDet-gp{grasp}-rn{runTime}; ;Átlag;{str(sum(res) / len(res))};Összes futási eredmény;{res};Eredmények csoportosítva;" + str({i: res.count(i) for i in res}) + "\n")
     f.close()
 
     print(res)
@@ -39,12 +39,11 @@ def L2NotDet(items, binSize, boxSize, runTime, dataName):
     return res
 
 
-def L2NotDet1D(itemsList, binSize, boxSize):
+def L2NotDet1D(itemsList, binSize, grasp):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin1D(binsIndex + 1, binSize[0]))
     allWeight = []
-    boxSize = boxSize
     items = itemsList.copy()
 
     while len(items):
@@ -61,10 +60,10 @@ def L2NotDet1D(itemsList, binSize, boxSize):
             continue
         allWeight.sort(key=itemWeight)
 
-        if boxSize > len(allWeight):
+        if grasp > len(allWeight):
             randomItemNo = np.random.random_integers(0, len(allWeight) - 1)
         else:
-            randomItemNo = np.random.random_integers(0, boxSize - 1)
+            randomItemNo = np.random.random_integers(0, grasp - 1)
 
         # print(f"Ezt a tárgyat teszük el: {allWeight[randomItemNo].item}\n")
         bins[int(allWeight[randomItemNo].bin.binIndex - 1)].addItem(allWeight[randomItemNo].item)
@@ -77,12 +76,11 @@ def L2NotDet1D(itemsList, binSize, boxSize):
     return len(bins)
 
 
-def L2NotDet2D(itemsList, binSize, boxSize):
+def L2NotDet2D(itemsList, binSize, grasp):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin2D(binsIndex + 1, binSize[0], binSize[1]))
     allWeight = []
-    boxSize = boxSize
     items = itemsList.copy()
 
     while len(items):
@@ -99,10 +97,10 @@ def L2NotDet2D(itemsList, binSize, boxSize):
             continue
         allWeight.sort(key=itemWeight)
 
-        if boxSize > len(allWeight):
+        if grasp > len(allWeight):
             randomItemNo = np.random.random_integers(0, len(allWeight) - 1)
         else:
-            randomItemNo = np.random.random_integers(0, boxSize - 1)
+            randomItemNo = np.random.random_integers(0, grasp - 1)
 
         # print(f"Ezt a tárgyat teszük el: {allWeight[randomItemNo].item}\n")
         bins[int(allWeight[randomItemNo].bin.binIndex - 1)].addItem(allWeight[randomItemNo].item)
@@ -115,12 +113,11 @@ def L2NotDet2D(itemsList, binSize, boxSize):
     return len(bins)
 
 
-def L2NotDet3D(itemsList, binSize, boxSize):
+def L2NotDet3D(itemsList, binSize, grasp):
     bins = []  # Felhasznált ládák listája
     binsIndex = 0  # A ládák indexelésére
     bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
     allWeight = []
-    boxSize = boxSize
     items = itemsList.copy()
 
     while len(items):
@@ -137,10 +134,10 @@ def L2NotDet3D(itemsList, binSize, boxSize):
             continue
         allWeight.sort(key=itemWeight)
 
-        if boxSize > len(allWeight):
+        if grasp > len(allWeight):
             randomItemNo = np.random.random_integers(0, len(allWeight) - 1)
         else:
-            randomItemNo = np.random.random_integers(0, boxSize - 1)
+            randomItemNo = np.random.random_integers(0, grasp - 1)
 
         # print(f"Ezt a tárgyat teszük el: {allWeight[randomItemNo].item}\n")
         bins[int(allWeight[randomItemNo].bin.binIndex - 1)].addItem(allWeight[randomItemNo].item)

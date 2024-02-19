@@ -32,8 +32,8 @@ def FFDMP(items, binSize, ratio, dataName):
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
-    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
-    f.write(f"FFDMP-{ratio};{res[0]}\n")
+    f = open(f"Results/{len(binSize)}D_Results/{len(binSize)}D_Results.txt", "a")
+    f.write(f"{dataName};FFDMP;{ratio};{res[0]}\n")
     f.close()
 
     # Ezt még át kell nézni

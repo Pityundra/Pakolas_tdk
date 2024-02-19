@@ -29,8 +29,8 @@ def FFDRevAdv(items, binSize,dataName):
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
-    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
-    f.write(f"FFDRevAdv;{res[0]}\n")
+    f = open(f"Results/{len(binSize)}D_Results/{len(binSize)}D_Results.txt", "a")
+    f.write(f"{dataName};FFDRevAdv;;{res[0]}\n")
     f.close()
 
     print(f"FFDRevAdv Futási eredménye: {res}\n")

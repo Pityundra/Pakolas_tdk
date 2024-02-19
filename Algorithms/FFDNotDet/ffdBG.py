@@ -18,7 +18,7 @@ def FFDGB(items, binSize, groupNumber, boxSize, runTime, dataName):
     itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
-    print(f"\nFFDGB Futási eredményei:")
+
     res = []
 
     if len(binSize) == 1:
@@ -34,10 +34,11 @@ def FFDGB(items, binSize, groupNumber, boxSize, runTime, dataName):
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
-    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
-    f.write(f"FFDBG-gn{groupNumber}-bx{boxSize}-rt{runTime}; ;Átlag;{str(sum(res) / len(res))};Összes futási eredmény;{res};Eredmények csoportosítva;" + str({i: res.count(i) for i in res}) + "\n")
+    f = open(f"Results/{len(binSize)}D_Results/{len(binSize)}D_Results.txt", "a")
+    f.write(f"{dataName};FFDBG;gn{groupNumber}-bx{boxSize}-rt{runTime};{str(sum(res) / len(res))};" + str({i: res.count(i) for i in res}) + "\n")
     f.close()
 
+    print(f"\nFFDGB-gn{groupNumber}-bx{boxSize} Futási eredményei:")
     print(res)
     print({i: res.count(i) for i in res})
     print("Átlag:" + str(sum(res) / len(res)))

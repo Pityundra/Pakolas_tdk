@@ -28,8 +28,8 @@ def L2NotDet(items, binSize, grasp, runTime, dataName):
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
 
-    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
-    f.write(f"L2NotDet-gp{grasp}-rn{runTime}; ;Átlag;{str(sum(res) / len(res))};Összes futási eredmény;{res};Eredmények csoportosítva;" + str({i: res.count(i) for i in res}) + "\n")
+    f = open(f"Results/{len(binSize)}D_Results/{len(binSize)}D_Results.txt", "a")
+    f.write(f"{dataName};L2NotDet;gp{grasp}-rn{runTime};{str(sum(res) / len(res))};" + str({i: res.count(i) for i in res}) + "\n")
     f.close()
 
     print(res)

@@ -28,52 +28,52 @@ for line in lines:
     print("Alsó korlát: " + str(SimpleLowerBound(items, binSize, dataName)))
 
     # Futtandó algoritmusok
-    FFD("sum", "bin", items, binSize, dataName)
-    FFD("avg", "bin", items, binSize, dataName)
-    FFD("prod", "bin", items, binSize, dataName)
-
-    FFD("sum", "item", items, binSize, dataName)
-    FFD("avg", "item", items, binSize, dataName)
-    FFD("prod", "item", items, binSize, dataName)
-
-    GH("dotP", items, binSize, 1, dataName)
-    GH("dotP", items, binSize, 2, dataName)
-    GH("dotP", items, binSize, 3, dataName)
-    GH("dotP", items, binSize, 4, dataName)
-
-    GH("L2", items, binSize, 1, dataName)
-    GH("L2", items, binSize, 2, dataName)
-    GH("L2", items, binSize, 3, dataName)
-    GH("L2", items, binSize, 4, dataName)
-
-    FFDRev(items, binSize, dataName)
-    FFDRevAdv(items, binSize, dataName)
-
-    FFDMP(items, binSize, 1.0, dataName)
-    FFDMP(items, binSize, 0.9, dataName)
-    FFDMP(items, binSize, 0.8, dataName)
-    FFDMP(items, binSize, 0.75, dataName)
-
-    FFDBox(items, binSize, 3, 100, dataName)
-    FFDBox(items, binSize, 4, 100, dataName)
-    FFDBox(items, binSize, 5, 100, dataName)
-    FFDBox(items, binSize, 6, 100, dataName)
-
-    FFDGroups(items, binSize, 4, 100, dataName)
-    FFDGroups(items, binSize, 6, 100, dataName)
-    FFDGroups(items, binSize, 10, 100, dataName)
-    FFDGroups(items, binSize, 20, 100, dataName)
+    # FFD("sum", "bin", items, binSize, dataName)
+    # FFD("avg", "bin", items, binSize, dataName)
+    # FFD("prod", "bin", items, binSize, dataName)
+    #
+    # FFD("sum", "item", items, binSize, dataName)
+    # FFD("avg", "item", items, binSize, dataName)
+    # FFD("prod", "item", items, binSize, dataName)
+    #
+    # GH("dotP", items, binSize, 1, dataName)
+    # GH("dotP", items, binSize, 2, dataName)
+    # GH("dotP", items, binSize, 3, dataName)
+    # GH("dotP", items, binSize, 4, dataName)
+    #
+    # GH("L2", items, binSize, 1, dataName)
+    # GH("L2", items, binSize, 2, dataName)
+    # GH("L2", items, binSize, 3, dataName)
+    # GH("L2", items, binSize, 4, dataName)
+    #
+    # FFDRev(items, binSize, dataName)
+    # FFDRevAdv(items, binSize, dataName)
+    #
+    # FFDMP(items, binSize, 1.0, dataName)
+    # FFDMP(items, binSize, 0.9, dataName)
+    # FFDMP(items, binSize, 0.8, dataName)
+    # FFDMP(items, binSize, 0.75, dataName)
+    #
+    # FFDBox(items, binSize, 3, 100, dataName)
+    # FFDBox(items, binSize, 4, 100, dataName)
+    # FFDBox(items, binSize, 5, 100, dataName)
+    # FFDBox(items, binSize, 6, 100, dataName)
+    #
+    # FFDGroups(items, binSize, 4, 100, dataName)
+    # FFDGroups(items, binSize, 6, 100, dataName)
+    # FFDGroups(items, binSize, 10, 100, dataName)
+    # FFDGroups(items, binSize, 20, 100, dataName)
 
     FFDGB(items, binSize, 4, 4, 100, dataName)
     FFDGB(items, binSize, 6, 4, 100, dataName)
     FFDGB(items, binSize, 5, 3, 100, dataName)
 
-    FFDRatio(items, binSize, 2, 100, dataName)
-    FFDRatio(items, binSize, 5, 100, dataName)
-    FFDRatio(items, binSize, 10, 100, dataName)
-    FFDRatio(items, binSize, 15, 100, dataName)
-
-    FFDVal(items, binSize, 100, dataName)
+    # FFDRatio(items, binSize, 2, 100, dataName)
+    # FFDRatio(items, binSize, 5, 100, dataName)
+    # FFDRatio(items, binSize, 10, 100, dataName)
+    # FFDRatio(items, binSize, 15, 100, dataName)
+    #
+    # FFDVal(items, binSize, 100, dataName)
 
     # L2NotDet(items, binSize, 1, 50, dataName)
     # L2NotDet(items, binSize, 3, 50, dataName)

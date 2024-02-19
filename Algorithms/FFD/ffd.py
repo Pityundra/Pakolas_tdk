@@ -53,8 +53,8 @@ def FFD(SAP, centric, items, binSize, dataName):
         print("Nem bin vagy item!")
         return 1
 
-    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
-    f.write(f"FFD-{centric}-{SAP};{res[0]}\n")
+    f = open(f"Results/{len(binSize)}D_Results/{len(binSize)}D_Results.txt", "a")
+    f.write(f"{dataName};FFD;{centric}-{SAP};{res[0]}\n")
     f.close()
 
     print(f"FFD-{centric}-{SAP} Futási eredménye: {res}\n")

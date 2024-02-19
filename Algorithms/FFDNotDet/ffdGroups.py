@@ -18,7 +18,6 @@ def FFDGroups(items, binSize, groupNumber, runTime, dataName):
     itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
-    print(f"\nFFDGroups Futási eredményei:")
     res = []
 
     if len(binSize) == 1:
@@ -37,6 +36,8 @@ def FFDGroups(items, binSize, groupNumber, runTime, dataName):
     f = open(f"Results/{len(binSize)}D_Results/{len(binSize)}D_Results.txt", "a")
     f.write(f"{dataName};FFDGroups;gn{groupNumber}-rt{runTime};{str(sum(res) / len(res))};" + str({i: res.count(i) for i in res}) + "\n")
     f.close()
+
+    print(f"\nFFDGroups-gn{groupNumber} Futási eredményei:")
 
     print(res)
     print({i: res.count(i) for i in res})

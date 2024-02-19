@@ -18,7 +18,7 @@ def FFDRatio(items, binSize, ratio, runTime, dataName):
     itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
-    print(f"\nFFDRatio Futási eredményei:")
+
     res = []
 
     if len(binSize) == 1:
@@ -38,6 +38,7 @@ def FFDRatio(items, binSize, ratio, runTime, dataName):
     f.write(f"{dataName};FFDRatio;ra{ratio}-rt{runTime};{str(sum(res) / len(res))};" + str({i: res.count(i) for i in res}) + "\n")
     f.close()
 
+    print(f"\nFFDRatio-ra{ratio} Futási eredményei:")
     print(res)
     print({i: res.count(i) for i in res})
     print("Átlag:" + str(sum(res) / len(res)))

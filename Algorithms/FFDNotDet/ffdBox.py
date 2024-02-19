@@ -18,7 +18,7 @@ def FFDBox(items, binSize, boxSize, runTime, dataName):
     itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
-    print(f"\nFFDBox Futási eredményei:")
+
     res = []
 
     if len(binSize) == 1:
@@ -38,6 +38,7 @@ def FFDBox(items, binSize, boxSize, runTime, dataName):
     f.write(f"{dataName};FFDBox;bx{boxSize}-rt{runTime};{str(sum(res) / len(res))};" + str({i: res.count(i) for i in res}) + "\n")
     f.close()
 
+    print(f"\nFFDBox-bx{boxSize} Futási eredményei:")
     print(res)
     print({i: res.count(i) for i in res})
     print("Átlag:" + str(sum(res) / len(res)))

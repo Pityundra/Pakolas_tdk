@@ -18,7 +18,7 @@ def FFDVal(items, binSize, runTime, dataName):
     itemsCopy = items.copy()
     itemsCopy.sort(reverse=True, key=itemsSum)
 
-    print(f"\nFFDVal Futási eredményei:")
+
     res = []
 
     if len(binSize) == 1:
@@ -35,9 +35,10 @@ def FFDVal(items, binSize, runTime, dataName):
         return 1
 
     f = open(f"Results/{len(binSize)}D_Results/{len(binSize)}D_Results.txt", "a")
-    f.write(f"{dataName};FFDVal-rt{runTime};{str(sum(res) / len(res))};" + str({i: res.count(i) for i in res}) + "\n")
+    f.write(f"{dataName};FFDVal;rt{runTime};{str(sum(res) / len(res))};" + str({i: res.count(i) for i in res}) + "\n")
     f.close()
 
+    print(f"\nFFDVal Futási eredményei:")
     print(res)
     print({i: res.count(i) for i in res})
     print("Átlag:" + str(sum(res) / len(res)))

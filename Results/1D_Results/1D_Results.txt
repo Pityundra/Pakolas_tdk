@@ -1,0 +1,324 @@
+class1_400_1;FFD;bin-sum;105
+class1_400_1;FFD;bin-avg;105
+class1_400_1;FFD;bin-prod;105
+class1_400_1;FFD;item-sum;103
+class1_400_1;FFD;item-avg;103
+class1_400_1;FFD;item-prod;103
+class1_400_1;dotP;gp1;103
+class1_400_1;dotP;gp2;103
+class1_400_1;dotP;gp3;103
+class1_400_1;dotP;gp4;103
+class1_400_1;L2;gp1;103
+class1_400_1;L2;gp2;103
+class1_400_1;L2;gp3;103
+class1_400_1;L2;gp4;103
+class1_400_1;FFDRev;;115
+class1_400_1;FFDRevAdv;;115
+class1_400_1;FFDMP;1.0;103
+class1_400_1;FFDMP;0.9;103
+class1_400_1;FFDMP;0.8;103
+class1_400_1;FFDMP;0.75;103
+class1_400_1;FFDBox;bx3-rt100;103.0;{103: 100}
+class1_400_1;FFDBox;bx4-rt100;103.0;{103: 100}
+class1_400_1;FFDBox;bx5-rt100;103.0;{103: 100}
+class1_400_1;FFDBox;bx6-rt100;103.0;{103: 100}
+class1_400_1;FFDGroups;gn4-rt100;104.19;{104: 81, 105: 19}
+class1_400_1;FFDGroups;gn6-rt100;103.19;{103: 81, 104: 19}
+class1_400_1;FFDGroups;gn10-rt100;103.04;{103: 96, 104: 4}
+class1_400_1;FFDGroups;gn20-rt100;103.03;{103: 97, 104: 3}
+class1_400_1;FFDBG;gn4-bx4-rt100;103.0;{103: 100}
+class1_400_1;FFDBG;gn6-bx4-rt100;103.0;{103: 100}
+class1_400_1;FFDBG;gn5-bx3-rt100;103.0;{103: 100}
+class1_400_1;FFDRatio;ra2-rt100;112.16;{115: 25, 107: 7, 114: 20, 108: 11, 111: 6, 110: 4, 116: 9, 113: 6, 106: 7, 109: 2, 112: 3}
+class1_400_1;FFDRatio;ra5-rt100;105.04;{105: 88, 106: 8, 104: 4}
+class1_400_1;FFDRatio;ra10-rt100;103.74;{104: 74, 103: 26}
+class1_400_1;FFDRatio;ra15-rt100;103.04;{103: 96, 104: 4}
+class1_400_1;FFDVal;rt100;107.37;{108: 35, 107: 61, 106: 2, 109: 2}
+class1_400_2;FFD;bin-sum;105
+class1_400_2;FFD;bin-avg;105
+class1_400_2;FFD;bin-prod;105
+class1_400_2;FFD;item-sum;103
+class1_400_2;FFD;item-avg;103
+class1_400_2;FFD;item-prod;103
+class1_400_2;dotP;gp1;103
+class1_400_2;dotP;gp2;103
+class1_400_2;dotP;gp3;103
+class1_400_2;dotP;gp4;103
+class1_400_2;L2;gp1;103
+class1_400_2;L2;gp2;103
+class1_400_2;L2;gp3;103
+class1_400_2;L2;gp4;103
+class1_400_2;FFDRev;;113
+class1_400_2;FFDRevAdv;;113
+class1_400_2;FFDMP;1.0;103
+class1_400_2;FFDMP;0.9;103
+class1_400_2;FFDMP;0.8;103
+class1_400_2;FFDMP;0.75;103
+class1_400_2;FFDBox;bx3-rt100;102.93;{103: 93, 102: 7}
+class1_400_2;FFDBox;bx4-rt100;102.91;{102: 9, 103: 91}
+class1_400_2;FFDBox;bx5-rt100;102.88;{103: 88, 102: 12}
+class1_400_2;FFDBox;bx6-rt100;102.91;{103: 91, 102: 9}
+class1_400_2;FFDGroups;gn4-rt100;103.6;{104: 60, 103: 40}
+class1_400_2;FFDGroups;gn6-rt100;103.33;{103: 67, 104: 33}
+class1_400_2;FFDGroups;gn10-rt100;103.01;{103: 99, 104: 1}
+class1_400_2;FFDGroups;gn20-rt100;102.98;{103: 98, 102: 2}
+class1_400_2;FFDBG;gn4-bx4-rt100;102.9;{103: 90, 102: 10}
+class1_400_2;FFDBG;gn6-bx4-rt100;102.9;{103: 90, 102: 10}
+class1_400_2;FFDBG;gn5-bx3-rt100;102.88;{102: 12, 103: 88}
+class1_400_2;FFDRatio;ra2-rt100;112.35;{114: 22, 110: 14, 115: 22, 107: 2, 116: 4, 109: 11, 112: 6, 111: 9, 113: 4, 108: 5, 117: 1}
+class1_400_2;FFDRatio;ra5-rt100;105.81;{106: 75, 105: 22, 107: 3}
+class1_400_2;FFDRatio;ra10-rt100;103.84;{104: 80, 103: 18, 105: 2}
+class1_400_2;FFDRatio;ra15-rt100;103.17;{103: 83, 104: 17}
+class1_400_2;FFDVal;rt100;106.78;{107: 68, 108: 5, 106: 27}
+class1_400_3;FFD;bin-sum;103
+class1_400_3;FFD;bin-avg;103
+class1_400_3;FFD;bin-prod;103
+class1_400_3;FFD;item-sum;101
+class1_400_3;FFD;item-avg;101
+class1_400_3;FFD;item-prod;101
+class1_400_3;dotP;gp1;101
+class1_400_3;dotP;gp2;101
+class1_400_3;dotP;gp3;101
+class1_400_3;dotP;gp4;101
+class1_400_3;L2;gp1;101
+class1_400_3;L2;gp2;101
+class1_400_3;L2;gp3;101
+class1_400_3;L2;gp4;101
+class1_400_3;FFDRev;;101
+class1_400_3;FFDRevAdv;;101
+class1_400_3;FFDMP;1.0;101
+class1_400_3;FFDMP;0.9;101
+class1_400_3;FFDMP;0.8;101
+class1_400_3;FFDMP;0.75;101
+class1_400_3;FFDBox;bx3-rt100;100.72;{101: 72, 100: 28}
+class1_400_3;FFDBox;bx4-rt100;100.56;{100: 44, 101: 56}
+class1_400_3;FFDBox;bx5-rt100;100.54;{101: 54, 100: 46}
+class1_400_3;FFDBox;bx6-rt100;100.7;{101: 70, 100: 30}
+class1_400_3;FFDGroups;gn4-rt100;101.1;{101: 90, 102: 10}
+class1_400_3;FFDGroups;gn6-rt100;101.04;{101: 96, 102: 4}
+class1_400_3;FFDGroups;gn10-rt100;100.94;{101: 94, 100: 6}
+class1_400_3;FFDGroups;gn20-rt100;100.71;{101: 71, 100: 29}
+class1_400_3;FFDBG;gn4-bx4-rt100;100.55;{101: 55, 100: 45}
+class1_400_3;FFDBG;gn6-bx4-rt100;100.74;{101: 74, 100: 26}
+class1_400_3;FFDBG;gn5-bx3-rt100;100.74;{100: 26, 101: 74}
+class1_400_3;FFDRatio;ra2-rt100;105.82;{105: 11, 110: 6, 109: 6, 108: 9, 103: 32, 102: 2, 113: 1, 112: 4, 106: 6, 111: 3, 107: 7, 104: 12, 114: 1}
+class1_400_3;FFDRatio;ra5-rt100;102.26;{103: 26, 102: 74}
+class1_400_3;FFDRatio;ra10-rt100;101.8;{102: 80, 101: 20}
+class1_400_3;FFDRatio;ra15-rt100;101.06;{101: 94, 102: 6}
+class1_400_3;FFDVal;rt100;104.91;{105: 75, 104: 17, 106: 8}
+class1_800_1;FFD;bin-sum;206
+class1_800_1;FFD;bin-avg;206
+class1_800_1;FFD;bin-prod;206
+class1_800_1;FFD;item-sum;204
+class1_800_1;FFD;item-avg;204
+class1_800_1;FFD;item-prod;204
+class1_800_1;dotP;gp1;204
+class1_800_1;dotP;gp2;204
+class1_800_1;dotP;gp3;204
+class1_800_1;dotP;gp4;205
+class1_800_1;L2;gp1;204
+class1_800_1;L2;gp2;204
+class1_800_1;L2;gp3;204
+class1_800_1;L2;gp4;205
+class1_800_1;FFDRev;;227
+class1_800_1;FFDRevAdv;;227
+class1_800_1;FFDMP;1.0;204
+class1_800_1;FFDMP;0.9;204
+class1_800_1;FFDMP;0.8;204
+class1_800_1;FFDMP;0.75;204
+class1_800_1;FFDBox;bx3-rt100;204.0;{204: 100}
+class1_800_1;FFDBox;bx4-rt100;204.0;{204: 100}
+class1_800_1;FFDBox;bx5-rt100;204.0;{204: 100}
+class1_800_1;FFDBox;bx6-rt100;204.0;{204: 100}
+class1_800_1;FFDGroups;gn4-rt100;206.17;{207: 19, 206: 79, 205: 2}
+class1_800_1;FFDGroups;gn6-rt100;205.0;{205: 96, 206: 2, 204: 2}
+class1_800_1;FFDGroups;gn10-rt100;204.58;{204: 42, 205: 58}
+class1_800_1;FFDGroups;gn20-rt100;204.78;{205: 78, 204: 22}
+class1_800_1;FFDBG;gn4-bx4-rt100;204.0;{204: 100}
+class1_800_1;FFDBG;gn6-bx4-rt100;204.0;{204: 100}
+class1_800_1;FFDBG;gn5-bx3-rt100;204.0;{204: 100}
+class1_800_1;FFDRatio;ra2-rt100;222.86;{223: 7, 216: 7, 222: 3, 230: 10, 221: 5, 212: 4, 228: 4, 225: 4, 220: 7, 227: 7, 215: 5, 211: 2, 218: 2, 232: 5, 217: 1, 213: 3, 231: 7, 219: 4, 229: 7, 226: 2, 214: 4}
+class1_800_1;FFDRatio;ra5-rt100;209.1;{210: 14, 209: 79, 208: 6, 211: 1}
+class1_800_1;FFDRatio;ra10-rt100;207.12;{207: 88, 208: 12}
+class1_800_1;FFDRatio;ra15-rt100;206.44;{206: 50, 207: 47, 205: 3}
+class1_800_1;FFDVal;rt100;214.02;{213: 20, 214: 58, 215: 22}
+class1_800_2;FFD;bin-sum;203
+class1_800_2;FFD;bin-avg;203
+class1_800_2;FFD;bin-prod;203
+class1_800_2;FFD;item-sum;201
+class1_800_2;FFD;item-avg;201
+class1_800_2;FFD;item-prod;201
+class1_800_2;dotP;gp1;201
+class1_800_2;dotP;gp2;201
+class1_800_2;dotP;gp3;201
+class1_800_2;dotP;gp4;201
+class1_800_2;L2;gp1;201
+class1_800_2;L2;gp2;201
+class1_800_2;L2;gp3;201
+class1_800_2;L2;gp4;201
+class1_800_2;FFDRev;;200
+class1_800_2;FFDRevAdv;;200
+class1_800_2;FFDMP;1.0;201
+class1_800_2;FFDMP;0.9;201
+class1_800_2;FFDMP;0.8;201
+class1_800_2;FFDMP;0.75;201
+class1_800_2;FFDBox;bx3-rt100;201.0;{201: 100}
+class1_800_2;FFDBox;bx4-rt100;201.0;{201: 100}
+class1_800_2;FFDBox;bx5-rt100;200.97;{201: 97, 200: 3}
+class1_800_2;FFDBox;bx6-rt100;200.95;{201: 95, 200: 5}
+class1_800_2;FFDGroups;gn4-rt100;201.49;{201: 51, 202: 49}
+class1_800_2;FFDGroups;gn6-rt100;202.09;{203: 12, 202: 85, 201: 3}
+class1_800_2;FFDGroups;gn10-rt100;200.49;{201: 49, 200: 51}
+class1_800_2;FFDGroups;gn20-rt100;201.03;{201: 97, 202: 3}
+class1_800_2;FFDBG;gn4-bx4-rt100;200.99;{201: 99, 200: 1}
+class1_800_2;FFDBG;gn6-bx4-rt100;200.98;{201: 98, 200: 2}
+class1_800_2;FFDBG;gn5-bx3-rt100;200.99;{201: 99, 200: 1}
+class1_800_2;FFDRatio;ra2-rt100;209.25;{206: 32, 209: 2, 208: 6, 218: 3, 222: 1, 205: 16, 216: 3, 212: 3, 211: 3, 223: 1, 215: 2, 207: 12, 213: 4, 221: 2, 217: 2, 219: 3, 220: 2, 214: 2, 204: 1}
+class1_800_2;FFDRatio;ra5-rt100;205.09;{204: 19, 207: 5, 205: 58, 206: 18}
+class1_800_2;FFDRatio;ra10-rt100;202.54;{203: 54, 202: 46}
+class1_800_2;FFDRatio;ra15-rt100;201.9;{202: 90, 201: 10}
+class1_800_2;FFDVal;rt100;209.08;{209: 62, 210: 23, 208: 15}
+class1_800_3;FFD;bin-sum;206
+class1_800_3;FFD;bin-avg;206
+class1_800_3;FFD;bin-prod;206
+class1_800_3;FFD;item-sum;204
+class1_800_3;FFD;item-avg;204
+class1_800_3;FFD;item-prod;204
+class1_800_3;dotP;gp1;204
+class1_800_3;dotP;gp2;204
+class1_800_3;dotP;gp3;204
+class1_800_3;dotP;gp4;204
+class1_800_3;L2;gp1;204
+class1_800_3;L2;gp2;204
+class1_800_3;L2;gp3;204
+class1_800_3;L2;gp4;204
+class1_800_3;FFDRev;;217
+class1_800_3;FFDRevAdv;;217
+class1_800_3;FFDMP;1.0;204
+class1_800_3;FFDMP;0.9;204
+class1_800_3;FFDMP;0.8;204
+class1_800_3;FFDMP;0.75;204
+class1_800_3;FFDBox;bx3-rt100;204.0;{204: 100}
+class1_800_3;FFDBox;bx4-rt100;204.0;{204: 100}
+class1_800_3;FFDBox;bx5-rt100;204.0;{204: 100}
+class1_800_3;FFDBox;bx6-rt100;204.0;{204: 100}
+class1_800_3;FFDGroups;gn4-rt100;205.23;{206: 25, 205: 73, 204: 2}
+class1_800_3;FFDGroups;gn6-rt100;204.46;{205: 46, 204: 54}
+class1_800_3;FFDGroups;gn10-rt100;204.05;{204: 95, 205: 5}
+class1_800_3;FFDGroups;gn20-rt100;204.28;{205: 28, 204: 72}
+class1_800_3;FFDBG;gn4-bx4-rt100;204.0;{204: 100}
+class1_800_3;FFDBG;gn6-bx4-rt100;204.0;{204: 100}
+class1_800_3;FFDBG;gn5-bx3-rt100;204.0;{204: 100}
+class1_800_3;FFDRatio;ra2-rt100;220.4;{215: 11, 216: 13, 219: 6, 224: 5, 228: 9, 222: 1, 213: 3, 217: 9, 223: 2, 227: 7, 218: 5, 226: 4, 220: 5, 229: 7, 211: 2, 230: 1, 221: 2, 212: 2, 214: 3, 225: 3}
+class1_800_3;FFDRatio;ra5-rt100;209.95;{209: 17, 210: 72, 211: 10, 212: 1}
+class1_800_3;FFDRatio;ra10-rt100;207.09;{207: 75, 206: 8, 208: 17}
+class1_800_3;FFDRatio;ra15-rt100;205.79;{205: 38, 206: 46, 207: 15, 208: 1}
+class1_800_3;FFDVal;rt100;212.52;{212: 49, 213: 39, 214: 7, 211: 4, 215: 1}
+class1_1000_1;FFD;bin-sum;260
+class1_1000_1;FFD;bin-avg;260
+class1_1000_1;FFD;bin-prod;260
+class1_1000_1;FFD;item-sum;258
+class1_1000_1;FFD;item-avg;258
+class1_1000_1;FFD;item-prod;258
+class1_1000_1;dotP;gp1;258
+class1_1000_1;dotP;gp2;258
+class1_1000_1;dotP;gp3;258
+class1_1000_1;dotP;gp4;258
+class1_1000_1;L2;gp1;258
+class1_1000_1;L2;gp2;258
+class1_1000_1;L2;gp3;258
+class1_1000_1;L2;gp4;258
+class1_1000_1;FFDRev;;294
+class1_1000_1;FFDRevAdv;;294
+class1_1000_1;FFDMP;1.0;258
+class1_1000_1;FFDMP;0.9;258
+class1_1000_1;FFDMP;0.8;258
+class1_1000_1;FFDMP;0.75;258
+class1_1000_1;FFDBox;bx3-rt100;258.0;{258: 100}
+class1_1000_1;FFDBox;bx4-rt100;258.0;{258: 100}
+class1_1000_1;FFDBox;bx5-rt100;258.0;{258: 100}
+class1_1000_1;FFDBox;bx6-rt100;258.0;{258: 100}
+class1_1000_1;FFDGroups;gn4-rt100;260.04;{260: 81, 259: 6, 261: 12, 258: 1}
+class1_1000_1;FFDGroups;gn6-rt100;258.78;{259: 72, 258: 25, 260: 3}
+class1_1000_1;FFDGroups;gn10-rt100;258.82;{259: 82, 258: 18}
+class1_1000_1;FFDGroups;gn20-rt100;258.87;{259: 87, 258: 13}
+class1_1000_1;FFDBG;gn4-bx4-rt100;258.0;{258: 100}
+class1_1000_1;FFDBG;gn6-bx4-rt100;258.0;{258: 100}
+class1_1000_1;FFDBG;gn5-bx3-rt100;258.0;{258: 100}
+class1_1000_1;FFDRatio;ra2-rt100;284.15;{290: 12, 286: 5, 289: 18, 284: 1, 288: 17, 285: 3, 282: 1, 291: 2, 275: 3, 277: 2, 278: 4, 267: 3, 276: 5, 287: 7, 279: 2, 281: 5, 280: 4, 272: 1, 273: 3, 266: 1, 283: 1}
+class1_1000_1;FFDRatio;ra5-rt100;264.44;{263: 9, 265: 22, 266: 8, 264: 56, 267: 5}
+class1_1000_1;FFDRatio;ra10-rt100;262.28;{263: 28, 262: 72}
+class1_1000_1;FFDRatio;ra15-rt100;261.41;{261: 59, 262: 41}
+class1_1000_1;FFDVal;rt100;268.85;{269: 54, 268: 28, 270: 15, 271: 1, 267: 2}
+class1_1000_2;FFD;bin-sum;261
+class1_1000_2;FFD;bin-avg;261
+class1_1000_2;FFD;bin-prod;261
+class1_1000_2;FFD;item-sum;259
+class1_1000_2;FFD;item-avg;259
+class1_1000_2;FFD;item-prod;259
+class1_1000_2;dotP;gp1;259
+class1_1000_2;dotP;gp2;259
+class1_1000_2;dotP;gp3;259
+class1_1000_2;dotP;gp4;259
+class1_1000_2;L2;gp1;259
+class1_1000_2;L2;gp2;259
+class1_1000_2;L2;gp3;259
+class1_1000_2;L2;gp4;259
+class1_1000_2;FFDRev;;296
+class1_1000_2;FFDRevAdv;;296
+class1_1000_2;FFDMP;1.0;259
+class1_1000_2;FFDMP;0.9;259
+class1_1000_2;FFDMP;0.8;259
+class1_1000_2;FFDMP;0.75;259
+class1_1000_2;FFDBox;bx3-rt100;259.0;{259: 100}
+class1_1000_2;FFDBox;bx4-rt100;259.0;{259: 100}
+class1_1000_2;FFDBox;bx5-rt100;259.0;{259: 100}
+class1_1000_2;FFDBox;bx6-rt100;259.0;{259: 100}
+class1_1000_2;FFDGroups;gn4-rt100;261.87;{261: 20, 262: 73, 263: 7}
+class1_1000_2;FFDGroups;gn6-rt100;260.52;{260: 49, 261: 50, 262: 1}
+class1_1000_2;FFDGroups;gn10-rt100;260.28;{260: 70, 261: 29, 259: 1}
+class1_1000_2;FFDGroups;gn20-rt100;259.0;{259: 100}
+class1_1000_2;FFDBG;gn4-bx4-rt100;259.0;{259: 100}
+class1_1000_2;FFDBG;gn6-bx4-rt100;259.0;{259: 100}
+class1_1000_2;FFDBG;gn5-bx3-rt100;259.0;{259: 100}
+class1_1000_2;FFDRatio;ra2-rt100;290.83;{291: 35, 294: 3, 292: 28, 293: 14, 289: 3, 290: 10, 279: 1, 287: 1, 286: 1, 274: 1, 288: 1, 285: 1, 272: 1}
+class1_1000_2;FFDRatio;ra5-rt100;268.32;{268: 20, 267: 24, 269: 52, 266: 1, 270: 3}
+class1_1000_2;FFDRatio;ra10-rt100;263.04;{263: 75, 262: 11, 264: 13, 265: 1}
+class1_1000_2;FFDRatio;ra15-rt100;261.27;{261: 76, 262: 21, 263: 3}
+class1_1000_2;FFDVal;rt100;270.92;{269: 1, 271: 51, 270: 28, 273: 2, 272: 18}
+class1_1000_3;FFD;bin-sum;251
+class1_1000_3;FFD;bin-avg;251
+class1_1000_3;FFD;bin-prod;251
+class1_1000_3;FFD;item-sum;249
+class1_1000_3;FFD;item-avg;249
+class1_1000_3;FFD;item-prod;249
+class1_1000_3;dotP;gp1;249
+class1_1000_3;dotP;gp2;249
+class1_1000_3;dotP;gp3;249
+class1_1000_3;dotP;gp4;249
+class1_1000_3;L2;gp1;249
+class1_1000_3;L2;gp2;249
+class1_1000_3;L2;gp3;249
+class1_1000_3;L2;gp4;249
+class1_1000_3;FFDRev;;251
+class1_1000_3;FFDRevAdv;;251
+class1_1000_3;FFDMP;1.0;249
+class1_1000_3;FFDMP;0.9;249
+class1_1000_3;FFDMP;0.8;249
+class1_1000_3;FFDMP;0.75;249
+class1_1000_3;FFDBox;bx3-rt100;249.0;{249: 100}
+class1_1000_3;FFDBox;bx4-rt100;249.0;{249: 100}
+class1_1000_3;FFDBox;bx5-rt100;249.01;{249: 99, 250: 1}
+class1_1000_3;FFDBox;bx6-rt100;249.0;{249: 100}
+class1_1000_3;FFDGroups;gn4-rt100;249.58;{250: 58, 249: 42}
+class1_1000_3;FFDGroups;gn6-rt100;250.18;{250: 82, 251: 18}
+class1_1000_3;FFDGroups;gn10-rt100;249.39;{250: 39, 249: 61}
+class1_1000_3;FFDGroups;gn20-rt100;249.0;{249: 100}
+class1_1000_3;FFDBG;gn4-bx4-rt100;249.0;{249: 100}
+class1_1000_3;FFDBG;gn6-bx4-rt100;249.0;{249: 100}
+class1_1000_3;FFDBG;gn5-bx3-rt100;249.0;{249: 100}
+class1_1000_3;FFDRatio;ra2-rt100;258.16;{258: 13, 266: 1, 275: 2, 257: 27, 263: 2, 256: 24, 260: 5, 269: 1, 259: 7, 255: 8, 272: 1, 254: 3, 261: 1, 268: 2, 264: 1, 253: 1, 267: 1}
+class1_1000_3;FFDRatio;ra5-rt100;254.08;{254: 88, 253: 2, 255: 10}
+class1_1000_3;FFDRatio;ra10-rt100;251.43;{252: 41, 251: 58, 253: 1}
+class1_1000_3;FFDRatio;ra15-rt100;250.23;{251: 23, 250: 77}
+class1_1000_3;FFDVal;rt100;258.96;{259: 56, 258: 24, 260: 16, 261: 3, 257: 1}

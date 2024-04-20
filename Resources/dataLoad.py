@@ -9,7 +9,7 @@ def fileRead(fileName):
     lines = f.readlines()
     # print(lines)
     firstLine = lines[0].replace('\n', " ").strip().split()
-    print(firstLine[0])
+    # print(firstLine[0])
     items = []
     binSize = []
 

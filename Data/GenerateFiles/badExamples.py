@@ -9,9 +9,9 @@ def badExamplesgen():
 
 def badExamplesWithOneBigDimension(className, binMax, db):
     r = open("badExamples/FileNames.txt", "a")
-    r.write(f"badExamples\{className}.txt\n")
+    r.write(f"badExamples\\{className}.txt\n")
 
-    f = open(f"badExamples\{className}.txt", "w")
+    f = open(f"badExamples\\{className}.txt", "w")
     f.write(str(db) + " \n")
     f.write(str(binMax) + " " + str(binMax) + " " + str(binMax) + " " + " \n")
 
@@ -31,10 +31,10 @@ def badExamplesWithOneBigDimension(className, binMax, db):
 
 
 def badExamplesEpsilon():
-    r = open("badExamples\FileNames.txt", "a")
-    r.write(f"badExamples\epsilon.txt\n")
+    r = open("badExamples\\FileNames.txt", "a")
+    r.write(f"badExamples\\epsilon.txt\n")
 
-    f = open(f"badExamples\epsilon.txt", "w")
+    f = open(f"badExamples\\epsilon.txt", "w")
     f.write(str(30) + " \n")
     f.write("999 " + " 999 " + "999 \n")
 
@@ -44,4 +44,15 @@ def badExamplesEpsilon():
         f.write(str(i) + " " + "332 " + "334 " + "333 \n")
     for i in range(21, 31):
         f.write(str(i) + " " + "333 " + "332 " + "334 \n")
+
+def badExamples2D():
+
+    f = open(f"C:\\Users\\koloz\\PycharmProjects\\Pakolas_tdk\\BadExaples\\badExample2D.txt", "w")
+    f.write(str(40) + " \n")
+    f.write(" 666 " + "666 \n")
+
+    for i in range(20):
+        f.write(str(i+1) + " " "111 " + "222 \n")
+    for i in range(21, 41):
+        f.write(str(i) + " " + "222 " + "111 \n")
 

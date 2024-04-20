@@ -1,4 +1,4 @@
-Oszlop1	Oszlop2	Oszlop3	Oszlop4	Oszlop5
+Bementi adat	Algoritmus	Paraméterek	Eredmény (átlag)	Átlag esetén eredmények számossága
 class1_400_1	FFD	bin-sum	111	
 class1_400_1	FFD	bin-avg	111	
 class1_400_1	FFD	bin-prod	112	
@@ -2339,3 +2339,756 @@ class8_1000_3	FFDRatio	ra5-rt100	475.03	{475: 29, 474: 30, 476: 23, 473: 7, 477:
 class8_1000_3	FFDRatio	ra10-rt100	466.41	{467: 19, 466: 30, 465: 25, 468: 16, 469: 7, 464: 3}
 class8_1000_3	FFDRatio	ra15-rt100	462.63	{463: 40, 462: 31, 464: 16, 461: 12, 465: 1}
 class8_1000_3	FFDVal	rt100	490.19	{493: 13, 488: 11, 492: 8, 490: 17, 489: 15, 487: 8, 495: 4, 486: 5, 494: 4, 491: 14, 485: 1}
+opt_10_test1	FFD	bin-sum	12	
+opt_10_test1	FFD	bin-avg	12	
+opt_10_test1	FFD	bin-prod	12	
+opt_10_test1	FFD	item-sum	10	
+opt_10_test1	FFD	item-avg	10	
+opt_10_test1	FFD	item-prod	10	
+opt_10_test1	dotP	gp1	10	
+opt_10_test1	dotP	gp2	10	
+opt_10_test1	L2	gp1	10	
+opt_10_test1	L2	gp2	10	
+opt_10_test1	FFDRev		11	
+opt_10_test1	FFDRevAdv		11	
+opt_10_test1	FFDBox	bx3-rt100	10.0	{10: 100}
+opt_10_test1	FFDBox	bx4-rt100	10.01	{10: 99, 11: 1}
+opt_10_test1	FFDBox	bx5-rt100	10.07	{10: 93, 11: 7}
+opt_10_test1	FFDBox	bx6-rt100	10.06	{10: 94, 11: 6}
+opt_10_test1	FFDGroups	gn4-rt100	10.0	{10: 100}
+opt_10_test1	FFDGroups	gn6-rt100	10.0	{10: 100}
+opt_10_test1	FFDBG	gn4-bx4-rt100	10.0	{10: 100}
+opt_10_test1	FFDBG	gn6-bx4-rt100	10.0	{10: 100}
+opt_10_test1	FFDBG	gn5-bx3-rt100	10.0	{10: 100}
+opt_10_test1	FFDRatio	ra2-rt100	10.8	{11: 76, 12: 2, 10: 22}
+opt_10_test1	FFDRatio	ra5-rt100	10.05	{10: 95, 11: 5}
+opt_10_test1	FFDRatio	ra10-rt100	10.0	{10: 100}
+opt_10_test1	FFDRatio	ra15-rt100	10.0	{10: 100}
+opt_10_test1	FFDVal	rt100	10.57	{11: 49, 10: 47, 12: 4}
+opt_10_test2	FFD	bin-sum	13	
+opt_10_test2	FFD	bin-avg	13	
+opt_10_test2	FFD	bin-prod	13	
+opt_10_test2	FFD	item-sum	11	
+opt_10_test2	FFD	item-avg	11	
+opt_10_test2	FFD	item-prod	11	
+opt_10_test2	dotP	gp1	11	
+opt_10_test2	dotP	gp2	12	
+opt_10_test2	L2	gp1	11	
+opt_10_test2	L2	gp2	11	
+opt_10_test2	FFDRev		11	
+opt_10_test2	FFDRevAdv		11	
+opt_10_test2	FFDBox	bx3-rt100	11.03	{11: 97, 12: 3}
+opt_10_test2	FFDBox	bx4-rt100	11.03	{11: 97, 12: 3}
+opt_10_test2	FFDBox	bx5-rt100	11.04	{11: 96, 12: 4}
+opt_10_test2	FFDBox	bx6-rt100	11.06	{11: 94, 12: 6}
+opt_10_test2	FFDGroups	gn4-rt100	11.01	{11: 99, 12: 1}
+opt_10_test2	FFDGroups	gn6-rt100	11.0	{11: 100}
+opt_10_test2	FFDBG	gn4-bx4-rt100	11.0	{11: 100}
+opt_10_test2	FFDBG	gn6-bx4-rt100	11.0	{11: 100}
+opt_10_test2	FFDBG	gn5-bx3-rt100	11.0	{11: 100}
+opt_10_test2	FFDRatio	ra2-rt100	11.41	{12: 31, 11: 64, 13: 5}
+opt_10_test2	FFDRatio	ra5-rt100	11.0	{11: 100}
+opt_10_test2	FFDRatio	ra10-rt100	11.0	{11: 100}
+opt_10_test2	FFDRatio	ra15-rt100	11.0	{11: 100}
+opt_10_test2	FFDVal	rt100	11.39	{11: 63, 12: 35, 13: 2}
+opt_10_test3	FFD	bin-sum	12	
+opt_10_test3	FFD	bin-avg	12	
+opt_10_test3	FFD	bin-prod	12	
+opt_10_test3	FFD	item-sum	10	
+opt_10_test3	FFD	item-avg	10	
+opt_10_test3	FFD	item-prod	10	
+opt_10_test3	dotP	gp1	11	
+opt_10_test3	dotP	gp2	11	
+opt_10_test3	L2	gp1	10	
+opt_10_test3	L2	gp2	11	
+opt_10_test3	FFDRev		11	
+opt_10_test3	FFDRevAdv		11	
+opt_10_test3	FFDBox	bx3-rt100	10.48	{11: 48, 10: 52}
+opt_10_test3	FFDBox	bx4-rt100	10.59	{10: 42, 11: 57, 12: 1}
+opt_10_test3	FFDBox	bx5-rt100	10.56	{10: 44, 11: 56}
+opt_10_test3	FFDBox	bx6-rt100	10.68	{10: 32, 11: 68}
+opt_10_test3	FFDGroups	gn4-rt100	10.61	{11: 61, 10: 39}
+opt_10_test3	FFDGroups	gn6-rt100	10.57	{11: 57, 10: 43}
+opt_10_test3	FFDBG	gn4-bx4-rt100	10.52	{11: 52, 10: 48}
+opt_10_test3	FFDBG	gn6-bx4-rt100	10.47	{11: 47, 10: 53}
+opt_10_test3	FFDBG	gn5-bx3-rt100	10.65	{11: 65, 10: 35}
+opt_10_test3	FFDRatio	ra2-rt100	11.14	{11: 86, 12: 14}
+opt_10_test3	FFDRatio	ra5-rt100	10.71	{11: 71, 10: 29}
+opt_10_test3	FFDRatio	ra10-rt100	10.21	{10: 79, 11: 21}
+opt_10_test3	FFDRatio	ra15-rt100	10.13	{10: 87, 11: 13}
+opt_10_test3	FFDVal	rt100	11.04	{11: 86, 10: 5, 12: 9}
+opt_10_test4	FFD	bin-sum	13	
+opt_10_test4	FFD	bin-avg	13	
+opt_10_test4	FFD	bin-prod	12	
+opt_10_test4	FFD	item-sum	11	
+opt_10_test4	FFD	item-avg	11	
+opt_10_test4	FFD	item-prod	11	
+opt_10_test4	dotP	gp1	11	
+opt_10_test4	dotP	gp2	11	
+opt_10_test4	L2	gp1	11	
+opt_10_test4	L2	gp2	11	
+opt_10_test4	FFDRev		12	
+opt_10_test4	FFDRevAdv		12	
+opt_10_test4	FFDBox	bx3-rt100	11.0	{11: 100}
+opt_10_test4	FFDBox	bx4-rt100	11.01	{11: 99, 12: 1}
+opt_10_test4	FFDBox	bx5-rt100	11.01	{11: 99, 12: 1}
+opt_10_test4	FFDBox	bx6-rt100	11.05	{11: 95, 12: 5}
+opt_10_test4	FFDGroups	gn4-rt100	11.0	{11: 100}
+opt_10_test4	FFDGroups	gn6-rt100	11.02	{11: 98, 12: 2}
+opt_10_test4	FFDBG	gn4-bx4-rt100	11.0	{11: 100}
+opt_10_test4	FFDBG	gn6-bx4-rt100	11.01	{11: 99, 12: 1}
+opt_10_test4	FFDBG	gn5-bx3-rt100	11.0	{11: 100}
+opt_10_test4	FFDRatio	ra2-rt100	12.07	{12: 65, 13: 21, 11: 14}
+opt_10_test4	FFDRatio	ra5-rt100	11.15	{11: 85, 12: 15}
+opt_10_test4	FFDRatio	ra10-rt100	11.01	{11: 99, 12: 1}
+opt_10_test4	FFDRatio	ra15-rt100	11.0	{11: 100}
+opt_10_test4	FFDVal	rt100	11.76	{12: 68, 11: 28, 13: 4}
+opt_10_test5	FFD	bin-sum	12	
+opt_10_test5	FFD	bin-avg	12	
+opt_10_test5	FFD	bin-prod	12	
+opt_10_test5	FFD	item-sum	10	
+opt_10_test5	FFD	item-avg	10	
+opt_10_test5	FFD	item-prod	10	
+opt_10_test5	dotP	gp1	11	
+opt_10_test5	dotP	gp2	11	
+opt_10_test5	L2	gp1	11	
+opt_10_test5	L2	gp2	11	
+opt_10_test5	FFDRev		11	
+opt_10_test5	FFDRevAdv		11	
+opt_10_test5	FFDBox	bx3-rt100	10.85	{10: 15, 11: 85}
+opt_10_test5	FFDBox	bx4-rt100	10.92	{11: 90, 10: 9, 12: 1}
+opt_10_test5	FFDBox	bx5-rt100	10.93	{11: 93, 10: 7}
+opt_10_test5	FFDBox	bx6-rt100	10.95	{11: 93, 10: 6, 12: 1}
+opt_10_test5	FFDGroups	gn4-rt100	10.92	{11: 92, 10: 8}
+opt_10_test5	FFDGroups	gn6-rt100	10.98	{11: 98, 10: 2}
+opt_10_test5	FFDBG	gn4-bx4-rt100	10.66	{10: 34, 11: 66}
+opt_10_test5	FFDBG	gn6-bx4-rt100	10.93	{11: 93, 10: 7}
+opt_10_test5	FFDBG	gn5-bx3-rt100	10.72	{11: 72, 10: 28}
+opt_10_test5	FFDRatio	ra2-rt100	11.48	{11: 53, 12: 46, 13: 1}
+opt_10_test5	FFDRatio	ra5-rt100	10.99	{11: 99, 10: 1}
+opt_10_test5	FFDRatio	ra10-rt100	10.94	{11: 94, 10: 6}
+opt_10_test5	FFDRatio	ra15-rt100	10.8	{11: 80, 10: 20}
+opt_10_test5	FFDVal	rt100	11.16	{11: 84, 12: 16}
+opt_10_test6	FFD	bin-sum	12	
+opt_10_test6	FFD	bin-avg	12	
+opt_10_test6	FFD	bin-prod	13	
+opt_10_test6	FFD	item-sum	10	
+opt_10_test6	FFD	item-avg	10	
+opt_10_test6	FFD	item-prod	10	
+opt_10_test6	dotP	gp1	10	
+opt_10_test6	dotP	gp2	11	
+opt_10_test6	L2	gp1	10	
+opt_10_test6	L2	gp2	11	
+opt_10_test6	FFDRev		11	
+opt_10_test6	FFDRevAdv		11	
+opt_10_test6	FFDBox	bx3-rt100	10.24	{10: 76, 11: 24}
+opt_10_test6	FFDBox	bx4-rt100	10.24	{11: 24, 10: 76}
+opt_10_test6	FFDBox	bx5-rt100	10.38	{11: 38, 10: 62}
+opt_10_test6	FFDBox	bx6-rt100	10.54	{11: 54, 10: 46}
+opt_10_test6	FFDGroups	gn4-rt100	10.5	{11: 50, 10: 50}
+opt_10_test6	FFDGroups	gn6-rt100	10.25	{10: 75, 11: 25}
+opt_10_test6	FFDBG	gn4-bx4-rt100	10.18	{11: 18, 10: 82}
+opt_10_test6	FFDBG	gn6-bx4-rt100	10.08	{10: 92, 11: 8}
+opt_10_test6	FFDBG	gn5-bx3-rt100	10.23	{10: 77, 11: 23}
+opt_10_test6	FFDRatio	ra2-rt100	11.07	{11: 89, 12: 9, 10: 2}
+opt_10_test6	FFDRatio	ra5-rt100	10.12	{11: 12, 10: 88}
+opt_10_test6	FFDRatio	ra10-rt100	10.34	{10: 66, 11: 34}
+opt_10_test6	FFDRatio	ra15-rt100	10.39	{11: 39, 10: 61}
+opt_10_test6	FFDVal	rt100	10.92	{11: 82, 10: 13, 12: 5}
+opt_10_test7	FFD	bin-sum	14	
+opt_10_test7	FFD	bin-avg	14	
+opt_10_test7	FFD	bin-prod	13	
+opt_10_test7	FFD	item-sum	11	
+opt_10_test7	FFD	item-avg	11	
+opt_10_test7	FFD	item-prod	11	
+opt_10_test7	dotP	gp1	11	
+opt_10_test7	dotP	gp2	11	
+opt_10_test7	L2	gp1	11	
+opt_10_test7	L2	gp2	11	
+opt_10_test7	FFDRev		11	
+opt_10_test7	FFDRevAdv		11	
+opt_10_test7	FFDBox	bx3-rt100	11.01	{11: 99, 12: 1}
+opt_10_test7	FFDBox	bx4-rt100	11.02	{11: 98, 12: 2}
+opt_10_test7	FFDBox	bx5-rt100	11.02	{11: 98, 12: 2}
+opt_10_test7	FFDBox	bx6-rt100	11.02	{11: 98, 12: 2}
+opt_10_test7	FFDGroups	gn4-rt100	11.0	{11: 100}
+opt_10_test7	FFDGroups	gn6-rt100	11.0	{11: 100}
+opt_10_test7	FFDBG	gn4-bx4-rt100	11.0	{11: 100}
+opt_10_test7	FFDBG	gn6-bx4-rt100	11.0	{11: 100}
+opt_10_test7	FFDBG	gn5-bx3-rt100	11.0	{11: 100}
+opt_10_test7	FFDRatio	ra2-rt100	11.1	{11: 90, 12: 10}
+opt_10_test7	FFDRatio	ra5-rt100	11.0	{11: 100}
+opt_10_test7	FFDRatio	ra10-rt100	11.0	{11: 100}
+opt_10_test7	FFDRatio	ra15-rt100	11.0	{11: 100}
+opt_10_test7	FFDVal	rt100	11.22	{12: 22, 11: 78}
+opt_10_test8	FFD	bin-sum	13	
+opt_10_test8	FFD	bin-avg	13	
+opt_10_test8	FFD	bin-prod	13	
+opt_10_test8	FFD	item-sum	11	
+opt_10_test8	FFD	item-avg	11	
+opt_10_test8	FFD	item-prod	11	
+opt_10_test8	dotP	gp1	11	
+opt_10_test8	dotP	gp2	11	
+opt_10_test8	L2	gp1	11	
+opt_10_test8	L2	gp2	11	
+opt_10_test8	FFDRev		11	
+opt_10_test8	FFDRevAdv		11	
+opt_10_test8	FFDBox	bx3-rt100	11.0	{11: 100}
+opt_10_test8	FFDBox	bx4-rt100	11.01	{11: 99, 12: 1}
+opt_10_test8	FFDBox	bx5-rt100	11.04	{11: 96, 12: 4}
+opt_10_test8	FFDBox	bx6-rt100	11.05	{11: 95, 12: 5}
+opt_10_test8	FFDGroups	gn4-rt100	11.05	{11: 95, 12: 5}
+opt_10_test8	FFDGroups	gn6-rt100	11.02	{11: 98, 12: 2}
+opt_10_test8	FFDBG	gn4-bx4-rt100	11.02	{11: 98, 12: 2}
+opt_10_test8	FFDBG	gn6-bx4-rt100	11.0	{11: 100}
+opt_10_test8	FFDBG	gn5-bx3-rt100	11.01	{11: 99, 12: 1}
+opt_10_test8	FFDRatio	ra2-rt100	11.27	{11: 73, 12: 27}
+opt_10_test8	FFDRatio	ra5-rt100	11.0	{11: 100}
+opt_10_test8	FFDRatio	ra10-rt100	11.0	{11: 100}
+opt_10_test8	FFDRatio	ra15-rt100	11.0	{11: 100}
+opt_10_test8	FFDVal	rt100	11.14	{11: 86, 12: 14}
+opt_10_test8	FFD	bin-sum	13	
+opt_10_test8	FFD	bin-avg	13	
+opt_10_test8	FFD	bin-prod	13	
+opt_10_test8	FFD	item-sum	11	
+opt_10_test8	FFD	item-avg	11	
+opt_10_test8	FFD	item-prod	11	
+opt_10_test8	dotP	gp1	11	
+opt_10_test8	dotP	gp2	11	
+opt_10_test8	L2	gp1	11	
+opt_10_test8	L2	gp2	11	
+opt_10_test8	FFDRev		11	
+opt_10_test8	FFDRevAdv		11	
+opt_10_test8	FFDBox	bx3-rt100	11.0	{11: 100}
+opt_10_test8	FFDBox	bx4-rt100	11.03	{11: 97, 12: 3}
+opt_10_test8	FFDBox	bx5-rt100	11.04	{11: 96, 12: 4}
+opt_10_test8	FFDBox	bx6-rt100	11.08	{11: 92, 12: 8}
+opt_10_test8	FFDGroups	gn4-rt100	11.06	{11: 94, 12: 6}
+opt_10_test8	FFDGroups	gn6-rt100	11.04	{11: 96, 12: 4}
+opt_10_test8	FFDBG	gn4-bx4-rt100	11.0	{11: 100}
+opt_10_test8	FFDBG	gn6-bx4-rt100	11.01	{11: 99, 12: 1}
+opt_10_test8	FFDBG	gn5-bx3-rt100	11.04	{11: 96, 12: 4}
+opt_10_test8	FFDRatio	ra2-rt100	11.33	{11: 67, 12: 33}
+opt_10_test8	FFDRatio	ra5-rt100	11.0	{11: 100}
+opt_10_test8	FFDRatio	ra10-rt100	11.0	{11: 100}
+opt_10_test8	FFDRatio	ra15-rt100	11.0	{11: 100}
+opt_10_test8	FFDVal	rt100	11.15	{12: 15, 11: 85}
+opt_10_test9	FFD	bin-sum	13	
+opt_10_test9	FFD	bin-avg	13	
+opt_10_test9	FFD	bin-prod	13	
+opt_10_test9	FFD	item-sum	11	
+opt_10_test9	FFD	item-avg	11	
+opt_10_test9	FFD	item-prod	11	
+opt_10_test9	dotP	gp1	11	
+opt_10_test9	dotP	gp2	11	
+opt_10_test9	L2	gp1	11	
+opt_10_test9	L2	gp2	11	
+opt_10_test9	FFDRev		11	
+opt_10_test9	FFDRevAdv		11	
+opt_10_test9	FFDBox	bx3-rt100	11.02	{11: 98, 12: 2}
+opt_10_test9	FFDBox	bx4-rt100	11.0	{11: 100}
+opt_10_test9	FFDBox	bx5-rt100	11.01	{11: 99, 12: 1}
+opt_10_test9	FFDBox	bx6-rt100	11.03	{11: 97, 12: 3}
+opt_10_test9	FFDGroups	gn4-rt100	11.02	{11: 98, 12: 2}
+opt_10_test9	FFDGroups	gn6-rt100	11.01	{11: 99, 12: 1}
+opt_10_test9	FFDBG	gn4-bx4-rt100	11.0	{11: 100}
+opt_10_test9	FFDBG	gn6-bx4-rt100	11.0	{11: 100}
+opt_10_test9	FFDBG	gn5-bx3-rt100	11.0	{11: 100}
+opt_10_test9	FFDRatio	ra2-rt100	11.13	{11: 87, 12: 13}
+opt_10_test9	FFDRatio	ra5-rt100	11.0	{11: 100}
+opt_10_test9	FFDRatio	ra10-rt100	11.0	{11: 100}
+opt_10_test9	FFDRatio	ra15-rt100	11.0	{11: 100}
+opt_10_test9	FFDVal	rt100	11.11	{11: 89, 12: 11}
+opt_10_test10	FFD	bin-sum	13	
+opt_10_test10	FFD	bin-avg	13	
+opt_10_test10	FFD	bin-prod	12	
+opt_10_test10	FFD	item-sum	11	
+opt_10_test10	FFD	item-avg	11	
+opt_10_test10	FFD	item-prod	11	
+opt_10_test10	dotP	gp1	11	
+opt_10_test10	dotP	gp2	12	
+opt_10_test10	L2	gp1	11	
+opt_10_test10	L2	gp2	11	
+opt_10_test10	FFDRev		11	
+opt_10_test10	FFDRevAdv		11	
+opt_10_test10	FFDBox	bx3-rt100	10.96	{11: 96, 10: 4}
+opt_10_test10	FFDBox	bx4-rt100	10.93	{11: 93, 10: 7}
+opt_10_test10	FFDBox	bx5-rt100	10.99	{11: 97, 12: 1, 10: 2}
+opt_10_test10	FFDBox	bx6-rt100	11.04	{11: 96, 12: 4}
+opt_10_test10	FFDGroups	gn4-rt100	10.98	{11: 98, 10: 2}
+opt_10_test10	FFDGroups	gn6-rt100	11.0	{11: 100}
+opt_10_test10	FFDBG	gn4-bx4-rt100	10.96	{11: 96, 10: 4}
+opt_10_test10	FFDBG	gn6-bx4-rt100	11.0	{11: 100}
+opt_10_test10	FFDBG	gn5-bx3-rt100	10.96	{11: 96, 10: 4}
+opt_10_test10	FFDRatio	ra2-rt100	11.61	{11: 40, 12: 59, 13: 1}
+opt_10_test10	FFDRatio	ra5-rt100	11.0	{11: 100}
+opt_10_test10	FFDRatio	ra10-rt100	11.0	{11: 100}
+opt_10_test10	FFDRatio	ra15-rt100	11.0	{11: 100}
+opt_10_test10	FFDVal	rt100	11.17	{11: 85, 12: 13, 13: 2}
+opt_20_test1	FFD	bin-sum	24	
+opt_20_test1	FFD	bin-avg	24	
+opt_20_test1	FFD	bin-prod	25	
+opt_20_test1	FFD	item-sum	21	
+opt_20_test1	FFD	item-avg	21	
+opt_20_test1	FFD	item-prod	21	
+opt_20_test1	dotP	gp1	22	
+opt_20_test1	dotP	gp2	22	
+opt_20_test1	L2	gp1	21	
+opt_20_test1	L2	gp2	22	
+opt_20_test1	FFDRev		23	
+opt_20_test1	FFDRevAdv		23	
+opt_20_test1	FFDBox	bx3-rt100	21.28	{21: 72, 22: 28}
+opt_20_test1	FFDBox	bx4-rt100	21.29	{21: 71, 22: 29}
+opt_20_test1	FFDBox	bx5-rt100	21.27	{22: 27, 21: 73}
+opt_20_test1	FFDBox	bx6-rt100	21.33	{22: 33, 21: 67}
+opt_20_test1	FFDGroups	gn4-rt100	21.42	{21: 58, 22: 42}
+opt_20_test1	FFDGroups	gn6-rt100	21.2	{22: 20, 21: 80}
+opt_20_test1	FFDBG	gn4-bx4-rt100	21.23	{21: 77, 22: 23}
+opt_20_test1	FFDBG	gn6-bx4-rt100	21.11	{21: 89, 22: 11}
+opt_20_test1	FFDBG	gn5-bx3-rt100	21.28	{22: 28, 21: 72}
+opt_20_test1	FFDRatio	ra2-rt100	22.98	{23: 92, 22: 5, 24: 3}
+opt_20_test1	FFDRatio	ra5-rt100	21.97	{22: 97, 21: 3}
+opt_20_test1	FFDRatio	ra10-rt100	21.5	{22: 50, 21: 50}
+opt_20_test1	FFDRatio	ra15-rt100	21.14	{21: 86, 22: 14}
+opt_20_test1	FFDVal	rt100	22.17	{22: 83, 23: 17}
+opt_20_test2	FFD	bin-sum	23	
+opt_20_test2	FFD	bin-avg	23	
+opt_20_test2	FFD	bin-prod	23	
+opt_20_test2	FFD	item-sum	21	
+opt_20_test2	FFD	item-avg	21	
+opt_20_test2	FFD	item-prod	21	
+opt_20_test2	dotP	gp1	21	
+opt_20_test2	dotP	gp2	21	
+opt_20_test2	L2	gp1	21	
+opt_20_test2	L2	gp2	21	
+opt_20_test2	FFDRev		22	
+opt_20_test2	FFDRevAdv		22	
+opt_20_test2	FFDBox	bx3-rt100	21.02	{21: 98, 22: 2}
+opt_20_test2	FFDBox	bx4-rt100	21.05	{21: 95, 22: 5}
+opt_20_test2	FFDBox	bx5-rt100	21.03	{21: 97, 22: 3}
+opt_20_test2	FFDBox	bx6-rt100	21.01	{21: 99, 22: 1}
+opt_20_test2	FFDGroups	gn4-rt100	21.14	{22: 14, 21: 86}
+opt_20_test2	FFDGroups	gn6-rt100	21.0	{21: 100}
+opt_20_test2	FFDBG	gn4-bx4-rt100	21.02	{21: 98, 22: 2}
+opt_20_test2	FFDBG	gn6-bx4-rt100	21.02	{21: 98, 22: 2}
+opt_20_test2	FFDBG	gn5-bx3-rt100	21.02	{21: 98, 22: 2}
+opt_20_test2	FFDRatio	ra2-rt100	22.26	{22: 77, 23: 20, 24: 3}
+opt_20_test2	FFDRatio	ra5-rt100	21.05	{21: 95, 22: 5}
+opt_20_test2	FFDRatio	ra10-rt100	21.01	{21: 99, 22: 1}
+opt_20_test2	FFDRatio	ra15-rt100	21.0	{21: 100}
+opt_20_test2	FFDVal	rt100	22.17	{23: 20, 22: 77, 21: 3}
+opt_20_test3	FFD	bin-sum	23	
+opt_20_test3	FFD	bin-avg	23	
+opt_20_test3	FFD	bin-prod	22	
+opt_20_test3	FFD	item-sum	20	
+opt_20_test3	FFD	item-avg	20	
+opt_20_test3	FFD	item-prod	21	
+opt_20_test3	dotP	gp1	21	
+opt_20_test3	dotP	gp2	21	
+opt_20_test3	L2	gp1	21	
+opt_20_test3	L2	gp2	21	
+opt_20_test3	FFDRev		22	
+opt_20_test3	FFDRevAdv		22	
+opt_20_test3	FFDBox	bx3-rt100	20.84	{20: 17, 21: 82, 22: 1}
+opt_20_test3	FFDBox	bx4-rt100	20.94	{22: 3, 20: 9, 21: 88}
+opt_20_test3	FFDBox	bx5-rt100	20.97	{21: 95, 22: 1, 20: 4}
+opt_20_test3	FFDBox	bx6-rt100	21.0	{21: 96, 20: 2, 22: 2}
+opt_20_test3	FFDGroups	gn4-rt100	21.12	{22: 10, 21: 89, 23: 1}
+opt_20_test3	FFDGroups	gn6-rt100	20.98	{21: 96, 20: 3, 22: 1}
+opt_20_test3	FFDBG	gn4-bx4-rt100	20.96	{21: 94, 20: 5, 22: 1}
+opt_20_test3	FFDBG	gn6-bx4-rt100	20.94	{21: 94, 20: 6}
+opt_20_test3	FFDBG	gn5-bx3-rt100	20.8	{21: 80, 20: 20}
+opt_20_test3	FFDRatio	ra2-rt100	22.63	{23: 54, 22: 37, 21: 3, 24: 6}
+opt_20_test3	FFDRatio	ra5-rt100	21.0	{21: 100}
+opt_20_test3	FFDRatio	ra10-rt100	21.0	{21: 100}
+opt_20_test3	FFDRatio	ra15-rt100	20.98	{21: 98, 20: 2}
+opt_20_test3	FFDVal	rt100	21.77	{22: 69, 23: 4, 21: 27}
+opt_20_test4	FFD	bin-sum	24	
+opt_20_test4	FFD	bin-avg	24	
+opt_20_test4	FFD	bin-prod	24	
+opt_20_test4	FFD	item-sum	21	
+opt_20_test4	FFD	item-avg	21	
+opt_20_test4	FFD	item-prod	21	
+opt_20_test4	dotP	gp1	21	
+opt_20_test4	dotP	gp2	21	
+opt_20_test4	L2	gp1	20	
+opt_20_test4	L2	gp2	21	
+opt_20_test4	FFDRev		22	
+opt_20_test4	FFDRevAdv		22	
+opt_20_test4	FFDBox	bx3-rt100	21.02	{21: 96, 22: 3, 20: 1}
+opt_20_test4	FFDBox	bx4-rt100	21.04	{21: 96, 22: 4}
+opt_20_test4	FFDBox	bx5-rt100	21.05	{21: 95, 22: 5}
+opt_20_test4	FFDBox	bx6-rt100	21.09	{21: 91, 22: 9}
+opt_20_test4	FFDGroups	gn4-rt100	21.05	{21: 95, 22: 5}
+opt_20_test4	FFDGroups	gn6-rt100	21.04	{21: 96, 22: 4}
+opt_20_test4	FFDBG	gn4-bx4-rt100	21.02	{21: 98, 22: 2}
+opt_20_test4	FFDBG	gn6-bx4-rt100	21.02	{21: 98, 22: 2}
+opt_20_test4	FFDBG	gn5-bx3-rt100	21.03	{21: 97, 22: 3}
+opt_20_test4	FFDRatio	ra2-rt100	22.01	{22: 65, 21: 17, 23: 18}
+opt_20_test4	FFDRatio	ra5-rt100	21.0	{21: 100}
+opt_20_test4	FFDRatio	ra10-rt100	21.0	{21: 100}
+opt_20_test4	FFDRatio	ra15-rt100	21.0	{21: 100}
+opt_20_test4	FFDVal	rt100	21.76	{22: 58, 21: 33, 23: 9}
+opt_20_test5	FFD	bin-sum	24	
+opt_20_test5	FFD	bin-avg	24	
+opt_20_test5	FFD	bin-prod	23	
+opt_20_test5	FFD	item-sum	21	
+opt_20_test5	FFD	item-avg	21	
+opt_20_test5	FFD	item-prod	21	
+opt_20_test5	dotP	gp1	21	
+opt_20_test5	dotP	gp2	21	
+opt_20_test5	L2	gp1	21	
+opt_20_test5	L2	gp2	21	
+opt_20_test5	FFDRev		22	
+opt_20_test5	FFDRevAdv		22	
+opt_20_test5	FFDBox	bx3-rt100	21.28	{21: 72, 22: 28}
+opt_20_test5	FFDBox	bx4-rt100	21.24	{21: 76, 22: 24}
+opt_20_test5	FFDBox	bx5-rt100	21.2	{21: 80, 22: 20}
+opt_20_test5	FFDBox	bx6-rt100	21.21	{21: 79, 22: 21}
+opt_20_test5	FFDGroups	gn4-rt100	21.17	{21: 83, 22: 17}
+opt_20_test5	FFDGroups	gn6-rt100	21.16	{21: 84, 22: 16}
+opt_20_test5	FFDBG	gn4-bx4-rt100	21.15	{21: 85, 22: 15}
+opt_20_test5	FFDBG	gn6-bx4-rt100	21.2	{21: 80, 22: 20}
+opt_20_test5	FFDBG	gn5-bx3-rt100	21.32	{21: 68, 22: 32}
+opt_20_test5	FFDRatio	ra2-rt100	22.17	{22: 83, 23: 17}
+opt_20_test5	FFDRatio	ra5-rt100	21.63	{21: 37, 22: 63}
+opt_20_test5	FFDRatio	ra10-rt100	21.3	{21: 70, 22: 30}
+opt_20_test5	FFDRatio	ra15-rt100	21.06	{21: 94, 22: 6}
+opt_20_test5	FFDVal	rt100	21.77	{22: 77, 21: 23}
+opt_100_test1	FFD	bin-sum	106	
+opt_100_test1	FFD	bin-avg	106	
+opt_100_test1	FFD	bin-prod	107	
+opt_100_test1	FFD	item-sum	103	
+opt_100_test1	FFD	item-avg	103	
+opt_100_test1	FFD	item-prod	105	
+opt_100_test1	dotP	gp1	102	
+opt_100_test1	dotP	gp2	102	
+opt_100_test1	L2	gp1	101	
+opt_100_test1	L2	gp2	102	
+opt_100_test1	FFDRev		108	
+opt_100_test1	FFDRevAdv		107	
+opt_100_test1	FFDBox	bx3-rt100	103.15	{103: 67, 104: 24, 102: 9}
+opt_100_test1	FFDBox	bx4-rt100	103.22	{103: 70, 104: 26, 102: 4}
+opt_100_test1	FFDBox	bx5-rt100	103.14	{103: 66, 104: 24, 102: 10}
+opt_100_test1	FFDBox	bx6-rt100	103.14	{104: 20, 103: 71, 102: 8, 105: 1}
+opt_100_test1	FFDGroups	gn4-rt100	103.54	{104: 47, 103: 48, 105: 4, 102: 1}
+opt_100_test1	FFDGroups	gn6-rt100	103.42	{104: 35, 103: 57, 105: 5, 102: 3}
+opt_100_test1	FFDBG	gn4-bx4-rt100	103.13	{103: 74, 105: 1, 102: 7, 104: 18}
+opt_100_test1	FFDBG	gn6-bx4-rt100	103.17	{103: 80, 104: 17, 102: 2, 105: 1}
+opt_100_test1	FFDBG	gn5-bx3-rt100	103.17	{103: 68, 104: 23, 102: 8, 105: 1}
+opt_100_test1	FFDRatio	ra2-rt100	108.46	{109: 24, 108: 57, 107: 6, 110: 11, 111: 2}
+opt_100_test1	FFDRatio	ra5-rt100	105.15	{104: 5, 105: 75, 106: 20}
+opt_100_test1	FFDRatio	ra10-rt100	104.1	{104: 90, 105: 10}
+opt_100_test1	FFDRatio	ra15-rt100	103.95	{103: 9, 104: 87, 105: 4}
+opt_100_test1	FFDVal	rt100	107.81	{109: 12, 108: 58, 107: 29, 106: 1}
+opt_100_test2	FFD	bin-sum	105	
+opt_100_test2	FFD	bin-avg	105	
+opt_100_test2	FFD	bin-prod	107	
+opt_100_test2	FFD	item-sum	101	
+opt_100_test2	FFD	item-avg	101	
+opt_100_test2	FFD	item-prod	103	
+opt_100_test2	dotP	gp1	101	
+opt_100_test2	dotP	gp2	102	
+opt_100_test2	L2	gp1	101	
+opt_100_test2	L2	gp2	101	
+opt_100_test2	FFDRev		108	
+opt_100_test2	FFDRevAdv		108	
+opt_100_test2	FFDBox	bx3-rt100	101.67	{102: 63, 101: 35, 103: 2}
+opt_100_test2	FFDBox	bx4-rt100	101.88	{101: 20, 102: 72, 103: 8}
+opt_100_test2	FFDBox	bx5-rt100	101.97	{103: 11, 101: 14, 102: 75}
+opt_100_test2	FFDBox	bx6-rt100	101.92	{102: 68, 103: 12, 101: 20}
+opt_100_test2	FFDGroups	gn4-rt100	102.66	{102: 39, 104: 5, 103: 56}
+opt_100_test2	FFDGroups	gn6-rt100	102.53	{103: 46, 102: 49, 104: 4, 101: 1}
+opt_100_test2	FFDBG	gn4-bx4-rt100	101.77	{102: 69, 101: 27, 103: 4}
+opt_100_test2	FFDBG	gn6-bx4-rt100	101.79	{102: 63, 103: 8, 101: 29}
+opt_100_test2	FFDBG	gn5-bx3-rt100	101.76	{101: 37, 102: 50, 103: 13}
+opt_100_test2	FFDRatio	ra2-rt100	107.68	{106: 15, 108: 39, 109: 18, 107: 24, 111: 1, 110: 2, 105: 1}
+opt_100_test2	FFDRatio	ra5-rt100	102.4	{102: 60, 103: 40}
+opt_100_test2	FFDRatio	ra10-rt100	101.95	{102: 95, 101: 5}
+opt_100_test2	FFDRatio	ra15-rt100	101.31	{101: 69, 102: 31}
+opt_100_test2	FFDVal	rt100	105.16	{105: 71, 106: 21, 104: 7, 107: 1}
+opt_100_test3	FFD	bin-sum	106	
+opt_100_test3	FFD	bin-avg	106	
+opt_100_test3	FFD	bin-prod	106	
+opt_100_test3	FFD	item-sum	102	
+opt_100_test3	FFD	item-avg	102	
+opt_100_test3	FFD	item-prod	103	
+opt_100_test3	dotP	gp1	102	
+opt_100_test3	dotP	gp2	102	
+opt_100_test3	L2	gp1	101	
+opt_100_test3	L2	gp2	102	
+opt_100_test3	FFDRev		108	
+opt_100_test3	FFDRevAdv		107	
+opt_100_test3	FFDBox	bx3-rt100	102.38	{102: 62, 103: 38}
+opt_100_test3	FFDBox	bx4-rt100	102.31	{103: 32, 102: 67, 101: 1}
+opt_100_test3	FFDBox	bx5-rt100	102.41	{102: 60, 103: 39, 104: 1}
+opt_100_test3	FFDBox	bx6-rt100	102.46	{103: 44, 102: 55, 104: 1}
+opt_100_test3	FFDGroups	gn4-rt100	103.44	{103: 51, 104: 42, 102: 4, 105: 3}
+opt_100_test3	FFDGroups	gn6-rt100	102.91	{103: 76, 105: 1, 102: 17, 104: 6}
+opt_100_test3	FFDBG	gn4-bx4-rt100	102.35	{103: 33, 102: 66, 104: 1}
+opt_100_test3	FFDBG	gn6-bx4-rt100	102.3	{102: 68, 103: 31, 101: 1}
+opt_100_test3	FFDBG	gn5-bx3-rt100	102.33	{103: 33, 102: 67}
+opt_100_test3	FFDRatio	ra2-rt100	108.03	{109: 26, 108: 42, 107: 25, 110: 4, 106: 3}
+opt_100_test3	FFDRatio	ra5-rt100	103.92	{104: 74, 105: 9, 103: 17}
+opt_100_test3	FFDRatio	ra10-rt100	102.76	{103: 76, 102: 24}
+opt_100_test3	FFDRatio	ra15-rt100	102.53	{102: 47, 103: 53}
+opt_100_test3	FFDVal	rt100	106.21	{106: 54, 108: 2, 107: 29, 105: 13, 104: 1, 109: 1}
+opt_100_test4	FFD	bin-sum	106	
+opt_100_test4	FFD	bin-avg	106	
+opt_100_test4	FFD	bin-prod	107	
+opt_100_test4	FFD	item-sum	103	
+opt_100_test4	FFD	item-avg	103	
+opt_100_test4	FFD	item-prod	103	
+opt_100_test4	dotP	gp1	101	
+opt_100_test4	dotP	gp2	102	
+opt_100_test4	L2	gp1	101	
+opt_100_test4	L2	gp2	102	
+opt_100_test4	FFDRev		107	
+opt_100_test4	FFDRevAdv		107	
+opt_100_test4	FFDBox	bx3-rt100	102.97	{103: 88, 102: 8, 105: 1, 104: 3}
+opt_100_test4	FFDBox	bx4-rt100	102.92	{102: 22, 103: 64, 104: 14}
+opt_100_test4	FFDBox	bx5-rt100	102.95	{103: 65, 104: 15, 102: 20}
+opt_100_test4	FFDBox	bx6-rt100	102.86	{103: 70, 102: 22, 104: 8}
+opt_100_test4	FFDGroups	gn4-rt100	102.93	{102: 27, 103: 54, 104: 18, 105: 1}
+opt_100_test4	FFDGroups	gn6-rt100	102.85	{101: 1, 103: 60, 102: 26, 104: 13}
+opt_100_test4	FFDBG	gn4-bx4-rt100	102.9	{103: 74, 104: 8, 102: 18}
+opt_100_test4	FFDBG	gn6-bx4-rt100	103.01	{102: 18, 103: 63, 104: 19}
+opt_100_test4	FFDBG	gn5-bx3-rt100	103.02	{103: 75, 102: 10, 104: 14, 101: 1}
+opt_100_test4	FFDRatio	ra2-rt100	107.1	{107: 53, 106: 20, 108: 24, 109: 3}
+opt_100_test4	FFDRatio	ra5-rt100	104.65	{105: 63, 104: 36, 106: 1}
+opt_100_test4	FFDRatio	ra10-rt100	103.84	{104: 64, 103: 26, 105: 10}
+opt_100_test4	FFDRatio	ra15-rt100	103.11	{103: 90, 104: 9, 105: 1}
+opt_100_test4	FFDVal	rt100	105.17	{105: 70, 104: 7, 106: 22, 107: 1}
+opt_100_test5	FFD	bin-sum	107	
+opt_100_test5	FFD	bin-avg	107	
+opt_100_test5	FFD	bin-prod	108	
+opt_100_test5	FFD	item-sum	104	
+opt_100_test5	FFD	item-avg	104	
+opt_100_test5	FFD	item-prod	103	
+opt_100_test5	dotP	gp1	102	
+opt_100_test5	dotP	gp2	103	
+opt_100_test5	L2	gp1	101	
+opt_100_test5	L2	gp2	102	
+opt_100_test5	FFDRev		107	
+opt_100_test5	FFDRevAdv		107	
+opt_100_test5	FFDBox	bx3-rt100	103.69	{104: 63, 103: 34, 105: 3}
+opt_100_test5	FFDBox	bx4-rt100	103.6	{103: 43, 104: 54, 105: 3}
+opt_100_test5	FFDBox	bx5-rt100	103.71	{104: 63, 103: 33, 105: 4}
+opt_100_test5	FFDBox	bx6-rt100	103.53	{104: 51, 103: 48, 105: 1}
+opt_100_test5	FFDGroups	gn4-rt100	103.46	{104: 44, 103: 49, 102: 4, 105: 3}
+opt_100_test5	FFDGroups	gn6-rt100	103.43	{103: 57, 104: 40, 102: 1, 105: 2}
+opt_100_test5	FFDBG	gn4-bx4-rt100	103.61	{103: 41, 104: 57, 105: 2}
+opt_100_test5	FFDBG	gn6-bx4-rt100	103.72	{103: 31, 104: 66, 105: 3}
+opt_100_test5	FFDBG	gn5-bx3-rt100	103.71	{103: 32, 104: 65, 105: 3}
+opt_100_test5	FFDRatio	ra2-rt100	107.37	{107: 36, 106: 16, 108: 43, 109: 5}
+opt_100_test5	FFDRatio	ra5-rt100	104.82	{105: 82, 104: 18}
+opt_100_test5	FFDRatio	ra10-rt100	104.0	{104: 100}
+opt_100_test5	FFDRatio	ra15-rt100	104.0	{104: 100}
+opt_100_test5	FFDVal	rt100	106.31	{107: 31, 105: 12, 104: 1, 106: 49, 108: 7}
+opt_500_test1	FFD	bin-sum	511	
+opt_500_test1	FFD	bin-avg	511	
+opt_500_test1	FFD	bin-prod	514	
+opt_500_test1	FFD	item-sum	505	
+opt_500_test1	FFD	item-avg	505	
+opt_500_test1	FFD	item-prod	506	
+opt_500_test1	dotP	gp1	501	
+opt_500_test1	dotP	gp2	501	
+opt_500_test1	L2	gp1	501	
+opt_500_test1	L2	gp2	501	
+opt_500_test1	FFDRev		516	
+opt_500_test1	FFDRevAdv		517	
+opt_500_test1	FFDBox	bx3-rt100	503.83	{503: 34, 505: 15, 504: 50, 506: 1}
+opt_500_test1	FFDBox	bx4-rt100	503.83	{504: 59, 505: 12, 503: 29}
+opt_500_test1	FFDBox	bx5-rt100	503.9	{505: 13, 504: 62, 503: 23, 506: 1, 502: 1}
+opt_500_test1	FFDBox	bx6-rt100	503.8	{505: 7, 504: 58, 503: 31, 506: 3, 502: 1}
+opt_500_test1	FFDGroups	gn4-rt100	504.6	{505: 37, 506: 13, 504: 43, 503: 6, 507: 1}
+opt_500_test1	FFDGroups	gn6-rt100	504.08	{504: 50, 505: 26, 503: 22, 506: 2}
+opt_500_test1	FFDBG	gn4-bx4-rt100	503.96	{503: 17, 505: 11, 504: 71, 506: 1}
+opt_500_test1	FFDBG	gn6-bx4-rt100	503.86	{503: 28, 504: 58, 505: 14}
+opt_500_test1	FFDBG	gn5-bx3-rt100	503.91	{505: 15, 504: 59, 503: 24, 502: 1, 506: 1}
+opt_500_test1	FFDRatio	ra2-rt100	515.35	{515: 50, 516: 35, 514: 10, 517: 5}
+opt_500_test1	FFDRatio	ra5-rt100	507.0	{507: 100}
+opt_500_test1	FFDRatio	ra10-rt100	505.54	{506: 54, 505: 46}
+opt_500_test1	FFDRatio	ra15-rt100	505.0	{505: 100}
+opt_500_test1	FFDVal	rt100	512.64	{512: 36, 511: 9, 513: 35, 514: 17, 510: 1, 515: 2}
+opt_500_test2	FFD	bin-sum	510	
+opt_500_test2	FFD	bin-avg	510	
+opt_500_test2	FFD	bin-prod	512	
+opt_500_test2	FFD	item-sum	503	
+opt_500_test2	FFD	item-avg	503	
+opt_500_test2	FFD	item-prod	507	
+opt_500_test2	dotP	gp1	502	
+opt_500_test2	dotP	gp2	502	
+opt_500_test2	L2	gp1	501	
+opt_500_test2	L2	gp2	501	
+opt_500_test2	FFDRev		514	
+opt_500_test2	FFDRevAdv		515	
+opt_500_test2	FFDBox	bx3-rt100	503.62	{503: 41, 504: 56, 505: 3}
+opt_500_test2	FFDBox	bx4-rt100	503.63	{503: 40, 504: 54, 505: 5, 502: 1}
+opt_500_test2	FFDBox	bx5-rt100	503.47	{503: 52, 504: 46, 502: 1, 505: 1}
+opt_500_test2	FFDBox	bx6-rt100	503.45	{504: 42, 503: 52, 505: 3, 502: 3}
+opt_500_test2	FFDGroups	gn4-rt100	504.35	{505: 41, 504: 43, 503: 13, 506: 2, 507: 1}
+opt_500_test2	FFDGroups	gn6-rt100	504.11	{504: 45, 505: 27, 506: 4, 503: 24}
+opt_500_test2	FFDBG	gn4-bx4-rt100	503.5	{504: 49, 503: 49, 502: 1, 505: 1}
+opt_500_test2	FFDBG	gn6-bx4-rt100	503.51	{504: 39, 503: 52, 505: 7, 502: 2}
+opt_500_test2	FFDBG	gn5-bx3-rt100	503.62	{504: 58, 503: 40, 505: 2}
+opt_500_test2	FFDRatio	ra2-rt100	514.47	{514: 24, 515: 47, 516: 9, 513: 17, 512: 2, 517: 1}
+opt_500_test2	FFDRatio	ra5-rt100	505.98	{506: 96, 505: 3, 507: 1}
+opt_500_test2	FFDRatio	ra10-rt100	504.74	{505: 74, 504: 26}
+opt_500_test2	FFDRatio	ra15-rt100	504.0	{504: 100}
+opt_500_test2	FFDVal	rt100	511.78	{512: 27, 511: 35, 513: 23, 514: 5, 510: 10}
+opt_500_test3	FFD	bin-sum	510	
+opt_500_test3	FFD	bin-avg	510	
+opt_500_test3	FFD	bin-prod	512	
+opt_500_test3	FFD	item-sum	504	
+opt_500_test3	FFD	item-avg	504	
+opt_500_test3	FFD	item-prod	506	
+opt_500_test3	dotP	gp1	502	
+opt_500_test3	dotP	gp2	502	
+opt_500_test3	L2	gp1	501	
+opt_500_test3	L2	gp2	501	
+opt_500_test3	FFDRev		513	
+opt_500_test3	FFDRevAdv		514	
+opt_500_test3	FFDBox	bx3-rt100	504.13	{504: 65, 505: 24, 503: 11}
+opt_500_test3	FFDBox	bx4-rt100	504.02	{504: 63, 503: 18, 505: 18, 506: 1}
+opt_500_test3	FFDBox	bx5-rt100	503.9	{504: 62, 503: 24, 505: 14}
+opt_500_test3	FFDBox	bx6-rt100	504.02	{504: 62, 503: 17, 505: 19, 506: 1, 502: 1}
+opt_500_test3	FFDGroups	gn4-rt100	504.29	{504: 48, 505: 30, 503: 16, 506: 4, 508: 1, 507: 1}
+opt_500_test3	FFDGroups	gn6-rt100	503.89	{503: 29, 504: 51, 505: 18, 502: 1, 506: 1}
+opt_500_test3	FFDBG	gn4-bx4-rt100	503.98	{503: 19, 504: 64, 505: 17}
+opt_500_test3	FFDBG	gn6-bx4-rt100	503.97	{503: 20, 504: 61, 505: 17, 502: 1, 506: 1}
+opt_500_test3	FFDBG	gn5-bx3-rt100	504.05	{505: 21, 504: 63, 503: 16}
+opt_500_test3	FFDRatio	ra2-rt100	513.87	{514: 62, 513: 24, 515: 13, 512: 1}
+opt_500_test3	FFDRatio	ra5-rt100	506.07	{506: 91, 507: 8, 505: 1}
+opt_500_test3	FFDRatio	ra10-rt100	504.96	{505: 96, 504: 4}
+opt_500_test3	FFDRatio	ra15-rt100	504.81	{505: 81, 504: 19}
+opt_500_test3	FFDVal	rt100	508.96	{509: 54, 510: 22, 508: 22, 507: 2}
+opt_500_test4	FFD	bin-sum	509	
+opt_500_test4	FFD	bin-avg	509	
+opt_500_test4	FFD	bin-prod	514	
+opt_500_test4	FFD	item-sum	503	
+opt_500_test4	FFD	item-avg	503	
+opt_500_test4	FFD	item-prod	506	
+opt_500_test4	dotP	gp1	502	
+opt_500_test4	dotP	gp2	502	
+opt_500_test4	L2	gp1	501	
+opt_500_test4	L2	gp2	501	
+opt_500_test4	FFDRev		513	
+opt_500_test4	FFDRevAdv		514	
+opt_500_test4	FFDBox	bx3-rt100	503.28	{504: 28, 503: 66, 505: 2, 502: 4}
+opt_500_test4	FFDBox	bx4-rt100	503.38	{503: 55, 504: 37, 502: 5, 505: 3}
+opt_500_test4	FFDBox	bx5-rt100	503.43	{503: 49, 504: 41, 505: 4, 502: 6}
+opt_500_test4	FFDBox	bx6-rt100	503.39	{504: 38, 503: 51, 502: 7, 505: 4}
+opt_500_test4	FFDGroups	gn4-rt100	504.16	{504: 58, 505: 23, 503: 15, 506: 4}
+opt_500_test4	FFDGroups	gn6-rt100	504.14	{505: 25, 504: 58, 503: 15, 506: 2}
+opt_500_test4	FFDBG	gn4-bx4-rt100	503.37	{505: 6, 504: 30, 502: 5, 503: 59}
+opt_500_test4	FFDBG	gn6-bx4-rt100	503.36	{503: 54, 504: 38, 502: 6, 505: 2}
+opt_500_test4	FFDBG	gn5-bx3-rt100	503.36	{503: 53, 502: 8, 504: 34, 505: 5}
+opt_500_test4	FFDRatio	ra2-rt100	513.54	{514: 53, 513: 25, 512: 9, 515: 9, 511: 4}
+opt_500_test4	FFDRatio	ra5-rt100	505.29	{505: 71, 506: 29}
+opt_500_test4	FFDRatio	ra10-rt100	504.0	{504: 100}
+opt_500_test4	FFDRatio	ra15-rt100	504.0	{504: 100}
+opt_500_test4	FFDVal	rt100	510.91	{511: 47, 509: 4, 510: 27, 513: 4, 512: 18}
+opt_500_test5	FFD	bin-sum	510	
+opt_500_test5	FFD	bin-avg	510	
+opt_500_test5	FFD	bin-prod	513	
+opt_500_test5	FFD	item-sum	504	
+opt_500_test5	FFD	item-avg	504	
+opt_500_test5	FFD	item-prod	507	
+opt_500_test5	dotP	gp1	502	
+opt_500_test5	dotP	gp2	502	
+opt_500_test5	L2	gp1	501	
+opt_500_test5	L2	gp2	501	
+opt_500_test5	FFDRev		516	
+opt_500_test5	FFDRevAdv		518	
+opt_500_test5	FFDBox	bx3-rt100	503.77	{504: 61, 503: 31, 505: 8}
+opt_500_test5	FFDBox	bx4-rt100	503.76	{504: 59, 505: 9, 503: 31, 502: 1}
+opt_500_test5	FFDBox	bx5-rt100	503.95	{504: 61, 505: 17, 503: 22}
+opt_500_test5	FFDBox	bx6-rt100	503.83	{504: 54, 503: 32, 505: 13, 506: 1}
+opt_500_test5	FFDGroups	gn4-rt100	504.95	{504: 25, 506: 14, 505: 58, 507: 3}
+opt_500_test5	FFDGroups	gn6-rt100	504.43	{505: 34, 504: 51, 506: 8, 503: 7}
+opt_500_test5	FFDBG	gn4-bx4-rt100	503.82	{504: 56, 503: 30, 506: 1, 505: 12, 502: 1}
+opt_500_test5	FFDBG	gn6-bx4-rt100	503.92	{503: 20, 504: 68, 505: 12}
+opt_500_test5	FFDBG	gn5-bx3-rt100	503.94	{504: 66, 503: 20, 505: 14}
+opt_500_test5	FFDRatio	ra2-rt100	515.28	{517: 6, 514: 13, 515: 40, 516: 37, 513: 4}
+opt_500_test5	FFDRatio	ra5-rt100	506.55	{506: 53, 507: 39, 508: 8}
+opt_500_test5	FFDRatio	ra10-rt100	504.34	{505: 34, 504: 66}
+opt_500_test5	FFDRatio	ra15-rt100	504.71	{505: 71, 504: 29}
+opt_500_test5	FFDVal	rt100	514.02	{514: 43, 512: 2, 515: 20, 513: 28, 516: 7}
+opt_1000_test1	FFD	bin-sum	1012	
+opt_1000_test1	FFD	bin-avg	1012	
+opt_1000_test1	FFD	bin-prod	1016	
+opt_1000_test1	FFD	item-sum	1007	
+opt_1000_test1	FFD	item-avg	1007	
+opt_1000_test1	FFD	item-prod	1013	
+opt_1000_test1	dotP	gp1	1003	
+opt_1000_test1	dotP	gp2	1004	
+opt_1000_test1	L2	gp1	1001	
+opt_1000_test1	L2	gp2	1002	
+opt_1000_test1	FFDRev		1026	
+opt_1000_test1	FFDRevAdv		1029	
+opt_1000_test1	FFDBox	bx3-rt100	1007.64	{1008: 40, 1007: 40, 1009: 12, 1006: 6, 1010: 2}
+opt_1000_test1	FFDBox	bx4-rt100	1007.75	{1007: 36, 1008: 42, 1009: 17, 1006: 4, 1010: 1}
+opt_1000_test1	FFDBox	bx5-rt100	1007.88	{1008: 53, 1007: 31, 1009: 10, 1011: 1, 1006: 1, 1010: 4}
+opt_1000_test1	FFDBox	bx6-rt100	1007.79	{1008: 43, 1009: 13, 1007: 37, 1006: 3, 1010: 3, 1011: 1}
+opt_1000_test1	FFDGroups	gn4-rt100	1008.79	{1008: 30, 1010: 12, 1009: 38, 1011: 8, 1007: 10, 1013: 1, 1006: 1}
+opt_1000_test1	FFDGroups	gn6-rt100	1007.75	{1007: 37, 1008: 37, 1009: 17, 1006: 6, 1010: 2, 1011: 1}
+opt_1000_test1	FFDBG	gn4-bx4-rt100	1007.78	{1009: 17, 1008: 41, 1007: 38, 1010: 2, 1006: 1, 1005: 1}
+opt_1000_test1	FFDBG	gn6-bx4-rt100	1007.87	{1009: 16, 1007: 35, 1008: 42, 1010: 5, 1006: 2}
+opt_1000_test1	FFDBG	gn5-bx3-rt100	1007.7	{1007: 34, 1009: 10, 1008: 53, 1006: 3}
+opt_1000_test1	FFDRatio	ra2-rt100	1025.7	{1025: 35, 1026: 37, 1027: 18, 1024: 6, 1023: 2, 1028: 1, 1029: 1}
+opt_1000_test1	FFDRatio	ra5-rt100	1011.1	{1012: 32, 1011: 46, 1010: 22}
+opt_1000_test1	FFDRatio	ra10-rt100	1008.99	{1008: 2, 1009: 97, 1010: 1}
+opt_1000_test1	FFDRatio	ra15-rt100	1008.02	{1008: 98, 1009: 2}
+opt_1000_test1	FFDVal	rt100	1024.79	{1023: 3, 1025: 42, 1024: 27, 1026: 19, 1027: 4, 1022: 5}
+opt_1000_test2	FFD	bin-sum	1013	
+opt_1000_test2	FFD	bin-avg	1013	
+opt_1000_test2	FFD	bin-prod	1016	
+opt_1000_test2	FFD	item-sum	1007	
+opt_1000_test2	FFD	item-avg	1007	
+opt_1000_test2	FFD	item-prod	1010	
+opt_1000_test2	dotP	gp1	1003	
+opt_1000_test2	dotP	gp2	1003	
+opt_1000_test2	L2	gp1	1001	
+opt_1000_test2	L2	gp2	1002	
+opt_1000_test2	FFDRev		1028	
+opt_1000_test2	FFDRevAdv		1028	
+opt_1000_test2	FFDBox	bx3-rt100	1005.95	{1006: 43, 1004: 1, 1007: 22, 1005: 31, 1008: 3}
+opt_1000_test2	FFDBox	bx4-rt100	1005.92	{1005: 33, 1006: 46, 1007: 18, 1008: 2, 1009: 1}
+opt_1000_test2	FFDBox	bx5-rt100	1005.79	{1005: 36, 1006: 37, 1007: 23, 1004: 4}
+opt_1000_test2	FFDBox	bx6-rt100	1005.78	{1005: 39, 1006: 43, 1007: 15, 1008: 2, 1004: 1}
+opt_1000_test2	FFDGroups	gn4-rt100	1008.07	{1008: 36, 1007: 26, 1009: 28, 1006: 4, 1010: 5, 1011: 1}
+opt_1000_test2	FFDGroups	gn6-rt100	1008.03	{1009: 34, 1008: 30, 1007: 24, 1006: 6, 1010: 2, 1005: 2, 1011: 1, 1012: 1}
+opt_1000_test2	FFDBG	gn4-bx4-rt100	1005.84	{1006: 51, 1005: 29, 1007: 15, 1004: 3, 1008: 2}
+opt_1000_test2	FFDBG	gn6-bx4-rt100	1005.83	{1005: 37, 1006: 44, 1007: 14, 1008: 4, 1004: 1}
+opt_1000_test2	FFDBG	gn5-bx3-rt100	1005.88	{1006: 49, 1007: 22, 1005: 24, 1004: 5}
+opt_1000_test2	FFDRatio	ra2-rt100	1026.88	{1028: 18, 1027: 42, 1029: 6, 1026: 27, 1025: 6, 1024: 1}
+opt_1000_test2	FFDRatio	ra5-rt100	1010.8	{1010: 22, 1011: 76, 1012: 2}
+opt_1000_test2	FFDRatio	ra10-rt100	1007.83	{1007: 26, 1008: 65, 1009: 9}
+opt_1000_test2	FFDRatio	ra15-rt100	1007.01	{1007: 99, 1008: 1}
+opt_1000_test2	FFDVal	rt100	1023.32	{1026: 3, 1024: 26, 1022: 15, 1021: 5, 1023: 40, 1025: 11}badExample2D;FFD;bin-sum;15
+badExample2D;FFD;bin-avg;15
+badExample2D;FFD;bin-prod;15
+badExample2D;FFD;item-sum;13
+badExample2D;FFD;item-avg;13
+badExample2D;FFD;item-prod;13
+badExample2D;dotP;gp1;10
+badExample2D;dotP;gp2;10
+badExample2D;L2;gp1;10
+badExample2D;L2;gp2;10
+badExample2D;FFDRev;;10
+badExample2D;FFDRevAdv;;13
+badExample2D;FFDBox;bx3-rt100;13.0;{13: 100}
+badExample2D;FFDBox;bx4-rt100;13.0;{13: 100}
+badExample2D;FFDBox;bx5-rt100;13.0;{13: 100}
+badExample2D;FFDBox;bx6-rt100;13.0;{13: 100}
+badExample2D;FFDGroups;gn4-rt100;13.0;{13: 100}
+badExample2D;FFDGroups;gn6-rt100;13.0;{13: 100}
+badExample2D;FFDBG;gn4-bx4-rt100;13.0;{13: 100}
+badExample2D;FFDBG;gn6-bx4-rt100;13.0;{13: 100}
+badExample2D;FFDBG;gn5-bx3-rt100;13.0;{13: 100}
+badExample2D;FFDRatio;ra2-rt100;11.44;{11: 57, 12: 42, 13: 1}
+badExample2D;FFDRatio;ra5-rt100;12.61;{13: 61, 12: 39}
+badExample2D;FFDRatio;ra10-rt100;12.98;{13: 98, 12: 2}
+badExample2D;FFDRatio;ra15-rt100;13.0;{13: 100}
+badExample2D;FFDVal;rt100;11.27;{12: 27, 11: 67, 13: 2, 10: 4}

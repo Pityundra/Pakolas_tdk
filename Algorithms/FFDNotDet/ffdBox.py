@@ -2,12 +2,16 @@ import numpy as np
 from Resources.Bin.bin1D import Bin1D
 from Resources.Bin.bin2D import Bin2D
 from Resources.Bin.bin3D import Bin3D
+from Resources.Bin.bin4D import Bin4D
+from Resources.Bin.bin6D import Bin6D
 from Resources.Item.item1D import itemsSum
 from Resources.Item.item2D import itemsSum
 from Resources.Item.item3D import itemsSum
 from Resources.PlaceItem.placeItem1D import placeItem1D
 from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
+from Resources.PlaceItem.placeItem4D import placeItem4D
+from Resources.PlaceItem.placeItem6D import placeItem6D
 
 
 def FFDBox(items, binSize, boxSize, runTime, dataName):
@@ -30,6 +34,12 @@ def FFDBox(items, binSize, boxSize, runTime, dataName):
     elif len(binSize) == 3:
         for i in range(runTime):
             res.append(FFDBox3D(itemsCopy, binSize, boxSize))
+    elif len(binSize) == 4:
+        for i in range(runTime):
+            res.append(FFDBox4D(itemsCopy, binSize, boxSize))
+    elif len(binSize) == 6:
+        for i in range(runTime):
+            res.append(FFDBox6D(itemsCopy, binSize, boxSize))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
@@ -101,6 +111,47 @@ def FFDBox3D(itemsList, binSize, boxSize):
         else:
             item = items[np.random.random_integers(0, boxSize - 1)]
             bin, binsIndex = placeItem3D(item, bins, binsIndex, binSize)
+            items.remove(item)
+
+    return len(bins)
+
+
+def FFDBox4D(itemsList, binSize, boxSize):
+    bins = []  # Felhasznált ládák listája
+    binsIndex = 0  # A ládák indexelésére
+    bins.append(Bin4D(binsIndex + 1, binSize[0], binSize[1], binSize[2], binSize[3]))
+    items = itemsList.copy()
+    boxSize = boxSize
+
+    for i in range(len(items)):
+        if boxSize > len(items):
+            item = items[np.random.random_integers(0, len(items) - 1)]
+            bin, binsIndex = placeItem4D(item, bins, binsIndex, binSize)
+            items.remove(item)
+        else:
+            item = items[np.random.random_integers(0, boxSize - 1)]
+            bin, binsIndex = placeItem4D(item, bins, binsIndex, binSize)
+            items.remove(item)
+
+    return len(bins)
+
+
+
+def FFDBox6D(itemsList, binSize, boxSize):
+    bins = []  # Felhasznált ládák listája
+    binsIndex = 0  # A ládák indexelésére
+    bins.append(Bin6D(binsIndex + 1, binSize[0], binSize[1], binSize[2], binSize[3], binSize[4], binSize[5]))
+    items = itemsList.copy()
+    boxSize = boxSize
+
+    for i in range(len(items)):
+        if boxSize > len(items):
+            item = items[np.random.random_integers(0, len(items) - 1)]
+            bin, binsIndex = placeItem6D(item, bins, binsIndex, binSize)
+            items.remove(item)
+        else:
+            item = items[np.random.random_integers(0, boxSize - 1)]
+            bin, binsIndex = placeItem6D(item, bins, binsIndex, binSize)
             items.remove(item)
 
     return len(bins)

@@ -1,5 +1,5 @@
-from Algorithms.GH.dotP import DotP1, DotP2, DotP3
-from Algorithms.GH.l2 import L2_1, L2_2, L2_3
+from Algorithms.GH.dotP import DotP1, DotP2, DotP3, DotP4, DotP6
+from Algorithms.GH.l2 import L2_1, L2_2, L2_3, L2_4, L2_6
 
 
 def GH(alg, items, binSize, grasp, dataName):
@@ -18,6 +18,10 @@ def GH(alg, items, binSize, grasp, dataName):
             res.append(DotP2(itemsCopy, binSize, grasp))
         elif len(binSize) == 3:
             res.append(DotP3(itemsCopy, binSize, grasp))
+        elif len(binSize) == 4:
+            res.append(DotP4(itemsCopy, binSize, grasp))
+        elif len(binSize) == 6:
+            res.append(DotP6(itemsCopy, binSize, grasp))
         else:
             print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1
@@ -29,6 +33,10 @@ def GH(alg, items, binSize, grasp, dataName):
             res.append(L2_2(itemsCopy, binSize, grasp))
         elif len(binSize) == 3:
             res.append(L2_3(itemsCopy, binSize, grasp))
+        elif len(binSize) == 4:
+            res.append(L2_4(itemsCopy, binSize, grasp))
+        elif len(binSize) == 6:
+            res.append(L2_6(itemsCopy, binSize, grasp))
         else:
             print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1

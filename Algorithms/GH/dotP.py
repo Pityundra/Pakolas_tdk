@@ -1,6 +1,8 @@
 from Resources.Bin.bin1D import Bin1D
 from Resources.Bin.bin2D import Bin2D
 from Resources.Bin.bin3D import Bin3D
+from Resources.Bin.bin4D import Bin4D
+from Resources.Bin.bin6D import Bin6D
 from Resources.weightInform import WeightInform, itemWeight
 
 
@@ -98,6 +100,95 @@ def DotP3(items, binSize, grasp):
         if not allWeight:
             binsIndex += 1
             bins.append(Bin3D(binsIndex + 1, binSize[0], binSize[1], binSize[2]))
+            continue
+
+        allWeight.sort(reverse=True, key=itemWeight)
+
+        # Grasp alkalmazása
+        if grasp <= len(allWeight) or grasp < 0:  # ha a Grasp értéke nagyobb mint a lehetséges elpakolható tágyak szám akkor elrakjuk a legutolsót
+            itemChosenNo = grasp - 1
+        else:
+            itemChosenNo = len(allWeight) - 1
+
+        # Elrakjuk a tárgyat a ládába
+        bins[int(allWeight[itemChosenNo].bin.binIndex - 1)].addItem(allWeight[itemChosenNo].item)
+        # Kiveszük a tárgyat az elpakolandó tárgyak listájából
+        items.remove(allWeight[itemChosenNo].item)
+        # Töröljük az eddigi súlyokat, hiszen mindent újra kell számolni
+        allWeight.clear()
+
+    return len(bins)
+
+
+def DotP4(items, binSize, grasp):
+    # Előkészítési fázis
+    bins = []  # Felhasznált ládák listája
+    binsIndex = 0  # A ládák indexelésére
+    bins.append(Bin4D(binsIndex + 1, binSize[0], binSize[1], binSize[2], binSize[3]))
+    # r(t) jelöli a jelenleg nyitott ládák fennmaradó kapacitás vektorát => bins[].d1FreeCapacity
+    allWeight = []  # [item] [bin] [weight]
+
+    while len(items):
+        for item in items:
+            for bin in bins:
+                if ((bin.d1FreeCapacity >= item.getD1())
+                        and (bin.d2FreeCapacity >= item.getD2())
+                        and (bin.d3FreeCapacity >= item.getD3())
+                        and (bin.d4FreeCapacity >= item.getD4())):
+                    item.itemWeight = int(item.d1) * int(bin.d1FreeCapacity) + int(item.d2) * int(bin.d2FreeCapacity) + int(item.d3) * int(bin.d3FreeCapacity) + int(item.d4) * int(bin.d4FreeCapacity)
+                    weight = WeightInform(item, bin, item.itemWeight)
+                    allWeight.append(weight)
+        if not allWeight:
+            binsIndex += 1
+            bins.append(Bin4D(binsIndex + 1, binSize[0], binSize[1], binSize[2], binSize[3]))
+            continue
+
+        allWeight.sort(reverse=True, key=itemWeight)
+
+        # Grasp alkalmazása
+        if grasp <= len(allWeight) or grasp < 0:  # ha a Grasp értéke nagyobb mint a lehetséges elpakolható tágyak szám akkor elrakjuk a legutolsót
+            itemChosenNo = grasp - 1
+        else:
+            itemChosenNo = len(allWeight) - 1
+
+        # Elrakjuk a tárgyat a ládába
+        bins[int(allWeight[itemChosenNo].bin.binIndex - 1)].addItem(allWeight[itemChosenNo].item)
+        # Kiveszük a tárgyat az elpakolandó tárgyak listájából
+        items.remove(allWeight[itemChosenNo].item)
+        # Töröljük az eddigi súlyokat, hiszen mindent újra kell számolni
+        allWeight.clear()
+
+    return len(bins)
+
+
+def DotP6(items, binSize, grasp):
+    # Előkészítési fázis
+    bins = []  # Felhasznált ládák listája
+    binsIndex = 0  # A ládák indexelésére
+    bins.append(Bin6D(binsIndex + 1, binSize[0], binSize[1], binSize[2], binSize[3], binSize[4], binSize[5]))
+    # r(t) jelöli a jelenleg nyitott ládák fennmaradó kapacitás vektorát => bins[].d1FreeCapacity
+    allWeight = []  # [item] [bin] [weight]
+
+    while len(items):
+        for item in items:
+            for bin in bins:
+                if ((bin.d1FreeCapacity >= item.getD1())
+                        and (bin.d2FreeCapacity >= item.getD2())
+                        and (bin.d3FreeCapacity >= item.getD3())
+                        and (bin.d4FreeCapacity >= item.getD4())
+                        and (bin.d5FreeCapacity >= item.getD5())
+                        and (bin.d6FreeCapacity >= item.getD6())):
+                    item.itemWeight = (int(item.d1) * int(bin.d1FreeCapacity)
+                                       + int(item.d2) * int(bin.d2FreeCapacity)
+                                       + int(item.d3) * int(bin.d3FreeCapacity)
+                                       + int(item.d4) * int(bin.d4FreeCapacity)
+                                       + int(item.d5) * int(bin.d5FreeCapacity)
+                                       + int(item.d6) * int(bin.d6FreeCapacity))
+                    weight = WeightInform(item, bin, item.itemWeight)
+                    allWeight.append(weight)
+        if not allWeight:
+            binsIndex += 1
+            bins.append(Bin6D(binsIndex + 1, binSize[0], binSize[1], binSize[2], binSize[3], binSize[4], binSize[5]))
             continue
 
         allWeight.sort(reverse=True, key=itemWeight)

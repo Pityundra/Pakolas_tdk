@@ -1,7 +1,7 @@
 from Resources.Bin.bin6D import Bin6D
 
 
-def placeItem4D(item, bins, binsIndex, binSize):
+def placeItem6D(item, bins, binsIndex, binSize):
     isItemTaken = False
 
     # Végig nézi a ládákat hogy hova fér be az Item és a legelső helyre berakja

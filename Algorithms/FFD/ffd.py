@@ -1,4 +1,4 @@
-from Algorithms.FFD.ffdBin import FFDBC1, FFDBC2, FFDBC3
+from Algorithms.FFD.ffdBin import FFDBC1, FFDBC2, FFDBC3, FFDBC4, FFDBC6
 from Algorithms.FFD.ffdItem import FFDIC1, FFDIC2, FFDIC3
 from Resources.Item.item1D import itemsSum, itemsAVG, itemsProd
 from Resources.Item.item2D import itemsSum, itemsAVG, itemsProd
@@ -35,6 +35,10 @@ def FFD(SAP, centric, items, binSize, dataName):
             res.append(FFDIC2(itemsCopy, binSize))
         elif len(binSize) == 3:
             res.append(FFDIC3(itemsCopy, binSize))
+        elif len(binSize) == 4:
+            res.append(FFDIC4(itemsCopy, binSize))
+        elif len(binSize) == 6:
+            res.append(FFDIC6(itemsCopy, binSize))
         else:
             print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1
@@ -46,6 +50,10 @@ def FFD(SAP, centric, items, binSize, dataName):
             res.append(FFDBC2(itemsCopy, binSize))
         elif len(binSize) == 3:
             res.append(FFDBC3(itemsCopy, binSize))
+        elif len(binSize) == 4:
+            res.append(FFDBC4(itemsCopy, binSize))
+        elif len(binSize) == 6:
+            res.append(FFDBC6(itemsCopy, binSize))
         else:
             print("Ilyen dimenzió számra nem vagyunk felkészülve!")
             return 1

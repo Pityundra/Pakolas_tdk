@@ -2,12 +2,16 @@ import numpy as np
 from Resources.Bin.bin1D import Bin1D
 from Resources.Bin.bin2D import Bin2D
 from Resources.Bin.bin3D import Bin3D
+from Resources.Bin.bin4D import Bin4D
+from Resources.Bin.bin6D import Bin6D
 from Resources.Item.item1D import itemsSum
 from Resources.Item.item2D import itemsSum
 from Resources.Item.item3D import itemsSum
 from Resources.PlaceItem.placeItem1D import placeItem1D
 from Resources.PlaceItem.placeItem2D import placeItem2D
 from Resources.PlaceItem.placeItem3D import placeItem3D
+from Resources.PlaceItem.placeItem4D import placeItem4D
+from Resources.PlaceItem.placeItem6D import placeItem6D
 
 
 def FFDGB(items, binSize, groupNumber, boxSize, runTime, dataName):
@@ -30,6 +34,12 @@ def FFDGB(items, binSize, groupNumber, boxSize, runTime, dataName):
     elif len(binSize) == 3:
         for i in range(runTime):
             res.append(FFDGB3D(itemsCopy, binSize, groupNumber, boxSize))
+    elif len(binSize) == 4:
+        for i in range(runTime):
+            res.append(FFDGB4D(itemsCopy, binSize, groupNumber, boxSize))
+    elif len(binSize) == 6:
+        for i in range(runTime):
+            res.append(FFDGB6D(itemsCopy, binSize, groupNumber, boxSize))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
@@ -153,6 +163,80 @@ def FFDGB3D(itemsList, binSize, groupNumber, boxSize):
                 else:
                     item = items[np.random.random_integers(0, boxSize - 1)]
                     bin, binsIndex = placeItem3D(item, bins, binsIndex, binSize)
+                    items.remove(item)
+
+    return len(bins)
+
+
+def FFDGB4D(itemsList, binSize, groupNumber, boxSize):
+    bins = []  # Felhasznált ládák listája
+    binsIndex = 0  # A ládák indexelésére
+    bins.append(Bin4D(binsIndex + 1, binSize[0], binSize[1], binSize[2], binSize[3]))
+
+    items = itemsList.copy()
+
+    groupNumber = groupNumber
+    boxSize = boxSize
+
+    splitNumber = int(np.ceil(len(items) / groupNumber))
+
+    for j in range(groupNumber):
+        if j == groupNumber - 1:
+            for i in range(len(items)):
+                if boxSize > len(items):
+                    item = items[np.random.random_integers(0, len(items) - 1)]
+                    bin, binsIndex = placeItem4D(item, bins, binsIndex, binSize)
+                    items.remove(item)
+                else:
+                    item = items[np.random.random_integers(0, boxSize - 1)]
+                    bin, binsIndex = placeItem4D(item, bins, binsIndex, binSize)
+                    items.remove(item)
+        else:
+            for i in range(splitNumber):
+                if boxSize > splitNumber - i:
+                    item = items[np.random.random_integers(0, splitNumber - 1 - i)]
+                    bin, binsIndex = placeItem4D(item, bins, binsIndex, binSize)
+                    items.remove(item)
+                else:
+                    item = items[np.random.random_integers(0, boxSize - 1)]
+                    bin, binsIndex = placeItem4D(item, bins, binsIndex, binSize)
+                    items.remove(item)
+
+    return len(bins)
+
+
+def FFDGB6D(itemsList, binSize, groupNumber, boxSize):
+    bins = []  # Felhasznált ládák listája
+    binsIndex = 0  # A ládák indexelésére
+    bins.append(Bin6D(binsIndex + 1, binSize[0], binSize[1], binSize[2], binSize[3], binSize[4], binSize[5]))
+
+    items = itemsList.copy()
+
+    groupNumber = groupNumber
+    boxSize = boxSize
+
+    splitNumber = int(np.ceil(len(items) / groupNumber))
+
+    for j in range(groupNumber):
+        if j == groupNumber - 1:
+            for i in range(len(items)):
+                if boxSize > len(items):
+                    item = items[np.random.random_integers(0, len(items) - 1)]
+                    bin, binsIndex = placeItem6D(item, bins, binsIndex, binSize)
+                    items.remove(item)
+                else:
+                    item = items[np.random.random_integers(0, boxSize - 1)]
+                    bin, binsIndex = placeItem6D(item, bins, binsIndex, binSize)
+                    items.remove(item)
+        else:
+            for i in range(splitNumber):
+                if boxSize > splitNumber - i:
+                    item = items[np.random.random_integers(0, splitNumber - 1 - i)]
+                    bin, binsIndex = placeItem6D(item, bins, binsIndex, binSize)
+                    items.remove(item)
+                else:
+                    item = items[np.random.random_integers(0, boxSize - 1)]
+                    bin, binsIndex = placeItem6D(item, bins, binsIndex, binSize)
                     items.remove(item)
 
     return len(bins)

@@ -10,12 +10,16 @@ from Algorithms.FFDNotDet.ffdVal import FFDVal
 from Algorithms.FFDNotDet.l2NotDet import L2NotDet
 from Algorithms.GH.gh import GH
 from Data.GenerateFiles.badExamples import badExamples2D
+from Data.GenerateFiles.dataGenerate import generateClasses
 from Data.GenerateFiles.dataGenerateWithOpt import dataGen
 from Data.GenerateFiles.splitData import splitData, dataSplitter
 from Resources.dataLoad import fileRead
 from Resources.simpleLowerBound import SimpleLowerBound
 from test import Tester, ffdic3Test, ffdic1Test, ffdic2Test, DotP1Test, DotP2Test, DotP3Test, L2_1Test, L2_2Test, \
     L2_3Test, FFDRevTest, FFDBGTest, FFDMPTest, Test, FFDBoxTest
+
+
+# generateClasses()
 
 
 f = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/BadExaples/FileNamesBad.txt", "r")
@@ -48,7 +52,7 @@ for line in lines:
     # GH("L2", items, binSize, 3, dataName)
     # GH("L2", items, binSize, 4, dataName)
 
-    FFDRev(items, binSize, dataName)
+    # FFDRev(items, binSize, dataName)
     FFDRevAdv(items, binSize, dataName)
 
     FFDBox(items, binSize, 3, 100, dataName)
@@ -58,19 +62,19 @@ for line in lines:
 
     FFDGroups(items, binSize, 4, 100, dataName)
     FFDGroups(items, binSize, 6, 100, dataName)
-    # FFDGroups(items, binSize, 10, 100, dataName)
-    # FFDGroups(items, binSize, 20, 100, dataName)
+    FFDGroups(items, binSize, 10, 100, dataName)
+    FFDGroups(items, binSize, 20, 100, dataName)
 
     FFDGB(items, binSize, 4, 4, 100, dataName)
     FFDGB(items, binSize, 6, 4, 100, dataName)
     FFDGB(items, binSize, 5, 3, 100, dataName)
 
-    FFDRatio(items, binSize, 2, 100, dataName)
-    FFDRatio(items, binSize, 5, 100, dataName)
+    # FFDRatio(items, binSize, 2, 100, dataName)
+    # FFDRatio(items, binSize, 5, 100, dataName)
     FFDRatio(items, binSize, 10, 100, dataName)
     FFDRatio(items, binSize, 15, 100, dataName)
 
-    FFDVal(items, binSize, 100, dataName)
+    # FFDVal(items, binSize, 100, dataName)
 
     items.clear()
     binSize.clear()

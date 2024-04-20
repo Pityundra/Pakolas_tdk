@@ -1,0 +1,2 @@
+C:\Users\koloz\PycharmProjects\Pakolas_tdk\BadExaples\badExample2D.txt
+C:\Users\koloz\PycharmProjects\Pakolas_tdk\BadExaples\epsilon.txt

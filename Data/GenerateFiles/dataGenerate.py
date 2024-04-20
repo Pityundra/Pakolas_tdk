@@ -27,12 +27,12 @@ def generateClasses():
         # Class9: Ládák mindegyik dimenziója 100 és a tárgyak dimenziói rendre [1/2*LádaMéret,100][1/2*LádaMéret,LádaMéret][1/2*LádaMéret,LádaMéret]
         # dataClass("class9", 100, 100, 100, i, 50, 100, 50, 100, 50, 100)
         # Class10: Ládák mindegyik dimenziója 100 és a tárgyak dimenziói rendre [1,1/2*LádaMéret][1,1/2*LádaMéret][1,1/2*LádaMéret]
-        dataClass("class10", 100, 100, 100, i, 1, 50, 1, 50, 1, 50)
+        dataClass("class6", 100, 100, 100, i, 1, 50, 1, 50, 1, 50)
 
         # Class11: Ládák mindegyik dimenziója 10 és a tárgyak mindegyik dimenzióbeli méretei 1 és 10 között van
-        dataClass("class11", 10, 10, 10, i, 1, 10, 1, 10, 1, 10)
+        dataClass("class7", 10, 10, 10, i, 1, 10, 1, 10, 1, 10)
         # Class12: Ládák mindegyik dimenziója 40 és a tárgyak mindegyik dimenzióbeli méretei 1 és 35 között van
-        dataClass("class12", 40, 40, 40, i, 1, 35, 1, 35, 1, 35)
+        dataClass("class8", 40, 40, 40, i, 1, 35, 1, 35, 1, 35)
 
 
 def dataClass(className, b1, b2, b3, i, ws, wl, hs, hl, ds, dl):
@@ -41,10 +41,10 @@ def dataClass(className, b1, b2, b3, i, ws, wl, hs, hl, ds, dl):
     b2 = b2
     b3 = b3
 
-    r = open("data/FileNames.txt", "a")
-    r.write(f"data\{className}_{i}.txt\n")
+    r = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/3D_Classes/FileNames3.txt", "a")
+    r.write(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/3D_Classes/{className}_{i}_3.txt\n")
 
-    f = open(f"data\{className}_{i}.txt", "w")
+    f = open(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/3D_Classes/{className}_{i}_3.txt", "w")
     f.write(str(i) + " \n")
     f.write(str(b1) + " " + str(b2) + " " + str(b3) + " " + " \n")
     for x in range(i):

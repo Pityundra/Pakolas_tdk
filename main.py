@@ -22,7 +22,7 @@ from test import Tester, ffdic3Test, ffdic1Test, ffdic2Test, DotP1Test, DotP2Tes
 # generateClasses()
 
 
-f = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/3D_Classes/FileNames2.txt", "r")
+f = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/3D_Classes/FileNames3.txt", "r")
 lines = f.readlines()
 
 for line in lines:

@@ -32,6 +32,36 @@ def SimpleLowerBound(items, binSize, dataName):
             d3Sum += item.getD3()
 
         lowerBound = max(ceil(d1Sum/binSize[0]), ceil(d2Sum/binSize[1]), ceil(d3Sum/binSize[2]))
+    elif len(binSize) == 4:
+        d1Sum = 0
+        d2Sum = 0
+        d3Sum = 0
+        d4Sum = 0
+
+        for item in items:
+            d1Sum += item.getD1()
+            d2Sum += item.getD2()
+            d3Sum += item.getD3()
+            d4Sum += item.getD4()
+
+        lowerBound = max(ceil(d1Sum/binSize[0]), ceil(d2Sum/binSize[1]), ceil(d3Sum/binSize[2]), ceil(d3Sum/binSize[3]))
+    elif len(binSize) == 6:
+        d1Sum = 0
+        d2Sum = 0
+        d3Sum = 0
+        d4Sum = 0
+        d5Sum = 0
+        d6Sum = 0
+
+        for item in items:
+            d1Sum += item.getD1()
+            d2Sum += item.getD2()
+            d3Sum += item.getD3()
+            d4Sum += item.getD4()
+            d5Sum += item.getD5()
+            d6Sum += item.getD6()
+
+        lowerBound = max(ceil(d1Sum/binSize[0]), ceil(d2Sum/binSize[1]), ceil(d3Sum/binSize[2]), ceil(d3Sum/binSize[3]), ceil(d3Sum/binSize[4]), ceil(d3Sum/binSize[5]))
     else:
         return "lyen dimenzió számra nem vagyunk felkészülve!"
 

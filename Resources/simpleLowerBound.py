@@ -41,7 +41,7 @@ def SimpleLowerBound(items, binSize, dataName):
     sehogy semm.
     """
     
-    f = open(f"Results/{len(binSize)}D_Results/{dataName}.txt", "a")
+    f = open(f"Results/{len(binSize)}D_Results/{len(binSize)}D_Results.txt", "a")
     f.write(f"Alsó Korlát;{lowerBound}\n")
     f.close()
 

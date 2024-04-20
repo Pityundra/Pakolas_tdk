@@ -22,13 +22,16 @@ from test import Tester, ffdic3Test, ffdic1Test, ffdic2Test, DotP1Test, DotP2Tes
 # generateClasses()
 
 
-f = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/BadExaples/FileNamesBad.txt", "r")
+f = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/3D_Classes/FileNames2.txt", "r")
 lines = f.readlines()
 
 for line in lines:
     line = line.strip()
-    dataName = line.replace(".", "\\").split("\\")[-2]
+    dataName = line.replace(".", "/").split("/")[-2]
+    print(dataName)
     items, binSize = fileRead(line)
+    # print(items)
+    # print(binSize)
 
     print("Dimenzió szám: " + str(len(binSize)))
     print("Alsó korlát: " + str(SimpleLowerBound(items, binSize, dataName)))

@@ -70,3 +70,9 @@ C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class5_1000_3.txt
 C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class6_1000_3.txt
 C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class7_1000_3.txt
 C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class8_1000_3.txt
+C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class9.txt
+C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class10.txt
+C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class9.txt
+C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class10.txt
+C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class9.txt
+C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class10.txt

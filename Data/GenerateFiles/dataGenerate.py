@@ -6,6 +6,7 @@ def generateClasses():
     itemdb = [400, 800, 1000]
 
     for i in itemdb:
+        dataCorrelated(i)
         """
         # Class1: Ládák mindegyik dimenziója 1000 és a tárgyak mindegyik dimenzióbeli méretei 100 és 400 között van
         dataClass("class1", 1000, 1000, 1000, i, 100, 400, 100, 400, 100, 400)
@@ -34,7 +35,7 @@ def generateClasses():
         dataClass("class7", 10, 10, 10, i, 1, 10, 1, 10, 1, 10)
         # Class12: Ládák mindegyik dimenziója 40 és a tárgyak mindegyik dimenzióbeli méretei 1 és 35 között van
         dataClass("class8", 40, 40, 40, i, 1, 35, 1, 35, 1, 35)
-        """
+        
         dataClass4d("class1", 1000, 1000, 1000, 1000, i, 100, 400, 100, 400, 100, 400, 100, 400)
         dataClass4d("class2", 1000, 1000, 1000, 1000, i, 1, 1000, 1, 1000, 1, 1000, 1, 1000)
         dataClass4d("class3", 1000, 1000, 1000, 1000, i, 200, 800, 200, 800, 200, 800, 200, 800)
@@ -52,7 +53,7 @@ def generateClasses():
         dataClass6d("class6", 100, 100, 100, 100, 100, 100, i, 1, 50, 1, 50, 1, 50, 1, 50, 1, 50, 1, 50)
         dataClass6d("class7", 10, 10, 10, 10, 10, 10, i, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10, 1, 10)
         dataClass6d("class8", 40, 40, 40, 40, 40, 40, i, 1, 35, 1, 35, 1, 35, 1, 35, 1, 35, 1, 35)
-
+        """
 
 def dataClass(className, b1, b2, b3, i, ws, wl, hs, hl, ds, dl):
     # láda dimenzióinak maximális kapacitása
@@ -125,4 +126,157 @@ def dataClass6d(className, b1, b2, b3, b4, b5, b6, i, s1, l1, s2, l2, s3, l3, s4
 
         f.write(str(x + 1) + " " + str(d1) + " " + str(d2) + " " + str(d3) + " " + str(d4) + " " + str(d5) + " " + str(d6) + " \n")
     r.close()
+    f.close()
+
+
+def dataCorrelated(i):
+    # láda dimenzióinak maximális kapacitása
+    b1 = 150
+    b2 = 150
+    b3 = 150
+    b4 = 150
+    b5 = 150
+    b6 = 150
+    """
+    # r = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/2D_Classes/FileNames.txt", "a")
+    # r.write(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/2D_Classes/class9.txt\n")
+
+    f = open(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/2D_Classes/class9_{i}.txt", "w")
+    f.write("2" + " \n")
+    f.write(str(b1) + " " + str(b2) + " " + " \n")
+    for x in range(i):
+        d1 = np.random.random_integers(20, 100)
+        d2_s = np.random.random_integers(0, 10)
+        d2_p = np.random.random_integers(0, 1)
+
+        if d2_p:
+            d2 = d1 + d2_s
+        else:
+            d2 = d1 - d2_s
+
+        f.write(str(x + 1) + " " + str(d1) + " " + str(d2) + " \n")
+    f.close()
+
+    # r.write(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/2D_Classes/class10.txt\n")
+
+    f = open(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/2D_Classes/class10_{i}.txt", "w")
+    f.write("2" + " \n")
+    f.write(str(b1) + " " + str(b2) + " " + " \n")
+    for x in range(i):
+        d1 = np.random.random_integers(20, 100)
+        d2_s = np.random.random_integers(110, 130)
+
+        d2 = d2_s - d1
+
+        f.write(str(x + 1) + " " + str(d1) + " " + str(d2) + " \n")
+    # r.close()
+    f.close()
+    """
+    #  r = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/4D_Classes/FileNames.txt", "a")
+    #  r.write(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/4D_Classes/class9.txt\n")
+
+    f = open(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/4D_Classes/class9_{i}.txt", "w")
+    f.write("4" + " \n")
+    f.write(str(b1) + " " + str(b2) + " " + str(b3) + " " + str(b4) + " " + " \n")
+    for x in range(i):
+        d1 = np.random.random_integers(20, 100)
+        d2_s = np.random.random_integers(0, 10)
+        d2_p = np.random.random_integers(0, 1)
+
+        if d2_p:
+            d2 = d1 + d2_s
+        else:
+            d2 = d1 - d2_s
+
+        d3 = np.random.random_integers(20, 100)
+        d4_s = np.random.random_integers(0, 10)
+        d4_p = np.random.random_integers(0, 1)
+
+        if d4_p:
+            d4 = d3 + d4_s
+        else:
+            d4 = d3 - d4_s
+
+        f.write(str(x + 1) + " " + str(d1) + " " + str(d2) + " " + str(d3) + " " + str(d4) + " \n")
+    f.close()
+
+    #  r.write(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/4D_Classes/class10.txt\n")
+
+    f = open(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/4D_Classes/class10_{i}.txt", "w")
+    f.write("4" + " \n")
+    f.write(str(b1) + " " + str(b2) + " " + str(b3) + " " + str(b4) + " " + " \n")
+    for x in range(i):
+        d1 = np.random.random_integers(20, 100)
+        d2_s = np.random.random_integers(110, 130)
+
+        d2 = d2_s - d1
+
+        d3 = np.random.random_integers(20, 100)
+        d4_s = np.random.random_integers(110, 130)
+
+        d4 = d4_s - d3
+
+        f.write(str(x + 1) + " " + str(d1) + " " + str(d2) + " " + str(d3) + " " + str(d4) + " \n")
+    # r.close()
+    f.close()
+
+    #  r = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/FileNames.txt", "a")
+    # r.write(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class9.txt\n")
+
+    f = open(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class9_{i}.txt", "w")
+    f.write("6" + " \n")
+    f.write(str(b1) + " " + str(b2) + " " + str(b3) + " " + str(b4) + " " + str(b5) + " " + str(b6) + " \n")
+    for x in range(i):
+        d1 = np.random.random_integers(20, 100)
+        d2_s = np.random.random_integers(0, 10)
+        d2_p = np.random.random_integers(0, 1)
+
+        if d2_p:
+            d2 = d1 + d2_s
+        else:
+            d2 = d1 - d2_s
+
+        d3 = np.random.random_integers(20, 100)
+        d4_s = np.random.random_integers(0, 10)
+        d4_p = np.random.random_integers(0, 1)
+
+        if d4_p:
+            d4 = d3 + d4_s
+        else:
+            d4 = d3 - d4_s
+
+        d5 = np.random.random_integers(20, 100)
+        d6_s = np.random.random_integers(0, 10)
+        d6_p = np.random.random_integers(0, 1)
+
+        if d6_p:
+            d6 = d5 + d6_s
+        else:
+            d6 = d5 - d6_s
+
+        f.write(str(x + 1) + " " + str(d1) + " " + str(d2) + " " + str(d3) + " " + str(d4) + " " + str(d5) + " " + str(d6) + " \n")
+    f.close()
+
+    # r.write(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class10.txt\n")
+
+    f = open(f"C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/6D_Classes/class10_{i}.txt", "w")
+    f.write("6" + " \n")
+    f.write(str(b1) + " " + str(b2) + " " + str(b3) + " " + str(b4) + " " + str(b5) + " " + str(b6) + " \n")
+    for x in range(i):
+        d1 = np.random.random_integers(20, 100)
+        d2_s = np.random.random_integers(110, 130)
+
+        d2 = d2_s - d1
+
+        d3 = np.random.random_integers(20, 100)
+        d4_s = np.random.random_integers(110, 130)
+
+        d4 = d4_s - d3
+
+        d5 = np.random.random_integers(20, 100)
+        d6_s = np.random.random_integers(110, 130)
+
+        d6 = d6_s - d5
+        f.write(str(x + 1) + " " + str(d1) + " " + str(d2) + " " + str(d3) + " " + str(d4) + " " + str(d5) + " " + str(d6) + " \n")
+    # r.close()
     f.close()

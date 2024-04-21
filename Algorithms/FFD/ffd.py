@@ -1,5 +1,5 @@
 from Algorithms.FFD.ffdBin import FFDBC1, FFDBC2, FFDBC3, FFDBC4, FFDBC6
-from Algorithms.FFD.ffdItem import FFDIC1, FFDIC2, FFDIC3
+from Algorithms.FFD.ffdItem import FFDIC1, FFDIC2, FFDIC3, FFDIC4, FFDIC6
 from Resources.Item.item1D import itemsSum, itemsAVG, itemsProd
 from Resources.Item.item2D import itemsSum, itemsAVG, itemsProd
 from Resources.Item.item3D import itemsSum, itemsAVG, itemsProd

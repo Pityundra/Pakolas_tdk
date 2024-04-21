@@ -108,7 +108,7 @@ class Bin6D:
 
     @staticmethod
     def getDim():
-        return 3
+        return 6
 
     def addItem(self, item):
         self.items.append(str(item.number) + " " + str(item.getD1()) + " " + str(item.getD2()) + " " + str(item.getD3()) + " " + str(item.getD4()) + " " + str(item.getD5()) + " " + str(item.getD6()))

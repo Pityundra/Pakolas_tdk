@@ -6,7 +6,10 @@ def placeItem4D(item, bins, binsIndex, binSize):
 
     # Végig nézi a ládákat hogy hova fér be az Item és a legelső helyre berakja
     for bin in bins:
-        if (bin.d1FreeCapacity >= item.getD1()) and (bin.d2FreeCapacity >= item.getD2()) and (bin.d3FreeCapacity >= item.getD3()) and (bin.d4FreeCapacity >= item.getD4()):
+        if ((bin.d1FreeCapacity >= item.getD1())
+                and (bin.d2FreeCapacity >= item.getD2())
+                and (bin.d3FreeCapacity >= item.getD3())
+                and (bin.d4FreeCapacity >= item.getD4())):
             bin.addItem(item)
             isItemTaken = True
             break

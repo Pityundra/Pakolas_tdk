@@ -123,7 +123,7 @@ def FFDIC6(items, binSize):
         # Ha nem sikerült berakni az itemet sehova új ládát nyitunk
         if not isItemTaken:
             binsIndex += 1
-            bins.append(Bin6D(binsIndex+1, binSize[0], binSize[1], binSize[2]))
+            bins.append(Bin6D(binsIndex+1, binSize[0], binSize[1], binSize[2], binSize[3], binSize[4], binSize[5]))
             bins[binsIndex].addItem(item)
 
     return len(bins)

@@ -135,7 +135,10 @@ def DotP4(items, binSize, grasp):
                         and (bin.d2FreeCapacity >= item.getD2())
                         and (bin.d3FreeCapacity >= item.getD3())
                         and (bin.d4FreeCapacity >= item.getD4())):
-                    item.itemWeight = int(item.d1) * int(bin.d1FreeCapacity) + int(item.d2) * int(bin.d2FreeCapacity) + int(item.d3) * int(bin.d3FreeCapacity) + int(item.d4) * int(bin.d4FreeCapacity)
+                    item.itemWeight = (int(item.d1) * int(bin.d1FreeCapacity)
+                                       + int(item.d2) * int(bin.d2FreeCapacity)
+                                       + int(item.d3) * int(bin.d3FreeCapacity)
+                                       + int(item.d4) * int(bin.d4FreeCapacity))
                     weight = WeightInform(item, bin, item.itemWeight)
                     allWeight.append(weight)
         if not allWeight:

@@ -137,7 +137,10 @@ def L2_4(items, binSize, grasp):
                         and (bin.d2FreeCapacity >= item.getD2())
                         and (bin.d3FreeCapacity >= item.getD3())
                         and (bin.d4FreeCapacity >= item.getD4())):
-                    item.itemWeight = pow((int(item.d1) - int(bin.d1FreeCapacity)), 2) + pow((int(item.d2) - int(bin.d2FreeCapacity)), 2) + pow((int(item.d3) - int(bin.d3FreeCapacity)), 2) + pow((int(item.d4) - int(bin.d4FreeCapacity)), 2)
+                    item.itemWeight = (pow((int(item.d1) - int(bin.d1FreeCapacity)), 2)
+                                       + pow((int(item.d2) - int(bin.d2FreeCapacity)), 2)
+                                       + pow((int(item.d3) - int(bin.d3FreeCapacity)), 2)
+                                       + pow((int(item.d4) - int(bin.d4FreeCapacity)), 2))
                     weight = WeightInform(item, bin, item.itemWeight)
                     allWeight.append(weight)
         if not allWeight:

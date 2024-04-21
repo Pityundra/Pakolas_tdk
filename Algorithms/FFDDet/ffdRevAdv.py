@@ -30,9 +30,9 @@ def FFDRevAdv(items, binSize,dataName):
     elif len(binSize) == 3:
         res.append(FFDRevAdv3D(itemsCopy, binSize))
     elif len(binSize) == 4:
-        res.append(FFDRevAdv3D(itemsCopy, binSize))
+        res.append(FFDRevAdv4D(itemsCopy, binSize))
     elif len(binSize) == 6:
-        res.append(FFDRevAdv3D(itemsCopy, binSize))
+        res.append(FFDRevAdv6D(itemsCopy, binSize))
     else:
         print("Ilyen dimenzió számra nem vagyunk felkészülve!")
         return 1
@@ -130,7 +130,7 @@ def FFDRevAdv4D(items, binSize):
 
     while len(items):
         item = items[0]
-        bin, binsIndex = placeItem3D(item, bins, binsIndex, binSize)
+        bin, binsIndex = placeItem4D(item, bins, binsIndex, binSize)
         items.remove(item)
 
         for bin in bins:

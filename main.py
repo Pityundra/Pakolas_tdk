@@ -19,10 +19,10 @@ from test import Tester, ffdic3Test, ffdic1Test, ffdic2Test, DotP1Test, DotP2Tes
     L2_3Test, FFDRevTest, FFDBGTest, FFDMPTest, Test, FFDBoxTest
 
 
-generateClasses()
+# generateClasses()
 
-"""
-f = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/3D_Classes/FileNames3.txt", "r")
+
+f = open("C:/Users/koloz/PycharmProjects/Pakolas_tdk/Data/4D_Classes/teszt_run.txt", "r")
 lines = f.readlines()
 
 for line in lines:
@@ -81,7 +81,7 @@ for line in lines:
 
     items.clear()
     binSize.clear()
-"""
+
 # Tester()
 #
 
